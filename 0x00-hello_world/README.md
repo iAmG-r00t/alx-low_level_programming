@@ -18,6 +18,6 @@
    - The output should be saved in the file `c`.
    - Export main c file : `export CFILE=main.c` then run script.
 1. [Compiler](./1-compiler) : A script that compiles a C program file but does not link.
-   - The C file name will be saved in the variable *[$CFILE](./main.c)*.
+   - The C file name will be saved in the variable *[$CFILE](./1-main.c)*.
    - The output file should be named the same as the C file, but with the extension `.o` instead of `.c`.
     - **Example:** if the C file is `main.c`, the output file should be `main.o`.
