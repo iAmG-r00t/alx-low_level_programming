@@ -31,8 +31,18 @@
     - Use the function `puts`.
     - You are not allowed to use `printf`.
     - Your program should end with the value `0`.
+	- Compile and run this way: `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 4-puts.c && ./a.out`.
 5. [Hello, printf](./5-printf.c) : A C program that prints exactly `with proper grammar, but the outcome is a piece of art,`, followed by a new line.
 	- Use the funtion `printf`.
 	- You are not allowed to use the funtion `puts`.
 	- Your program should return `0`.
 	- Your program should compile without warning when using the `-Wall` `gcc` option.
+	- Compile this way: `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 5-printf.c`.
+	- Run the `a.out` executable file.
+6. [Size is not grandeur, and territory does not make a nation](./6-size.c) : A C program that prints the size of various types on the computer it is compiled and run on.
+	- You should produce the exact same output as in the example.
+	- Warnings are allowed.
+	- Your program should return `0`.
+	- You might have to install the package `libc6-dev-i386` on your linux (Vagrant) to test the `-m32` `gcc` option.
+	- Compile this way: `gcc 6-size.c -m32 -o size32 2> /tmp/32` & `gcc 6-size.c -m64 -o size64 2> /tmp/64`
+	- Compare outputs for the `size32` and `size64`.
