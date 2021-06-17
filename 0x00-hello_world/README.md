@@ -46,3 +46,7 @@
 	- You might have to install the package `libc6-dev-i386` on your linux (Vagrant) to test the `-m32` `gcc` option.
 	- Compile this way: `gcc 6-size.c -m32 -o size32 2> /tmp/32` & `gcc 6-size.c -m64 -o size64 2> /tmp/64`
 	- Compare outputs for the `size32` and `size64`.
+7. [Intel](./100-intel) : A script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
+	- The C file name will be saved in the variable *[$CFILE](./main.c)*.
+	- The output file should be named the same as the C file, but with the extension `.s` instead of `.c`.
+		- **Example:** if the C file is `main.c`, the output file should be `main.s`.
