@@ -27,3 +27,7 @@
     - **Example:** if the C file is `main.c`, the output file should be `main.s`.
 3. [Name](./3-name) : A script that compiles a C file and creates an executable named `cisfun`.
    - The C file name will be saved in the variable *[$CFILE](./main.c)*.
+4. [Hello, puts](./4-puts.c) : A C program that prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line.
+    - Use the function `puts`.
+    - You are not allowed to use `printf`.
+    - Your program should end with the value `0`.
