@@ -4,7 +4,7 @@
 
 ## Resource
 
-- C [Books and PDF's](../references) to check out and use as a reference.
+- C [Books and PDF's](./references) to check out and use as a reference.
 
 ---
 
