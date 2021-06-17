@@ -1,3 +1,2 @@
 #!/bin/bash
-output=$(echo $CFILE | cut -d. -f1)
-gcc -c $CFILE -o $output.out
+gcc -c $CFILE -o $CFILE.out
