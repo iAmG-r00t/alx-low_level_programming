@@ -9,3 +9,4 @@
 ---
 
 - [0x00](./0x00-hello_world) : C - Hello, World.
+- [0x01](./0x01-variables_if_else_while) : C - Variables,if,else,while.
