@@ -25,3 +25,14 @@
 			- if the number is 0: `is zero`
 			- if the number is less than 0: `is negative`
 		- Followed by a new line.
+1. [The last digit](./1-last_digit.c) : A C program will assign a random number to the variable `n` each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable `n`.
+	- [Source Code](./https://github.com/holbertonschool/0x01.c/blob/master/1-last_digit_c)
+	- The variable `n` will store a different value everytime you will run this program.
+	- You don't have to understand what `rand`, `srand`, `RAND_MAX` do.
+	-  The output of the program should be:
+		- The string `Last digit of`, followed by
+		- `n`, followed by
+		- The string `is`, followed by
+			- If the last digit of `n` is greater than 5: the string `and is greater than 5`.
+			- If the last digit of `n` is 0: the string `and is 0`.
+			- If the last digit of `n` is less than 6 and not 0: the string `and is less than 6 and not 0`.
