@@ -10,30 +10,34 @@
 
 int main(void)
 {
-	int i;
-	int j = 0;
+	int c;
+	int d = 0;
 
-	while (j < 10)
+	while (d < 10)
 	{
-		i = 0;
-		while (i < 10)
-		{
-			putchar(j + '0');
-			putchar(i + '0');
+		c = 0;
 
-			if (j + i != 18)
+		while (c < 10)
+		{
+			if (d != c && d < c)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(d + '0');
+				putchar(c + '0');
+
+				if (c + d != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 
-			i++;
+			c++;
 		}
 
-		j++;
+		d++;
 	}
 
 	putchar('\n');
 
-	return ('0');
+	return (0);
 }
