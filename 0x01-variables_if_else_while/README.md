@@ -72,3 +72,10 @@
 	- I have another solution [here](./8-print_base16.2.c), you can check it out.
 	- This [ASCII](https://ascii.cl/) table will help you understand the second solution.
 		- So for the second solution, you need to understand that `putchar` will store the ASCII value of the variable, always **REMEMBER** that.
+9. [Patience, persistence and perspiration make an unbeatable combination for success](./9-print_comb.c) : A C program that prints all possible combinations of single-digit numbers.
+	- Numbers must be separated by `,`, followed by a space.
+	- Numbers should be printed in ascending order: `lowest - highest`.
+	- You can only use the `putchar` function (every other function(`printf`, `puts`, etc ..) is forbidden).
+	- All your code should be in the `main` function.
+	- You can only use `putchar` four times in your code.
+	- You are not allowed to use variable any variable of type `char`.
