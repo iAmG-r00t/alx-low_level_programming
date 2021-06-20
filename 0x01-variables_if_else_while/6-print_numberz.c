@@ -13,8 +13,10 @@ int main(void)
 {
 	int i;
 
+	/*for loop that print 0-9*/
 	for (i = 0; i <= 9; i++)
 	{
+		/*don't understand how it works*/
 		putchar(i + '0');
 	}
 
