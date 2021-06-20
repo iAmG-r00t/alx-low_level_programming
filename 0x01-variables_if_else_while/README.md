@@ -56,3 +56,8 @@
 	- You can only use the `putchar` function (every other function(`printf`, `puts`, etc ..) is forbidden).
 	- You can only use `putchar` twice in your code.
 	- All your code should be in the main function.
+7. [Smile in the mirror](./7-print_tebahpla.c) : A C program that prints the lowercase alphabet in reverse, followed by a new line.
+	- You can only use the `putchar` function (every other function(`printf`, `puts`, etc ..) is forbidden).
+	- All your code should be in the `main` function.
+	- You can only use `putchar` twice in your code.
+	- I have two solutions for this, one which is the main one using a while loop, while the [second one](./7-print_tebahpla.2.c) uses a for loop.
