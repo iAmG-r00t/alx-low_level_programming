@@ -56,6 +56,10 @@
 	- You can only use the `putchar` function (every other function(`printf`, `puts`, etc ..) is forbidden).
 	- You can only use `putchar` twice in your code.
 	- All your code should be in the main function.
+	- This [ASCII](https://ascii.cl/) table will help you understand my solution.
+		- For this you need to understand that `putchar` holds the ASCII value of a variable.
+			- So we add `0 == 48` 48 is the ASCII value to our single digit integer to convert it into its character representation.
+			- Better explanation [here](https://stackoverflow.com/questions/21255038/what-does-putchar0-num-do)
 7. [Smile in the mirror](./7-print_tebahpla.c) : A C program that prints the lowercase alphabet in reverse, followed by a new line.
 	- You can only use the `putchar` function (every other function(`printf`, `puts`, etc ..) is forbidden).
 	- All your code should be in the `main` function.
@@ -65,3 +69,6 @@
 	- You can only use the `putchar` function (every other function(`printf`, `puts`, etc ..) is forbidden).
 	- All your code should be in the `main` function.
 	- You can only use `putchar` three times in your code.
+	- I have another solution [here](./8-print_base16.2.c), you can check it out.
+	- This [ASCII](https://ascii.cl/) table will help you understand the second solution.
+		- So for the second solution, you need to understand that `putchar` will store the ASCII value of the variable, always **REMEMBER** that.

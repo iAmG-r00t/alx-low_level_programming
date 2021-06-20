@@ -16,7 +16,7 @@ int main(void)
 	/*for loop that print 0-9*/
 	for (i = 0; i <= 9; i++)
 	{
-		/*don't understand how it works*/
+		/*convert single-digit int into ASCII*/
 		putchar(i + '0');
 	}
 

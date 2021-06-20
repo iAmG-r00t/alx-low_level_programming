@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 /**
  * main - Entry point
  *
@@ -10,18 +9,21 @@
 
 int main(void)
 {
-	int i;
+	char i = '0';
+	char ch = 'a';
 
-	/*while loop that print 0-9*/
-	for (i = 48; i <= 102; i++)
+	/*while loop that prints 0-9*/
+	while (i <= '9')
 	{
 		putchar(i);
+		i++;
+	}
 
-		/*to learn why*/
-		if (i == 57)
-		{
-			i += 39;
-		}
+	/*while loop that prints a-f*/
+	while (ch <= 'f')
+	{
+		putchar(ch);
+		ch++;
 	}
 
 	putchar('\n');
