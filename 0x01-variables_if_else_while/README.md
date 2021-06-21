@@ -89,3 +89,14 @@
 	- You can only use `putchar` five times maximum in your code.
 	- You are not allowed to use variable any variable of type `char`.
 	- All your code should be in the `main` function.
+	- Second [solution](./100-print_comb3.2.c) is here using a while loop, while my first solution I am using a for loop.
+11. [The success combination in business is: Do what you do better... and: do more of what you do... ](./101-print_comb4.c) : A C program that prints all possible different combinations of three digits.
+	- Numbers must be separated by `,`, followed by space.
+	- The three digits must be different.
+	- `012`, `120`, `102`, `021`, `201`, `210` are considered the same combination of the three digits `0`, `1` and `2`.
+	- Print only the smallest combination of three digits
+	- Numbers should be printed in ascending order, with three digits
+	- You can only use the `putchar` function (every other function(`printf`, `puts`, etc ..) is forbidden).
+	- You can only use `putchar` six times maximum in your code.
+	- You are not allowed to use variable any variable of type `char`.
+	- All your code should be in the `main` function.
