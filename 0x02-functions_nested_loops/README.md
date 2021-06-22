@@ -43,3 +43,10 @@
 	- **FYI:** The standard library provides a similar function: `isalpha`. Run `man isalpha` to learn more.
 	- Use this [main.c](./4-main.c) C program file to check if the code works correctly.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 4-main.c 4-isalpha.c -o 4-isalpha`
+5. [Sign](./5-sign.c) : A C program function that prints the sign of a number.
+	- Prototype: `int print_sign(int n);`
+	- Return `1` and prints `+` if `n` is greater than zero.
+	- Return `0` and prints `0` if `n` is zero.
+	- Return `-1` and prints `-` if `n` is less than zero.
+	- Use this [main.c](./5-main.c) C program file to check if the code works correctly.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 5-main.c 5-sign.c -o 5-sign`
