@@ -14,7 +14,7 @@ int main(void)
 	 * we declare our str char array of size 10
 	 * and an int ch which is 0
 	*/
-	char str[8] = "Holberton";
+	char str[10] = "Holberton";
 	int ch = 0;
 
 	/**
