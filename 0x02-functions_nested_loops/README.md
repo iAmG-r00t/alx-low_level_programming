@@ -50,3 +50,10 @@
 	- Return `-1` and prints `-` if `n` is less than zero.
 	- Use this [main.c](./5-main.c) C program file to check if the code works correctly.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 5-main.c 5-sign.c -o 5-sign`
+6. [There is no such thing as absolute value in this world. You can only estimate what a thing is worth to you](./6-abs.c) : A C program function that will compute the absolute value of an integer.
+	- Prototype: `int _abs(int);`
+	- **FYI:** The standard library provides a similar function: `abs`. Run `man abs` to learn more.
+	- Use this [main.c](./6-main.c) C program file to check if the code works correctly.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 6-main.c 6-abs.c -o 6-abs`
+	- 
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 5-main.c 5-sign.c -o 5-sign`
