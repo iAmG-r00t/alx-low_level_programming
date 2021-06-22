@@ -15,6 +15,15 @@
 
 ## Tasks
 
+- How to run most of the tasks;
+	- File name is the C program file with extension `.c`
+
+		```sh
+		gcc -Wall -pedantic -Werror -Wextra -std=gnu89 $filename_.c -o $filename
+		```
+
+---
+
 0. [Positive anything is better than negative nothing](./0-positive_or_negative.c) : A C program that will assign a random number to the variable `n` each time it is executed. Complete the source code in order to print whether the number stored in the variable `n` is positive or negative.
 	- [Source Code](https://github.com/holbertonschool/0x01.c/blob/master/0-positive_or_negative_c)
 	- The variable `n` will store a different value everytime you will run this program.
