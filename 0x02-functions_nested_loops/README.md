@@ -27,4 +27,10 @@
 2. [10 x alphabet](./2-print_alphabet_x10.c) : A C program function that prints the alphabet, in lowercase, followed by a new line.
 	- Prototype: `void print_alphabet_x10(void);`.
 	- You can use `_putchar` twice in your code.
+	- Use this [main.c](./2-main.c) C program file to check if the code works correctly.
 	- Run the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 2-main.c 2-print_alphabet_x10.c -o 2-alphabet_x10`
+3. [islower](./3-islower.c) : A C program function that checks for lowercase character.
+	- Prototype: `int _islower(int c);`.
+	- Return `1` if `c` is lowercase.
+	- Returns `0` otherwise.
+	- **FYI:** The standard library provides a similar function: `islower`. Run `man islower` to learn more.
