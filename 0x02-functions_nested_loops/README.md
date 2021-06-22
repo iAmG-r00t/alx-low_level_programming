@@ -60,3 +60,8 @@
 	- Returns the value of the last digit.
 	- Use this [main.c](./7-main.c) C program file to check if the code works correctly.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 7-main.c 7-print_last_digit.c -o 7-last_digit`
+8. [I'm federal agent Jack Bauer, and today is the longest day of my life](./8-24_hours.c): A C program function that prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
+	- Prototype: `void jack_bauer(void);`
+	- You can listen to this [soundtrack](https://www.youtube.com/watch?v=btAfXqgMkPs) while coding :)
+	- Use this [main.c](./8-main.c) C program file to check if the code works correctly.
+	- Compile the code this way: `cc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 8-main.c 8-24_hours.c -o 8-24`
