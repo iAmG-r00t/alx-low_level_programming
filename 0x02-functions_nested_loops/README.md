@@ -54,6 +54,9 @@
 	- Prototype: `int _abs(int);`
 	- **FYI:** The standard library provides a similar function: `abs`. Run `man abs` to learn more.
 	- Use this [main.c](./6-main.c) C program file to check if the code works correctly.
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 6-main.c 6-abs.c -o 6-abs`
-	- 
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 5-main.c 5-sign.c -o 5-sign`
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 6-main.c 6-abs.c -o 6-abs` 
+7. [There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important](./7-print_last_digit.c) : A C program function that will print the last digit of a number.
+	- Prototype: `int print_last_digit(int);`
+	- Returns the value of the last digit.
+	- Use this [main.c](./7-main.c) C program file to check if the code works correctly.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 7-main.c 7-print_last_digit.c -o 7-last_digit`
