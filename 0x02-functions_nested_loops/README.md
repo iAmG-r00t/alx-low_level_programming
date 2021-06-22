@@ -18,7 +18,7 @@
 0. [\_putchar](./0-holberton.c) : A C program that prints `Holberton`, followed by a new line.
 	- The program should return `0`.
 	- In this task we will be using prototype of funtion [\_putchar](./_putchar.c).
-	- Run the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-holberton.c -o 0-holberton`
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-holberton.c -o 0-holberton`
 1. [I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game](./1-alphabet.c) : A C program function that prints the alphabet, in lowercase, followed by a new line.
 	- Prototype: `void print_alphabet(void);`.
 	- You can only use `_putchar` twice in your code.
@@ -28,9 +28,18 @@
 	- Prototype: `void print_alphabet_x10(void);`.
 	- You can use `_putchar` twice in your code.
 	- Use this [main.c](./2-main.c) C program file to check if the code works correctly.
-	- Run the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 2-main.c 2-print_alphabet_x10.c -o 2-alphabet_x10`
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 2-main.c 2-print_alphabet_x10.c -o 2-alphabet_x10`
 3. [islower](./3-islower.c) : A C program function that checks for lowercase character.
 	- Prototype: `int _islower(int c);`.
 	- Return `1` if `c` is lowercase.
 	- Returns `0` otherwise.
 	- **FYI:** The standard library provides a similar function: `islower`. Run `man islower` to learn more.
+	- Use this [main.c](./3-main.c) C program file to check if the code works correctly.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 3-main.c 3-islower.c -o 3-islower`
+4. [isalpha](./4-isalpha.c) : A C program function that checks for alphabetic character.
+	- Prototype: `int _isalpha(int c);`
+	- Returns `1` if `c` is a letter, lowercase or uppercase.
+	- Returns `0` otherwise.
+	- **FYI:** The standard library provides a similar function: `isalpha`. Run `man isalpha` to learn more.
+	- Use this [main.c](./4-main.c) C program file to check if the code works correctly.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 4-main.c 4-isalpha.c -o 4-isalpha`
