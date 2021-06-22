@@ -24,3 +24,7 @@
 	- You can only use `_putchar` twice in your code.
 	- Use this [main.c](./1-main.c) C program file to check if the code works correctly.
 	- Run the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 1-main.c 1-alphabet.c -o 1-alphabet`
+2. [10 x alphabet](./2-print_alphabet_x10.c) : A C program function that prints the alphabet, in lowercase, followed by a new line.
+	- Prototype: `void print_alphabet_x10(void);`.
+	- You can use `_putchar` twice in your code.
+	- Run the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 2-main.c 2-print_alphabet_x10.c -o 2-alphabet_x10`
