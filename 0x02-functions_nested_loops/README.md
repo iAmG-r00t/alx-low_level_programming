@@ -13,6 +13,8 @@
 - **Note** for all these challenges we will not be using global variables and any standard library.
 - We will be using function prototypes that will be included in our header file called, [holberton.h](./holberton.h).
 
+---
+
 0. [\_putchar](./0-holberton.c) : A C program that prints `Holberton`, followed by a new line.
 	- The program should return `0`.
 	- In this task we will be using prototype of funtion [\_putchar](./_putchar.c).
