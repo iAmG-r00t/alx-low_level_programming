@@ -18,3 +18,9 @@
 0. [\_putchar](./0-holberton.c) : A C program that prints `Holberton`, followed by a new line.
 	- The program should return `0`.
 	- In this task we will be using prototype of funtion [\_putchar](./_putchar.c).
+	- Run the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-holberton.c -o 0-holberton`
+1. [I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game](./1-alphabet.c) : A C program function that prints the alphabet, in lowercase, followed by a new line.
+	- Prototype: `void print_alphabet(void);`.
+	- You can only use `_putchar` twice in your code.
+	- Use this [main.c](./1-main.c) C program file to check if the code works correctly.
+	- Run the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 1-main.c 1-alphabet.c -o 1-alphabet`
