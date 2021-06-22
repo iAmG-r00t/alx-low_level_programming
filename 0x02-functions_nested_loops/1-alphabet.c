@@ -1,11 +1,11 @@
 #include"holberton.h"
 
 /**
- * main - Entry point
+ * print_alphabet - utilizes on the _putchar function to print
+ *                 the alphabet a - z
  *
- * Description:function called print_alphabet
- *            that utilizes on the _putchar
- *            function prototype
+ * Description: prototype function called print_alphabet
+ *
  *
  * Return: return 1 on success
 */
