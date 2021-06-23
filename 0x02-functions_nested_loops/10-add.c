@@ -3,8 +3,8 @@
 /**
  * add - add two integers
  *
- * @a - first input
- * @b - second input
+ * @a: first input
+ * @b: second input
  *
  * Return: results of addition
 */
