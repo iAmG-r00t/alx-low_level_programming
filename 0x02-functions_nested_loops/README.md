@@ -64,4 +64,9 @@
 	- Prototype: `void jack_bauer(void);`
 	- You can listen to this [soundtrack](https://www.youtube.com/watch?v=btAfXqgMkPs) while coding :)
 	- Use this [main.c](./8-main.c) C program file to check if the code works correctly.
-	- Compile the code this way: `cc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 8-main.c 8-24_hours.c -o 8-24`
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 8-main.c 8-24_hours.c -o 8-24`
+9. [Learn your times table](./9-times_table.c) : A C program function that prints the 9 times table, starting with 0.
+	- Prototype: `void time_table(void);`
+	- Comiple and run the code this way: `./9-times_table | cat -e` to see the format.
+	- Use this [main.c](./9-main.c) C program file to check if the code works correctly.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 9-main.c 9-times_table.c -o 9-times_table`
