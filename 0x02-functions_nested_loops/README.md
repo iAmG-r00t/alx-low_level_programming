@@ -70,3 +70,7 @@
 	- Comiple and run the code this way: `./9-times_table | cat -e` to see the format.
 	- Use this [main.c](./9-main.c) C program file to check if the code works correctly.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 9-main.c 9-times_table.c -o 9-times_table`
+10. [a+b](./10-add.c) : A C program function that adds two integers and returns the result.
+	- Prototype: `int add(int, int);`
+	- Use this [main.c](./10-main.c) C program file to check if the code works correctly.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 10-main.c 10-add.c -o 10-add`
