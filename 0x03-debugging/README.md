@@ -13,3 +13,5 @@
 	- For this challenge we are not allowed to add or remove lines of code, we may only change one line in this task.
 	- Use this [positive_or_negative.c](./positive_or_negative.c) C program file to compile the code, expected output is `0 is zero`.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 positive_or_negative.c 0-main.c -o 0-main`
+1. [Like, comment, subscribe](./1-main.c) : A C program where I have commented the areas of code that were causing the output to go into an infinite loop.
+	- No need to compile the code with `-Wall -Werror -Wextra -pedantic` for this task.
