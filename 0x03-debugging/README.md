@@ -15,3 +15,4 @@
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 positive_or_negative.c 0-main.c -o 0-main`
 1. [Like, comment, subscribe](./1-main.c) : A C program where I have commented the areas of code that were causing the output to go into an infinite loop.
 	- No need to compile the code with `-Wall -Werror -Wextra -pedantic` for this task.
+	- Compile the code this way: `gcc -std=gnu89 1-main.c -o 1-main`
