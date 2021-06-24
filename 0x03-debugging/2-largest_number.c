@@ -12,11 +12,6 @@ int largest_number(int a, int b, int c)
 {
 	int largest;
 
-	/**
-	 * the original code issue is here,
-	 * compare this from the original
-	 * and you will see it
-	*/
 	if (a > b && a > c)
 	{
 		largest = a;
