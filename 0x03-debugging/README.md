@@ -11,3 +11,5 @@
 0. [Multiple mains](./0-main.c) : This file must test that the function `positive_or_negative()` gives the correct output when given a case of `0`.
 	- For this task its not about coding the solution / function but testing it. For this task I will adapt the [positive_or_negative](../0x01-variables_if_else_while/0-positive_or_negative.c) C program file as a prototype function that I learnt from the previous topic [Functions and nested loops](../0x02-functions_nested_loops).
 	- For this challenge we are not allowed to add or remove lines of code, we may only change one line in this task.
+	- Use this [positive_or_negative.c](./positive_or_negative.c) C program file to compile the code, expected output is `0 is zero`.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 positive_or_negative.c 0-main.c -o 0-main`
