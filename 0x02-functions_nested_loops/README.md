@@ -74,3 +74,12 @@
 	- Prototype: `int add(int, int);`
 	- Use this [main.c](./10-main.c) C program file to check if the code works correctly.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 10-main.c 10-add.c -o 10-add`
+11. [Holberton School, 98 Battery Street, the OG](./11-print_to_98.c) : A C program function that prints all natural numbers from `n` to `98`, followed by a new line.
+	- Prototype: `void print_to_98(int n);`
+	- Numbers must be separated by a comma, followed by a space.
+	- Numbers should be printed in order.
+	- The first number should be the number passed to your function.
+	- The last printed number should be `98`.
+	- You are allowed to use the standard library.
+	- Use this [main.c](./11-main.c) C program file to check if the code works correctly.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 11-main.c 11-print_to_98.c -o 11-98`
