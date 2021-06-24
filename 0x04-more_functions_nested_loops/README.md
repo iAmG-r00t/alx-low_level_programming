@@ -17,3 +17,8 @@
 	- Returns `1` if `c` is uppercase.
 	- Returns `0` otherwise.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-isupper.c -o 0-isuper`
+1. [isdigit](./1-isdigit.c) : A C program function that checks for a digit(`0` through `9`).
+	- Prototype: `int _isdigit(int c);`
+	- Returns `1` if `c` is a digit.
+	- Returns `0` otherwise.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-isdigit.c -o 1-isdigit`
