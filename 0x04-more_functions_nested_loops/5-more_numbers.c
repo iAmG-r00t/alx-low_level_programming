@@ -21,7 +21,7 @@ void more_numbers(void)
 			{
 				if (!(s == 1 && i >= 5))
 				{
-					if(s)
+					if (s)
 						_putchar(s + 48);
 					_putchar(i + 48);
 				}
