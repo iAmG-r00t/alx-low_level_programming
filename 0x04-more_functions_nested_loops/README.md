@@ -34,3 +34,7 @@
 	- Do not print `2` and `4`.
 	- You can only use `_putchar` twice in your code.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 4-main.c 4-print_most_numbers.c -o 4-print_most_numbers`
+5. [Numbers constitute the only universal language](./5-more_numbers.c) : A C function program that prints 10 times the numbers, from `0` to `14`, followed by a new line.
+	- Prototype: `void more_numbers(void);`
+	- You can only `_putchar` three times in your code.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 5-main.c 5-more_numbers.c -o 5-more_numbers`
