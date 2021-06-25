@@ -22,3 +22,5 @@
 	- Returns `1` if `c` is a digit.
 	- Returns `0` otherwise.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-isdigit.c -o 1-isdigit`
+2. [Collaboration is multiplication](./2-mul.c) : A C program that multiplies two integers.
+	- Prototype: `int mul(int a, int b);`
