@@ -38,3 +38,10 @@
 	- Prototype: `void more_numbers(void);`
 	- You can only `_putchar` three times in your code.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 5-main.c 5-more_numbers.c -o 5-more_numbers`
+6. [The shortest distance between two points is a straight line](./6-print_line.c) : A C function program that draws a straight line in the terminal.
+	- Prototype: `void print_line(int n);`
+	- You can only use `_putchar` function to print.
+	- Where `n` is the number of times the character `_` should be printed.
+	- The line should end with a `\n`.
+	- If `n` is `0` or less, the function should only print `\n`.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 6-main.c 6-print_line.c -o 6-lines`.
