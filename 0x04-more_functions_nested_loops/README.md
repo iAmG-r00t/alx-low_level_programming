@@ -24,4 +24,8 @@
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-isdigit.c -o 1-isdigit`
 2. [Collaboration is multiplication](./2-mul.c) : A C program that multiplies two integers.
 	- Prototype: `int mul(int a, int b);`
-	- Compule the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-mul.c -o 2-mul`
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-mul.c -o 2-mul`
+3. [The numbers speak for themselves](./3-print_numbers.c) : A C program that prints the numbers, from `0` to `9`, followed by a new line.
+	- Prototype: `void print_numbers(void);`
+	- You can only use `_putchar` twice in your code.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 3-main.c 3-print_numbers.c -o 3-print_numbers`
