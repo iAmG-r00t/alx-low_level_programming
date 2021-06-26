@@ -45,3 +45,10 @@
 	- The line should end with a `\n`.
 	- If `n` is `0` or less, the function should only print `\n`.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 6-main.c 6-print_line.c -o 6-lines`.
+7. [I feel like I am diagonally parked in a parallel universe](./7-print_diagonal.c) :  A C function program that draws a diagonal line on the terminal.
+	- Prototype: `void print_diagonal(int n);`
+	- You can only use `_putchar` function to print.
+	- Where `n` is the number of times the character `\` should be printed.
+	- The diagonal should end with a `\n`.
+	- If `n` is `0` or less, the function should only print a `\n`.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 7-main.c 7-print_diagonal.c -o 7-diagonals`
