@@ -16,3 +16,6 @@
 1. [Don't swap horses in crossing a stream](./1-swap.c) : A C function program that swaps the values of two integers.
 	- Prototype: `void swap_int(int *a, int *b);`
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-swap.c -o 1-swap`
+2. [This report, by its very length, defends itself against the risk of being read](./2-strlen.c) : A C function program that returns the length of a string.
+	- Prototype: `int _strlen(char *s);`
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-strlen.c -o 2-strlen`
