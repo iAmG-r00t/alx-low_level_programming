@@ -17,5 +17,8 @@
 		- Compile this way: `gcc dereference_1.c -o dereference_1`
 	- [Part 2](./dereference_2.c)
 		- Compile this way: `gcc dereference_2.c -o dereference_2`
-- Function parameters are passed by value. [modif_my_param](./modif_my_param.c)
-	- Compile this way: `gcc modif_main.c modif_my_param.c -o modif_param`
+- Function parameters are passed by value.
+	- [modif_my_param](./modif_my_param.c)
+		- Compile this way: `gcc modif_main.c modif_my_param.c -o modif_param`
+	- [Assignment](./modif_my_char_var.c)
+		- Compile this way: `gcc modif_char_main.c modif_my_char_var.c -o modif_char`
