@@ -7,4 +7,5 @@
 ## Programs
 
 - Address of variables `c` and `n`. [Address](address.c)
-- Pointer Size. [psize](./psize.c)
+- Pointer size and address. [psize](./psize.c)
+- Storing an address of a variable into a pointer. [pn](./pn.c)
