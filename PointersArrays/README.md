@@ -9,3 +9,6 @@
 - Address of variables `c` and `n`. [Address](address.c)
 - Pointer size and address. [psize](./psize.c)
 - Storing an address of a variable into a pointer. [pn](./pn.c)
+- Dereferencing (Hard term right here.)
+	- [Part 1](dereference_1.c)
+	- [Part 2](./dereference_2.c)
