@@ -13,3 +13,6 @@
 0. [98 Battery st.](./0-reset_to_98.c) : A C function program that takes a pointer to an `int` as parameter and updates the value it points to to `98`.
 	- Prototype: `void reset_to_98(int *n);`
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-reset_to_98.c -o 0-98`
+1. [Don't swap horses in crossing a stream](./1-swap.c) : A C function program that swaps the values of two integers.
+	- Prototype: `void swap_int(int *a, int *b);`
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-swap.c -o 1-swap`
