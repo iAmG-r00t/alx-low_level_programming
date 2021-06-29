@@ -25,3 +25,6 @@
 		- Compile this way: `gcc modif_char_main.c modif_my_char_var.c -o modif_char`
 - Arrays. [Example code for an array](./array.c)
 - [Arrays vs Pointer](./array_vs_pointer.c) : An Array is not a pointer but you can still use the name of the array in your code, and it's value will be ...the address of the first element of the array.
+- [Array type decay](./array_type_decay_main.c) : This is when the name of an array is used in an expression, the array type gets automatically implicitly converted to pointer-to-element type in all contexts and the resultant pointer is a completely independent temporary value, that is the address of the first element of the array.
+- [sizeof_array](./sizeof_array.c) : First exception.
+- [address-of array](./address_of_array.c) : `&` Second exception.
