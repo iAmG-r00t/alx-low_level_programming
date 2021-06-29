@@ -19,3 +19,6 @@
 2. [This report, by its very length, defends itself against the risk of being read](./2-strlen.c) : A C function program that returns the length of a string.
 	- Prototype: `int _strlen(char *s);`
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-strlen.c -o 2-strlen`
+3. [I do not fear computers. I fear the lack of them](./3-puts.c) : A C function program that prints a string, followed by a new line, to `stdout`.
+	- Prototype: `void _puts(char *str);`
+	- Comiple the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 3-main.c 3-puts.c -o 3-puts`
