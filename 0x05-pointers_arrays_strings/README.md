@@ -22,3 +22,6 @@
 3. [I do not fear computers. I fear the lack of them](./3-puts.c) : A C function program that prints a string, followed by a new line, to `stdout`.
 	- Prototype: `void _puts(char *str);`
 	- Comiple the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 3-main.c 3-puts.c -o 3-puts`
+4. [I can only go one way. I've not got a reverse gear](./4-print_rev.c) : A C function that prints a string, in reverse, followed by a new line.
+	- Prototype: `void print_rev(char *s);`
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 4-main.c 4-print_rev.c -o 4-print_rev`
