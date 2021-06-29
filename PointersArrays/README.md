@@ -23,3 +23,4 @@
 	- [Assignment](./modif_my_char_var.c)
 		- [Memory Address view](https://memoryview.tiiny.site/)
 		- Compile this way: `gcc modif_char_main.c modif_my_char_var.c -o modif_char`
+- Arrays. [Example code for an array](./array.c)
