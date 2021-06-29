@@ -3,7 +3,7 @@
 /**
  * modif_my_char_var - Solve me
  *
- * @*cc: pointer to char
+ * @cc: pointer to char
  * @ccc: char input
  *
  * Return: nothing.

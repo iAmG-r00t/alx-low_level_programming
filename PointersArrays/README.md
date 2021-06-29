@@ -24,3 +24,4 @@
 		- [Memory Address view](https://memoryview.tiiny.site/)
 		- Compile this way: `gcc modif_char_main.c modif_my_char_var.c -o modif_char`
 - Arrays. [Example code for an array](./array.c)
+- [Arrays vs Pointer](./array_vs_pointer.c) : An Array is not a pointer but you can still use the name of the array in your code, and it's value will be ...the address of the first element of the array.
