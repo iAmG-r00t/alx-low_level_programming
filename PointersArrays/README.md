@@ -28,3 +28,5 @@
 - [Array type decay](./array_type_decay_main.c) : This is when the name of an array is used in an expression, the array type gets automatically implicitly converted to pointer-to-element type in all contexts and the resultant pointer is a completely independent temporary value, that is the address of the first element of the array.
 - [sizeof_array](./sizeof_array.c) : First exception.
 - [address-of array](./address_of_array.c) : `&` Second exception.
+- [Size of array and address](./sizeof_array_address.c) : This is an interesting bit.
+- [Array Pointers Arithmetic](./array_pointers_arithmetic.c).
