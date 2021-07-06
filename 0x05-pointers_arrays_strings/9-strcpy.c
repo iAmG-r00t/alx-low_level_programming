@@ -16,6 +16,10 @@ char *_strcpy(char *dest, char *src)
 	for (c = 0; src[c] >= 0;)
 	{
 		dest[c] = src[c];
+		/**
+		 * end for loop once you have
+		 * reached at the null byte
+		*/
 		if (src[c] == '\0')
 			break;
 		c++;
