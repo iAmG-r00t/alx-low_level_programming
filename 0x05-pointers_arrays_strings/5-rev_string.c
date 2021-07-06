@@ -22,7 +22,7 @@ void rev_string(char *s)
 	}
 
 	/*reverse the string by swapping*/
-	for(f = 0; f < (c - 1); f++)
+	for (f = 0; f < (c - 1); f++)
 	{
 		for (l = f + 1; l > 0; l--)
 		{
