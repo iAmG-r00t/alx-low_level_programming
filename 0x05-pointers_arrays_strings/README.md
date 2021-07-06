@@ -41,4 +41,9 @@
 	- Where `n` is the number of elements of the array to be printed.
 	- Numbers must be separated by comma, followed by a space.
 	- The numbers should be displayed in the same order as they are stored in the array.
-	- You are not allowed to use `printf`.
+	- You are allowed to use `printf`.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 8-main.c 8-print_array.c -o 8-print_array`
+9. [strcpy](./9-strcpy.c) : A C function program that copies the string pointed to by `src`, including the terminating null byte (`\0`), to the buffer pointed to by `dest`.
+	- Prototype: `char *_strcpy(char *dest, char *src);`
+	- Return value is the pointer to `dest`.
+	- **FYI:** The standard library provides a similar function: `strcpy`. Run `man strcpy` to learn more.
