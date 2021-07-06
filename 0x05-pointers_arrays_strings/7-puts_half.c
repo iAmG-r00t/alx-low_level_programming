@@ -21,7 +21,7 @@ void puts_half(char *str)
 	}
 
 	/*check if length is even or not*/
-	if (c % 2 == 0)
+	if (c % 2 == 1)
 		/**
 		 * if length is even,
 		 * i is half the length
@@ -34,10 +34,7 @@ void puts_half(char *str)
 		*/
 		i = (c - 1) / 2;
 
-	while (i < c)
-	{
+	for (i++; i < c; i++)
 		_putchar(str[i]);
-		i++;
-	}
 	_putchar('\n');
 }
