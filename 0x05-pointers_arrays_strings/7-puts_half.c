@@ -10,7 +10,7 @@
 
 void puts_half(char *str)
 {
-	int i, c = 0;
+	int i, c = 0, m;
 
 	/* find the length of array - null character*/
 	while (c >= 0)
@@ -21,20 +21,25 @@ void puts_half(char *str)
 	}
 
 	/*check if length is even or not*/
-	if (c % 2 == 1)
+	if (c % 2 == 0)
+	{
 		/**
 		 * if length is even,
 		 * i is half the length
 		*/
-		i = c / 2;
+		m = c / 2;
+		for (i = m; i < c; i++)
+			_putchar(str[i]);
+	}
 	else
+	{
 		/**
 		 * if length is odd,
 		 * i is half of length - 1
 		*/
-		i = (c - 1) / 2;
-
-	for (i++; i < c; i++)
-		_putchar(str[i]);
+		m = (c - 1) / 2;
+		for (i = m + 1; i < c; i++)
+			_putchar(str[i]);
+	}
 	_putchar('\n');
 }
