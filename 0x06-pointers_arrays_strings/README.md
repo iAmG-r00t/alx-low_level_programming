@@ -26,3 +26,8 @@
 	- Your function should work exactly like `strncpy`.
 	- **FYI:**  The standard library provides a similar function: `strncpy`. Run `man strncpy` to learn more.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-strncpy.c -o 2-strncpy`
+3. [strcmp](./3-strcmp.c) : A C function program that compares two strings.
+	- Prototype: `int _strcmp(char *s1, char *s2);`
+	- Your function should work exactly like `strcmp``.
+	- **FYI:** The standard library provides a similar function: `strcmp`. Run `man strcmp` to learn more.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-strcmp.c -o 3-strcmp`
