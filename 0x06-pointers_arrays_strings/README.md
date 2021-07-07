@@ -31,6 +31,12 @@
 	- Your function should work exactly like `strcmp`.
 	- **FYI:** The standard library provides a similar function: `strcmp`. Run `man strcmp` to learn more.
 	- [Read an example here to understand](https://www.studytonight.com/c/programs/string/strcmp()-function)
+		- **Remember:**
+			- The `strcmp` returns the following;
+				- 0 if `s1` and `s2` are equal
+				- Negative integer if the stopping character in `s1` was less than the stopping character in `s2`
+				- Positive integer if the stopping character in `s1` was greater than the stopping character in `s2`
+			- So when we compare we will only check the difference of the first character found between `s1` and `s2`, break the array iteration and return the difference.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-strcmp.c -o 3-strcmp`
 4. [I am a kind of paranoid in reverse. I suspect people of plotting to make me happy](./4-rev_array.c) : A C function program that reverses the content of an array of integers.
 	- Prototype: `void reverse_array(int *a, int n);`
