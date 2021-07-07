@@ -2,7 +2,7 @@
 
 ## Resources
 
-- Read the resources from the previous project; [0x05. C - Pointers, arrays and strings](../0x05-pointers_arrays_strings #resources).
+- Read the resources from the previous project; [0x05. C - Pointers, arrays and strings](../0x05-pointers_arrays_strings#resources).
 
 ## Tasks
 
