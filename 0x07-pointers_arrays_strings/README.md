@@ -11,8 +11,16 @@
 
 ## Tasks
 
-0. [memset](0-memset.c) : A function that fills memory with a constant byte.
+0. [memset](./0-memset.c) : A function that fills memory with a constant byte.
 	- Prototype: `char *_memset(char *s, char b, unsigned int n);`
 	- The `_memset()` function fills the first `n` bytes of the memory area pointed to by `s` with the constant byte `b`.
 	- Returns a pointer to the memory area `s`.
+	- [Read more on memset here](https://www.holbertonschool.com/coding-resource-memset-in-c)
 	- **FYI:** The standard library provides a similar function: `memset`. Run `man memset` to learn more.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-memset.c -o 0-memset`
+1. [memcpy](./1-memcpy.c) : A function that copies the memory area.
+	- Prototype: `char *_memcpy(char *dest, char *src, unsigned int n);`
+	- The `_memcpy()` function copies `n` bytes from the memory area `src` to the memory area `dest`.
+	- Returns a pointer to `dest`
+	- **FYI:** The standard library provides a similar function: `memcpy`. Run `man memcpy` to learn more.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-memcpy.c -o 1-memcpy`
