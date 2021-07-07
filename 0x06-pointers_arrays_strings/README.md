@@ -47,3 +47,7 @@
 5. [Always look up](5-string_toupper.c) : A C function program that changes all lowercase letters of a string to uppercase.
 	- Prototype: `char *string_toupper(char *);`
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 5-string_toupper.c -o 5-string_toupper`
+6. [Expect the best. Prepare for the worst. Capitalize on what comes](./6-cap_string.c) : A C function program that capitalizes all words of a string.
+	- Prototype: `char *cap_string(char *);`
+	- Separators of words: space, tabulation, new line, `,`, `;`, `.`, `!`, `?`, `"`, `(`, `)`, `{`, and `}`.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 6-main.c 6-cap_string.c -o 6-cap`
