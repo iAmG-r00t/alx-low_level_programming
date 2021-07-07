@@ -44,3 +44,6 @@
 	- [Read an example here on how to swap](https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/)
 	- `n` is the number of elements in the array [Read here for more information](https://stackoverflow.com/questions/37538/how-do-i-determine-the-size-of-my-array-in-c).
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-rev_array.c -o 4-rev_array`
+5. [Always look up](5-string_toupper.c) : A C function program that changes all lowercase letters of a string to uppercase.
+	- Prototype: `char *string_toupper(char *);`
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 5-string_toupper.c -o 5-string_toupper`
