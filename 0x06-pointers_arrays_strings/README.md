@@ -21,3 +21,8 @@
 	- Return a pointer to the resulting string `dest`.
 	- **FYI:** The standard library provides a similar function: `strncat`. Run `man strncat` to learn more.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-strncat.c -o 1-strncat`
+2. [strncpy](./2-strncpy.c) : A C function program that copies a string.
+	- Prototype: `char *_strncpy(char *dest, char *src, int n);`
+	- Your function should work exactly like `strncpy`.
+	- **FYI:**  The standard library provides a similar function: `strncpy`. Run `man strncpy` to learn more.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-strncpy.c -o 2-strncpy`
