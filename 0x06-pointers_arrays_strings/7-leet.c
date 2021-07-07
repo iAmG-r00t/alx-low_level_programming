@@ -8,31 +8,30 @@
 
 char *leet(char *s)
 {
-	int i;
+	int i, c = 0;
+	int sl[] = {97, 101, 111, 116, 108};
+	int ul[] = {65, 69, 79, 84, 76};
+	int n[] = {52, 51, 48, 55, 49};
 
-	while (s[i] != '\0')
+	/*iterate values in array s*/
+	while (s[c] != '\0')
 	{
-		if (s[i] == 97 || s[i] == 65)
+		/**
+		 * loop through array value five times
+		 * to check if the value is equal to
+		 * any small letter in array sl or
+		 * upper letter in array ul and if it
+		 * is replace it with the value in array n
+		*/
+		for (i = 0; i < 5; i++)
 		{
-			s[i] = '4';
+			if (s[c] == sl[i] || s[c] == ul[i])
+			{
+				s[c] = n[i];
+				break;
+			}
 		}
-		else if (s[i] == 101 || s[i] == 69)
-		{
-			s[i] = '3';
-		}
-		else if (s[i] == 111 || s[i] == 79)
-		{
-			s[i] = '0';
-		}
-		else if (s[i] == 116 || s[i] == 84)
-		{
-			s[i] = '7';
-		}
-		else if (s[i] == 108 || s[i] == 76)
-		{
-			s[i] = '1';
-		}
-		i++;
+		c++;
 	}
 	return (s);
 }
