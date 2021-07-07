@@ -28,6 +28,11 @@
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-strncpy.c -o 2-strncpy`
 3. [strcmp](./3-strcmp.c) : A C function program that compares two strings.
 	- Prototype: `int _strcmp(char *s1, char *s2);`
-	- Your function should work exactly like `strcmp``.
+	- Your function should work exactly like `strcmp`.
 	- **FYI:** The standard library provides a similar function: `strcmp`. Run `man strcmp` to learn more.
+	- [Read an example here to understand](https://www.studytonight.com/c/programs/string/strcmp/()-function)
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-strcmp.c -o 3-strcmp`
+4. [I am a kind of paranoid in reverse. I suspect people of plotting to make me happy](./4-rev_array.c) : A C function program that reverses the content of an array of integers.
+	- Prototype: `void reverse_array(int *a, int n);`
+	- Where `n` is the number of elements of the array.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-rev_array.c -o 4-rev_array`
