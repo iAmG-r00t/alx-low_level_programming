@@ -47,3 +47,4 @@
 	- Prototype: `char *_strcpy(char *dest, char *src);`
 	- Return value is the pointer to `dest`.
 	- **FYI:** The standard library provides a similar function: `strcpy`. Run `man strcpy` to learn more.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 9-main.c 9-strcpy.c -o 9-strcpy`
