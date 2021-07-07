@@ -5,7 +5,7 @@
  *
  * @s : pointer to input char
  *
- * Return: nothing
+ * Return: @s
 */
 
 char *string_toupper(char *s)
