@@ -1,10 +1,10 @@
+![img](https://assets.imaginablefutures.com/media/images/ALX_Logo.max-200x150.png)
+
 # C is FUN 😊
 
 >Learning C right now, been wanting to get on this. It's going to be FUN !!.
 
 ## About
-
-![img](https://opportunitydesk.org/wp-content/uploads/2018/07/ALX-Launchpad-Program-2018-for-High-potentials-Changemakers-1024x538.jpg)
 
 - This repository consists of all the C programming projects done with [ALX Africa](https://www.alxafrica.com/) Full stack Software Engineering course in partnership with [Holberton School](https://www.holbertonschool.com/) by [th3_gr00t](https://th33-gr00t.tk/).
 - All main.c files are prewritten by the school. We build functions that produce a specific output while also taking into consideration edge cases.
