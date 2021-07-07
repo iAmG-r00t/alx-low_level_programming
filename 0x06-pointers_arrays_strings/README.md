@@ -41,4 +41,5 @@
 4. [I am a kind of paranoid in reverse. I suspect people of plotting to make me happy](./4-rev_array.c) : A C function program that reverses the content of an array of integers.
 	- Prototype: `void reverse_array(int *a, int n);`
 	- Where `n` is the number of elements of the array.
+	- [Read an example here on how to swap](https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/)
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-rev_array.c -o 4-rev_array`
