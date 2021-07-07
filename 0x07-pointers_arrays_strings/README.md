@@ -24,3 +24,9 @@
 	- Returns a pointer to `dest`
 	- **FYI:** The standard library provides a similar function: `memcpy`. Run `man memcpy` to learn more.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-memcpy.c -o 1-memcpy`
+2. [strchr](./2-strchr.c) : A function that locates a character in a string.
+	- Prototype: `char *_strchr(char *s, char c);`
+	- Returns a pointer to the first occurrence of the character `c` in the string `s`, or `NULL` if the character is not found.
+	- **FYI:** The standard library provides a similar function: `strchr`. Run `man strchr` to learn more.
+	- [Read more here on strchr](https://stackoverflow.com/questions/41863674/how-to-write-your-own-strchr-in-c-using-pointers).
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-strchr.c -o 2-strchr`
