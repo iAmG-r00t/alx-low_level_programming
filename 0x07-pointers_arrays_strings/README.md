@@ -35,3 +35,9 @@
 	- Returns the number of bytes in the initial segment of `s` which consist only of bytes from `accept`.
 	- **FYI:** The standard library provides a similar function: `strspn`. Run `man strspn` to learn more.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-strspn.c -o 3-strspn`
+4. [strpbrk](./4-strpbrk.c) : A function that searches a string for any of a set of bytes.
+	- Prototype: `char *_strpbrk(char *s, char *accept);`
+	- The `_strpbrk()` function locates the first occurrence in the string `s` of any of the bytes in the string `accept`.
+	- Returns a pointer to the byte in `s` that matches one of the bytes in `accept`, or `NULL` if no such byte is found.
+	- **FYI:**  The standard library provides a similar function: `strpbrk`. Run `man strpbrk` to learn more.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-strpbrk.c -o 4-strpbrk`
