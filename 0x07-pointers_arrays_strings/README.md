@@ -30,3 +30,8 @@
 	- **FYI:** The standard library provides a similar function: `strchr`. Run `man strchr` to learn more.
 	- [Read more here on strchr](https://stackoverflow.com/questions/41863674/how-to-write-your-own-strchr-in-c-using-pointers).
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-strchr.c -o 2-strchr`
+3. [strspn](./3-strspn.c) : A function that gets the length of a prefix substring.
+	- Prototype: `unsigned int _strspn(char *s, char *accept);`
+	- Returns the number of bytes in the initial segment of `s` which consist only of bytes from `accept`.
+	- **FYI:** The standard library provides a similar function: `strspn`. Run `man strspn` to learn more.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-strspn.c -o 3-strspn`
