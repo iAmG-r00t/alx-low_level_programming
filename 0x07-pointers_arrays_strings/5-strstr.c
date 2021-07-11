@@ -17,17 +17,18 @@ char *_strstr(char *haystack, char *needle)
 	 * to assist in returning one of
 	 * our parameters pointers haystack
 	*/
-	char *h;
+	char *h, *n;
 
 	while (*haystack != '\0')
 	{
 		h = haystack;
-		while (*haystack != '\0' && *needle != '\0' && *haystack == *needle)
+		n = needle;
+		while (*n != '\0' && *haystack == *n)
 		{
 			haystack++;
-			needle++;
+			n++;
 		}
-		if (!*needle)
+		if (!*n)
 			return (h);
 		haystack++;
 	}
