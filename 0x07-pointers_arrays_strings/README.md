@@ -51,3 +51,10 @@
 6. [Chess is mental torture](./7-print_chessboard.c) : A function that prints the chessboard.
 	- Prototype: `void print_chessboard(char (*a)[8]);`
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 7-main.c 7-print_chessboard.c -o 7-print_chessboard`
+7. [The line of life is a ragged diagonal between duty and desire](./8-print_diagsums.c) : A function that prints the sum of the two diagonals of a square matrix of integers.
+	- Prototype: `void print_diagsums(int *a, int size);`
+	- Format: see [main code](./8-main.c).
+	- You are allowed to use the standard library.
+	- **Note:** that in the following example we are casting an `int[][]` into an `int*`.
+		- This is not something you should do. The goal here is to make sure you understand how an array of array is stored in memory.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 8-main.c 8-print_diagsums.c -o 8-print_diagsums`
