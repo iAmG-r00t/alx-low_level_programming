@@ -48,3 +48,6 @@
 	- Returns a pointer to the beginning of the located substring, or `NULL` if the substring is not found.
 	- **FYI:** The standard library provides a similar function: `strstr`. Run `man strstr` to learn more.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 5-strstr.c -o 5-strstr`
+6. [Chess is mental torture](./7-print_chessboard.c) : A function that prints the chessboard.
+	- Prototype: `void print_chessboard(char (*a)[8]);`
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 7-main.c 7-print_chessboard.c -o 7-print_chessboard`
