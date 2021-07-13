@@ -15,7 +15,7 @@ int main(int argc, char __attribute__((unused)) *argv[])
 {
 	int i = 0, m;
 
-	while(i < argc)
+	while (i < argc)
 	{
 		m = i;
 		i++;
