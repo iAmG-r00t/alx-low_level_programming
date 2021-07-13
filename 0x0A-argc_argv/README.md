@@ -20,3 +20,8 @@
 	- All arguments should be printed, including the first one.
 	- Only print one argument per line, ending with a new line.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-args.c -o args`
+3. [Neither irony nor sarcasm is argument](./3-mul.c) : A program that multiplies two numbers.
+	- Your program should print the result of the multiplication, followed by a new line.
+	- You can assume that the two numbers and result of the multiplication can be stored in an integer.
+	- If the program does not receive two arguments, your program should print `Error`, followed by a new line, and return `1`.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-mul.c -o mul`
