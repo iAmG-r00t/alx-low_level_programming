@@ -17,6 +17,13 @@
 	- I am two projects behind alot of backlog.
 		- They have released `0x08 while I am at 0x06`.
 	- Currently on leave to rest, catch up with ALX while I think about the contract.
+- Date: `12 July 2021` Time: `6:36 pm`
+	- Damn I am still far, but I have managed to finish three projects.
+	- Currently behind with `Recursion`, `Static Libraries` and `argc, argv`.
+	- I am planning to jump to `argc, argv before the deadline ends today, then work backwards.
+	- Struggling abit here because I am unwell tested positive of Covid when I was on leave.
+		- Good news is I have time to catch up before I get back to work.
+	- Signed the contract btw.
 
 ## Resource
 
@@ -32,6 +39,7 @@
 - [0x05](./0x05-pointers_arrays_strings) : Pointers, arrays and strings.
 - [0x06](./0x06-pointers_arrays_strings) : More pointers, arrays and strings.
 - [0x07](./0x07-pointers_arrays_strings) : Even more pointers, arrays and strings.
+- [0x0A](./0x0A-argc_argv) : argc, argv.
 
 ---
 
