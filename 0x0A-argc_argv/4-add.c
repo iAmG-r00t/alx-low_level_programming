@@ -16,7 +16,7 @@ int isNum(char num[])
 
 	for (i = 0; i < l; i++)
 	{
-		if(!isdigit(num[i]))
+		if (!isdigit(num[i]))
 			return (1);
 	}
 	return (0);
