@@ -16,3 +16,7 @@
 1. [Silence is argument carried out by other means](./1-args.c) : A program that prints the number of arguments passed into it.
 	- Your program should print a number, followed by a new line.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-args.c -o nargs`
+2. [The best argument against democracy is a five-minute conversation with the average voter](./2-args.c) : A program that prints all the arguments it receives.
+	- All arguments should be printed, including the first one.
+	- Only print one argument per line, ending with a new line.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-args.c -o args`
