@@ -20,15 +20,22 @@ char *_strdup(char *str)
 	length = i;
 
 	s = malloc(length * sizeof(char));
-	if (str == NULL || s == NULL)
-		return (NULL);
-
-	i = 0;
-	while (i < length)
+	if (str == NULL)
 	{
-		s[i] = str[i];
-		i++;
+		return (NULL);
 	}
-
+	else if (s == NULL)
+	{
+		return (NULL);
+	}
+	else
+	{
+		i = 0;
+		while (i < length)
+		{
+			s[i] = str[i];
+			i++;
+		}
+	}
 	return (s);
 }
