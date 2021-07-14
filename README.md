@@ -20,10 +20,15 @@
 - Date: `12 July 2021` Time: `6:36 pm`
 	- Damn I am still far, but I have managed to finish three projects.
 	- Currently behind with `Recursion`, `Static Libraries` and `argc, argv`.
-	- I am planning to jump to `argc, argv before the deadline ends today, then work backwards.
+	- I am planning to jump to `argc, argv` before the deadline ends today, then work backwards.
 	- Struggling abit here because I am unwell tested positive of Covid when I was on leave.
 		- Good news is I have time to catch up before I get back to work.
 	- Signed the contract btw.
+- Date `14th July 2021` Time: `6:36 am`
+	- Still playing catch up, managed to finish `argc, argv` now heading to `malloc, free`, then I do `static, libraries` then finish up with `recursions`.
+	- Why am I getting late every single time because I am trying to understand the concepts being taught.
+	- I am excited the changed the deadlines to **6am** which means I can try catching up today.
+	- I am also excited to learn about `malloc` (*calloc*, *realloc*) and `free` today and how to use `valgrind` to find memory leaks.
 
 ## Resource
 
@@ -39,10 +44,13 @@
 - [0x05](./0x05-pointers_arrays_strings) : Pointers, arrays and strings.
 - [0x06](./0x06-pointers_arrays_strings) : More pointers, arrays and strings.
 - [0x07](./0x07-pointers_arrays_strings) : Even more pointers, arrays and strings.
-- [0x0A](./0x0A-argc_argv) : argc, argv.
+- [0x0A](./0x0A-argc_argv) : argc, argv[].
+- [0x0B](./0x0B-malloc_free) : Malloc, free.
 
 ---
 
 # More Resources
 
 - [Pointers and Arrays](./PointersArrays) : Code snippets and notes on Pointers and Arrays from Concept Page.
+- [Dynamic Memory Allocation](./dynamic_memory_alloc) : Code snippets and notes on how dynamic memory allocation works with `malloc` and `free`.
+- [Heap vs Stack](./heap_stack) : Code snippets and notes on what is a heap, a stack and how they work.
