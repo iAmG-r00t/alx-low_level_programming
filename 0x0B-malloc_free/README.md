@@ -21,3 +21,9 @@
 	- On success, the `_strdup`  function returns a pointer to the duplicated string. It returns `NULL` if insufficient memory was available.
 	- **FYI:** The standard library provides a similar function: `strdup`. Run `man strdup` to learn more.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-strdup.c -o s`
+2. [He who is not courageous enough to take risks will accomplish nothing in life](./2-str_concat.c) : A function that concatenates two strings.
+	- Prototype: `char *str_concat(char *s1, char *s2);`
+	- The returned pointer should point to a newly allocated space in memory which contains the contents of `s1`, followed by the contents of `s2`, and null terminated.
+	- If `NULL` is passed, treat it as an empty string.
+	- The function should return `NULL` on faliure.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-str_concat.c -o c`
