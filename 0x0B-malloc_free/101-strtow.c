@@ -40,7 +40,7 @@ int wordcount(char *str)
 
 void free_array(char **ar, int i)
 {
-	if (array != NULL && i != 0)
+	if (ar != NULL && i != 0)
 	{
 		while (i >= 0)
 		{
@@ -62,7 +62,7 @@ void free_array(char **ar, int i)
 char **strtow(char *str)
 {
 	int i, s, j, str_l, word;
-	char **string, *temp;
+	char **string;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
@@ -75,24 +75,24 @@ char **strtow(char *str)
 
 	for (i = s = 0; i < str_l; i++)
 	{
-		for (word = s; str[words] != '\0'; word++)
+		for (word = s; str[word] != '\0'; word++)
 		{
 			if (str[word] == ' ')
 				s++;
 
-			if (str[word] != ' ' && str[word] != '\0')
+			if (str[word] != ' ' && (str[word + 1] == ' ' || str[word + 1] == '\0'))
 			{
 				string[i] = malloc((word - s + 2) * sizeof(char));
 				if (string[i] == NULL)
 				{
-				free_array(string[i]);
-				return (NULL);
+					free_array(string,i);
+					return (NULL);
 				}
 				break;
 			}
 		}
 
-		for (j = 0; s <= word; s++; j++)
+		for (j = 0; s <= word; s++, j++)
 			string[i][j] = str[s];
 		string[i][j] = '\0';
 	}
