@@ -52,6 +52,7 @@ char **strtow(char *str)
 		return (NULL);
 
 
+	/*iterate through the string*/
 	while (*str != '\0' && i < str_l)
 	{
 		/*skip empty spaces*/
@@ -60,15 +61,10 @@ char **strtow(char *str)
 		else
 		{
 			temp = str;
-			/*count words*/
-			while (str[k] != '\0')
-			{
-				if (str[k] != ' ' &&
-				    (str[k + 1] == ' ' ||
-				     str[k + 1] == '\0'))
-					words++;
-				k++;
-			}
+			/*count word_s*/
+			while (*str != ' ' && *str != '\0')
+				str++;
+			words++;
 
 			string[i] = malloc((words + 1) * sizeof(char));
 			if (string[i] == NULL)
