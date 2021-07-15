@@ -22,7 +22,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	length = l1 = l2 = 0;
+	l1 = l2 = 0;
 	/*length of both s1 & s2 respectively*/
 	while (s1[l1] != '\0')
 		l1++;
@@ -41,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; s1[i] != '\0'; i++)
 		str[i] = s1[i];
 	/*add s2 n bytes to str*/
-	for (j = 0; j < n && str[j] != '\0'; j++)
+	for (j = 0; j < n; j++)
 	{
 		str[i] = s2[j];
 		i++;
