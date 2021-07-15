@@ -46,6 +46,7 @@
 - [0x07](./0x07-pointers_arrays_strings) : Even more pointers, arrays and strings.
 - [0x0A](./0x0A-argc_argv) : argc, argv[].
 - [0x0B](./0x0B-malloc_free) : Malloc, free.
+- [0x0C](./0x0C-more_malloc_free) : More malloc, free.
 
 ---
 
