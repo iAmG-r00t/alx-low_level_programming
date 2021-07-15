@@ -84,7 +84,7 @@ char **strtow(char *str)
 				temp++; j++;
 			}
 			string[i][j] = '\0';
-			i++; j = 0; str++;
+			i++; j = 0; words = 0; str++;
 		}
 	}
 	string[str_l] = NULL;
