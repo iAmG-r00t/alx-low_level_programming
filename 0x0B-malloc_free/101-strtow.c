@@ -44,7 +44,7 @@ char **strtow(char *str)
 
 	i = j = str_l = words = 0;
 
-	if (str == NULL || *str == '\0')
+	if (str == NULL || *str == ' ')
 		return (NULL);
 
 	str_l = wordcount(str);
