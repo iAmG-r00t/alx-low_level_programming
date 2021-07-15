@@ -33,3 +33,7 @@
 	- The function should return `NULL` on faliure.
 	- If `width` or `height` is `0` or negative, return `NULL`.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-alloc_grid.c -o g`
+4. [It's not bragging if you can back it up](./4-free_grid.c) : A function that frees a 2 dimensional grid previously created by the [alloc_grid](./3-alloc_grid.c) function.
+	- Prototype: `void free_grid(int **grid, int height);`
+	- Note that we will first compile the `alloc_grid` file to make sure it compiles.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 3-alloc_grid.c 4-free_grid.c -o f`
