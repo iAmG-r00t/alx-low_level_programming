@@ -41,7 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; s1[i] != '\0'; i++)
 		str[i] = s1[i];
 	/*add s2 n bytes to str*/
-	for (j = 0; j < n; j++)
+	for (j = 0; j < n && str[j] != '\0'; j++)
 	{
 		str[i] = s2[j];
 		i++;
