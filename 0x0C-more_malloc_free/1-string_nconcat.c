@@ -40,14 +40,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (str == NULL)
 		return (NULL);
 
-	/*add s1 to str*/
-	for (i = 0; i < length && s1[i] != '\0'; i++)
-		str[i] = s1[i];
-	/*add s2 to str*/
-	for (j = 0; i < length && s2[j] != '\0'; j++)
+	/*add s1 && s2 to str*/
+	for (i = j = 0; i < length && s1[i] != '\0'; i++)
 	{
-		str[i] = s2[j];
-		i++;
+		if (i < length)
+			str[i] = s1[i];
+		else
+			str[i] = s2[j++];
 	}
 	str[i] = '\0';
 
