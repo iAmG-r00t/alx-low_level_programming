@@ -37,3 +37,9 @@
 	- Prototype: `void free_grid(int **grid, int height);`
 	- Note that we will first compile the `alloc_grid` file to make sure it compiles.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 3-alloc_grid.c 4-free_grid.c -o f`
+5. [It isn't the mountains ahead to climb that wear you out; it's the pebble in your shoe](./100-argstostr.c) : A function that concatenates all the arguments of your program.
+	- Prototype: `char *argstostr(int ac, char **av);`
+	- Returns `NULL` if `ac == 0` or `av == NULL`
+	- Returns a pointer to a new string, or `NULL` if it fails.
+	- Each argument should be followed by a `\n` in the new string.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-argstostr.c -o args`
