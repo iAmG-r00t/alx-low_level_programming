@@ -44,10 +44,13 @@ char **strtow(char *str)
 
 	i = j = str_l = words = 0;
 
-	if (str == NULL || *str == ' ')
+	if (str == NULL || *str == '\0')
 		return (NULL);
 
 	str_l = wordcount(str);
+	/*return null if str is a space*/
+	if (str_l == 0)
+		return (NULL);
 
 	string = malloc((str_l + 1) * sizeof(char *));
 	if (string == NULL)
