@@ -27,3 +27,9 @@
 	- If `NULL` is passed, treat it as an empty string.
 	- The function should return `NULL` on faliure.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-str_concat.c -o c`
+3. [If you even dream of beating me you'd better wake up and apologize](./3-alloc_grid.c) : A function that returns a pointer to a 2 dimensional array of integers.
+	- Prototype: `int **alloc_grid(int width, int height);`
+	- Each element of the grid should be initialized to `0`.
+	- The function should return `NULL` on faliure.
+	- If `width` or `height` is `0` or negative, return `NULL`.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-alloc_grid.c -o g`
