@@ -81,11 +81,10 @@ char **strtow(char *str)
 			while (*temp != ' ' && *temp != '\0')
 			{
 				string[i][j] = *temp;
-				temp++;
-				j++;
+				temp++; j++;
 			}
 			string[i][j] = '\0';
-			i++, j = 0; str++;
+			i++; j = 0; str++;
 		}
 	}
 	string[str_l] = NULL;
