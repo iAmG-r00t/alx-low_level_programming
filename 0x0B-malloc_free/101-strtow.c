@@ -71,7 +71,7 @@ char **strtow(char *str)
 				str++;
 			words++;
 
-			string[i] = malloc((words) * sizeof(char));
+			string[i] = malloc((words + 1) * sizeof(char));
 			if (string[i] == NULL)
 			{
 				while (i >= 0)
