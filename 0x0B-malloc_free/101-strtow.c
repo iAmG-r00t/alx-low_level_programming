@@ -30,6 +30,28 @@ int wordcount(char *str)
 }
 
 /**
+ * free_array - free arr[i]
+ *
+ * @ar: array to free
+ * @i: array[i]
+ *
+ * Return: nothing
+*/
+
+void free_array(char **ar, int i)
+{
+	if (array != NULL && i != 0)
+	{
+		while (i >= 0)
+		{
+			free(ar[i]);
+			i--;
+		}
+		free(ar);
+	}
+}
+
+/**
  * strtow - split a string to words
  *
  * @str: string to split.
@@ -39,59 +61,41 @@ int wordcount(char *str)
 
 char **strtow(char *str)
 {
-	int i, j, str_l, words;
+	int i, s, j, str_l, word;
 	char **string, *temp;
-
-	i = j = str_l = words = 0;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
 
 	str_l = wordcount(str);
-	/*return null if str is empty*/
-	if (str_l == 0)
-		return (NULL);
-
+	/*return null if str_l == 0 || new == NULL*/
 	string = malloc((str_l + 1) * sizeof(char *));
-	if (string == NULL)
+	if (str_l == 0 || string == NULL)
 		return (NULL);
 
-
-	/*iterate through the string*/
-	while (*str != '\0' && i < str_l)
+	for (i = s = 0; i < str_l; i++)
 	{
-		/*skip empty spaces*/
-		if (*str == ' ')
-			str++;
-		else
+		for (word = s; str[words] != '\0'; word++)
 		{
-			temp = str;
-			/*count word_s*/
-			while (*str != ' ' && *str != '\0')
-				str++;
-			words++;
+			if (str[word] == ' ')
+				s++;
 
-			string[i] = malloc((words) * sizeof(char));
-			if (string[i] == NULL)
+			if (str[word] != ' ' && str[word] != '\0')
 			{
-				while (i >= 0)
+				string[i] = malloc((word - s + 2) * sizeof(char));
+				if (string[i] == NULL)
 				{
-					free(string[i]);
-					i--;
-				}
-				free(string);
+				free_array(string[i]);
 				return (NULL);
+				}
+				break;
 			}
-
-			while (*temp != ' ' && *temp != '\0')
-			{
-				string[i][j] = *temp;
-				temp++; j++;
-			}
-			string[i][j] = '\0';
-			i++; j = 0; words = 0; str++;
 		}
+
+		for (j = 0; s <= word; s++; j++)
+			string[i][j] = str[s];
+		string[i][j] = '\0';
 	}
-	string[str_l] = NULL;
+	string[i] = NULL;
 	return (string);
 }
