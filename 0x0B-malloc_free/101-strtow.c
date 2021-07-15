@@ -85,7 +85,7 @@ char **strtow(char *str)
 				string[i] = malloc((word - s + 2) * sizeof(char));
 				if (string[i] == NULL)
 				{
-					free_array(string,i);
+					free_array(string, i);
 					return (NULL);
 				}
 				break;
