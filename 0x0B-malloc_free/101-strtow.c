@@ -22,7 +22,8 @@ int wordcount(char *str)
 		{
 			/*count words*/
 			while (*str != ' ' && *str != '\0')
-				str++, words++;
+				str++;
+			words++;
 		}
 	}
 	return (words);
@@ -64,7 +65,8 @@ char **strtow(char *str)
 			temp = str;
 			/*count word_s*/
 			while (*str != ' ' && *str != '\0')
-				str++, words++;
+				str++;
+			words++;
 
 			string[i] = malloc((words + 1) * sizeof(char));
 			if (string[i] == NULL)
@@ -84,7 +86,7 @@ char **strtow(char *str)
 				temp++; j++;
 			}
 			string[i][j] = '\0';
-			i++; j = 0; words = 0; str++;
+			i++; j = 0; str++;
 		}
 	}
 	string[str_l] = NULL;
