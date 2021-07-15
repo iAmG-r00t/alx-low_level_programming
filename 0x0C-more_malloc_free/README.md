@@ -27,3 +27,10 @@
 	- If `malloc` fails, then `_calloc` returns `NULL`.
 	- **FYI:** The standard library provides a different function: `calloc`. Run `man calloc` to learn more.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-calloc.c -o c`
+3. [array\_range](./3-array_range.c) : A function that creates an array of integers.
+	- Prototype: `int *array_range(int min, int max);`
+	- The array created should contain all the values from `min` (included) to `max` (included), ordered from `min` to `max`.
+	- Return: the pointer to the newly created array.
+	- If `min` > `max`, return `NULL`
+	- If `malloc` fails, return `NULL`
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-array_range.c -o d`
