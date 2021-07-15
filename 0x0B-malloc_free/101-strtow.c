@@ -2,7 +2,7 @@
 
 /**
  * wordcount - get word count from string
- *             with spaces and null bytes
+ *             without spaces
  *
  * @str: string to count words present
  *
@@ -11,16 +11,20 @@
 
 int wordcount(char *str)
 {
-	int c, words;
+	int words = 0;
 
-	c = words = 0;
-	while (str[c] != '\0')
+	while (*str != '\0')
 	{
-		if (str[c] != ' ' &&
-		    (str[c + 1] == ' ' ||
-		     str[c + 1] == '\0'))
+		/*skip spaces*/
+		if (*str == ' ')
+			str++;
+		else
+		{
+			/*count words*/
+			while (*str != ' ' && *str != '\0')
+				str++;
 			words++;
-		c++;
+		}
 	}
 	return (words);
 }
@@ -35,15 +39,16 @@ int wordcount(char *str)
 
 char **strtow(char *str)
 {
-	int i, j, k, str_l, words;
+	int i, j, str_l, words;
 	char **string, *temp;
 
-	i = j = k = str_l = words = 0;
+	i = j = str_l = words = 0;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
 
 	str_l = wordcount(str);
+	/*return null if str is empty*/
 	if (str_l == 0)
 		return (NULL);
 
@@ -66,7 +71,7 @@ char **strtow(char *str)
 				str++;
 			words++;
 
-			string[i] = malloc((words + 1) * sizeof(char));
+			string[i] = malloc((words) * sizeof(char));
 			if (string[i] == NULL)
 			{
 				while (i >= 0)
@@ -84,7 +89,7 @@ char **strtow(char *str)
 				temp++; j++;
 			}
 			string[i][j] = '\0';
-			i++; j = 0; str++;
+			i++; j = 0; words = 0; str++;
 		}
 	}
 	string[str_l] = NULL;
