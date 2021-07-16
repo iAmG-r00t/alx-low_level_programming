@@ -6,8 +6,13 @@
 
 filename = "liball.a" # static library filename
 
-gcc -c *.c # compile all our .c files
-ar rc "$filename" *.o # create our static library
-echo y | rm -I *.o # remove all object files
-ar -t "$filename" # confirm our static library was created
-nm "$filename" # confirm all our functions were linked correctly
+# compile all our .c files
+gcc -c *.c
+# create our static library
+ar rc "$filename" *.o
+# remove all object files
+echo y | rm -I *.o
+# confirm our static library was created
+ar -t "$filename"
+# confirm all our functions were linked correctly
+nm "$filename"
