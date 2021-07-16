@@ -4,8 +4,6 @@
 # called liball.a from all the .c files
 # that are in the current directory
 
-filename = "liball.a" 
-
 gcc -c *.c
-ar rc "$filename" *.o
+ar rc liball.a *.o
 echo y | rm -I *.o
