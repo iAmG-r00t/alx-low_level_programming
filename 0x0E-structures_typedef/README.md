@@ -26,7 +26,7 @@
 	- Prototype: `void init_dog(struct dog *d, char *name, float age, char *owner);`
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-init_dog.c -o b`
 
-<img align="right" src="../.imgs/dog2.jpg" alt="dog1" width="120" height="120">
+<img align="right" src="../.imgs/dog2.jpg" alt="dog2" width="120" height="120">
 
 2. [A dog will teach you unconditional love. If you can have that in your life, things won't be too bad](./2-print_dog.c) : A function that prints a `struct dog`
 	- Prototype: `void print_dog(struct dog *d);`
@@ -36,7 +36,7 @@
 	- If `d` is `NULL` print nothing.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-print_dog.c -o c`
 
-<img align="right" src="../.imgs/dog3.jpg" alt="dog1" width="120" height="120">
+<img align="right" src="../.imgs/dog3.jpg" alt="dog3" width="120" height="120">
 
 3. [Outside of a dog, a book is a man's best friend. Inside of a dog it's too dark to read](./dog.h) : Define a new type `dog_t` as a new name for the type `struct dog`
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c -o d`
