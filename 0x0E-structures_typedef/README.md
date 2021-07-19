@@ -17,4 +17,6 @@
 	- `age`, type = `float`
 	- `owner`, type = `char *`
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c -o a`
-
+1. [A dog is the only thing on earth that loves you more than you love yourself](./1-init_dog.c) : A function that initialize a variable of type `struct dog`<img align="right" src="../.imgs/dog1.jpg" alt="dog1" width="120" height="120">
+	- Prototype: `void init_dog(struct dog *d, char *name, float age, char *owner);`
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-init_dog.c -o b`
