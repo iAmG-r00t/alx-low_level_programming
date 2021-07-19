@@ -17,3 +17,7 @@
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c -o a`
 1. [Pi](./1-pi.h) : A header file that defines a macro named `PI` as an abbreviation for the token `3.14159265359`.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c -o b`
+2. [File name](./2-main.c) : A program that prints the name of the file it was compiled from, followed by a new line.
+	- You are allowed to use the standard library.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c -o cc`
+	- Then you can try and create a copy of `2-main` to `02-main.c` then recompile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 02-main.c -o cc`
