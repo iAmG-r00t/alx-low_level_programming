@@ -35,3 +35,8 @@
 	- If an element of `d` is `NULL`, print `(nil)` instead of this element. (if `name` is `NULL`, print `Name: (nil)`)
 	- If `d` is `NULL` print nothing.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-print_dog.c -o c`
+
+<img align="right" src="../.imgs/dog3.jpg" alt="dog1" width="120" height="120">
+
+3. [Outside of a dog, a book is a man's best friend. Inside of a dog it's too dark to read](./dog.h) : Define a new type `dog_t` as a new name for the type `struct dog`
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c -o d`
