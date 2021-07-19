@@ -12,7 +12,7 @@
 
 ## Tasks
 
-![dog0](../.imgs/dog0.jpg =250x250)
+<img src="../.imgs/dog0.jpg" alt="dog0" width="90" height="90">
 
 0. [Poppy](./dog.h) : A new type `struct dog` with the following elements.
 	- `name`, type = `char *`
