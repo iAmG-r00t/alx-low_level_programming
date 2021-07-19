@@ -21,3 +21,5 @@
 	- You are allowed to use the standard library.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c -o cc`
 	- Then you can try and create a copy of `2-main` to `02-main.c` then recompile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 02-main.c -o cc`
+3. [Function-like macro](./3-function_like_macro.h) : A function-like macro `ABS(x)` that computes the absolute value of a number `x`.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c -o d`
