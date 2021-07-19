@@ -15,3 +15,5 @@
 
 0. [Object-like Macro](./0-object_like_macro.h) : A header file that defines a macro named `SIZE` as an abbreviation for the token `1024`.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c -o a`
+1. [Pi](./1-pi.h) : A header file that defines a macro named `PI` as an abbreviation for the token `3.14159265359`.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c -o b`
