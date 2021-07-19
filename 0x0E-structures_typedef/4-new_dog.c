@@ -18,15 +18,12 @@ char *_strdup(char *str)
 		return (NULL);
 
 	/*get str length*/
-	while (str[i] != '\0')
+	while (str[i])
 		i++;
 
 	p = malloc((i + 1) * sizeof(*p));
 	if (p == NULL)
-	{
-		free(p);
 		return (NULL);
-	}
 
 	while (n < i)
 	{
@@ -61,11 +58,19 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	d->name = _strdup(name);
 	if ((*d).name == NULL)
+	{
+		free(d->name);
+		free(d);
 		return (NULL);
+	}
 
 	d->owner = _strdup(owner);
 	if ((*d).owner == NULL)
+	{
+		free(d->owner);
+		free(d);
 		return (NULL);
+	}
 
 	d->age = age;
 
