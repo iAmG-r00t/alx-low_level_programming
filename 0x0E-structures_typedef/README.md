@@ -12,10 +12,9 @@
 
 ## Tasks
 
-<img src="../.imgs/dog0.jpg" alt="dog0" width="90" height="90">
-
-0. [Poppy](./dog.h) : A new type `struct dog` with the following elements.
+0. [Poppy](./dog.h) : A new type `struct dog` with the following elements. <img align="right" src="../.imgs/dog0.jpg" alt="dog0" width="120" height="120">
 	- `name`, type = `char *`
 	- `age`, type = `float`
 	- `owner`, type = `char *`
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c -o a`
+
