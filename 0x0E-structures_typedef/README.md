@@ -13,7 +13,7 @@
 ## Tasks
 
 0. [Poppy](./dog.h) : A new type `struct dog` with the following elements.
-<img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2021/3/3b534d73d79949ef8b7535d462014518256953f2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU65GPZGY3%2F20210719%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210719T154655Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9e19d032cd4684e0afbd6c22e84e978170d5424732da770dbdd9adb881dc6b0e" alt="dog_0" width="200"/>
+   <img src="https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2021/3/3b534d73d79949ef8b7535d462014518256953f2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU65GPZGY3%2F20210719%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210719T154655Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9e19d032cd4684e0afbd6c22e84e978170d5424732da770dbdd9adb881dc6b0e" alt="dog_0" width="200"/>
 	- `name`, type = `char *`
 	- `age`, type = `float`
 	- `owner`, type = `char *`
