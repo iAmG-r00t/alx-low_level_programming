@@ -13,7 +13,7 @@
 ## Tasks
 
 0. [Poppy](./dog.h) : A new type `struct dog` with the following elements.
-![dog0](../.imgs/dog0.jpg =250x250)
+   ![dog0](../.imgs/dog0.jpg =250x250)
 	- `name`, type = `char *`
 	- `age`, type = `float`
 	- `owner`, type = `char *`
