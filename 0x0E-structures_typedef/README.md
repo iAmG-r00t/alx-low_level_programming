@@ -49,3 +49,10 @@
 	- You have to store a copy of `name` and `owner`
 	- Return `NULL` if the function fails.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-new_dog.c -o e`
+
+<img align="right" src="../.imgs/dog5.jpg" alt="dog5" width="120" height="120">
+
+5. [How many legs does a dog have if you call his tail a leg? Four. Saying that a tail is a leg doesn't make it a leg](./5-free_dog.c) : A function that frees dogs.
+	- Prototype: `void free_dog(dog_t *d);`
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 5-free_dog.c 4-new_dog.c -o f`
+	- Run the code this way: `valgrind ./f`
