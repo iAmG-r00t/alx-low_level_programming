@@ -9,9 +9,9 @@
  * Return: length of @str
 */
 
-size_t _strlen(const char *str)
+int _strlen(const char *str)
 {
-	size_t length = 0;
+	int length = 0;
 
 	while (*str++)
 		length++;
@@ -19,32 +19,23 @@ size_t _strlen(const char *str)
 }
 
 /**
- * _strdup - a function that returns a pointer to a copy of a string
+ * _strcopy - a function that returns @dest with a copy of a string from @src
  *
- * @str: pointer to the string
+ * @src: string to copy
+ * @dest: copy string to here
  *
- * Return: Address to string
+ * Return: @dest
 */
 
-char *_strdup(char *str)
+char *_strcopy(char *dest, char *src)
 {
-	char *p;
-	unsigned int length = 0, i;
+	int i;
 
-	if (!str)
-		return (NULL);
+	for (i = 0; src[i]; i++)
+		dest[i] = src[i];
+	dest[i] = '\0';
 
-	length = _strlen(str);
-
-	p = malloc(sizeof(*p) * length + 1);
-	if (!p)
-		return (NULL);
-
-	for (i = 0; i < length; i++)
-		p[i] = str[i];
-	p[i] = '\0';
-
-	return (p);
+	return (dest);
 }
 
 /**
@@ -61,30 +52,32 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d;
 
-	d = malloc(sizeof(dog_t));
+	/* if name and owner are empty and age is a negative number return null*/
+	if (!name || age < 0 || !owner)
+		return (NULL);
+
+	d = (dog_t *) malloc(sizeof(dog_t));
 	if (d == NULL)
+		return (NULL);
+
+	d->name = malloc(sizeof(char) * (_strlen(name) + 1));
+	if ((*d).name == NULL)
 	{
 		free(d);
 		return (NULL);
 	}
 
-	d->name = _strdup(name);
-	if (!((*d).name))
+	d->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+	if ((*d).owner == NULL)
 	{
 		free(d->name);
 		free(d);
 		return (NULL);
 	}
 
-	d->owner = _strdup(owner);
-	if (!((*d).owner))
-	{
-		free(d->owner);
-		free(d);
-		return (NULL);
-	}
-
+	d->name = _strcopy(d->name, name);
 	d->age = age;
+	d->owner = _strcopy(d->owner, owner);
 
 	return (d);
 }
