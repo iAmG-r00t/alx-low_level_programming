@@ -45,39 +45,40 @@ char *_strcopy(char *dest, char *src)
  * @age: age of dog
  * @owner: dog owner
  *
- * Return: NULL if function fails
+ * Return: struct pointer dog
+ *         NULL if function fails
 */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *d;
+	dog_t *dog;
 
-	/* if name and owner are empty and age is a negative number return null*/
+	/* if name and owner are empty and age is less than zero return null*/
 	if (!name || age < 0 || !owner)
 		return (NULL);
 
-	d = (dog_t *) malloc(sizeof(dog_t));
-	if (d == NULL)
+	dog = (dog_t *) malloc(sizeof(dog_t));
+	if (dog == NULL)
 		return (NULL);
 
-	d->name = malloc(sizeof(char) * (_strlen(name) + 1));
-	if ((*d).name == NULL)
+	dog->name = malloc(sizeof(char) * (_strlen(name) + 1));
+	if ((*dog).name == NULL)
 	{
-		free(d);
+		free(dog);
 		return (NULL);
 	}
 
-	d->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
-	if ((*d).owner == NULL)
+	dog->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+	if ((*dog).owner == NULL)
 	{
-		free(d->name);
-		free(d);
+		free(dog->name);
+		free(dog);
 		return (NULL);
 	}
 
-	d->name = _strcopy(d->name, name);
-	d->age = age;
-	d->owner = _strcopy(d->owner, owner);
+	dog->name = _strcopy(dog->name, name);
+	dog->age = age;
+	dog->owner = _strcopy(dog->owner, owner);
 
-	return (d);
+	return (dog);
 }
