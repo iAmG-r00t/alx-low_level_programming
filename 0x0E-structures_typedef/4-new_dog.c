@@ -2,6 +2,23 @@
 #include "dog.h"
 
 /**
+ * _strlen - a function that gets a length of string
+ *
+ * @str: the string to get the length
+ *
+ * Return: length of @str
+*/
+
+size_t _strlen(const char *str)
+{
+	size_t length = 0;
+
+	while (*str++)
+		length++;
+	return (length);
+}
+
+/**
  * _strdup - a function that returns a pointer to a copy of a string
  *
  * @str: pointer to the string
@@ -12,25 +29,20 @@
 char *_strdup(char *str)
 {
 	char *p;
-	unsigned int i = 0, n = 0;
+	unsigned int length = 0, i;
 
-	if (str == NULL)
+	if (!str)
 		return (NULL);
 
-	/*get str length*/
-	while (str[i])
-		i++;
+	length = _strlen(str);
 
-	p = malloc((i + 1) * sizeof(*p));
-	if (p == NULL)
+	p = malloc(sizeof(*p) * length + 1);
+	if (!p)
 		return (NULL);
 
-	while (n < i)
-	{
-		p[n] = str[n];
-		n++;
-	}
-	p[n] = '\0';
+	for (i = 0; i < length; i++)
+		p[i] = str[i];
+	p[i] = '\0';
 
 	return (p);
 }
@@ -57,7 +69,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	d->name = _strdup(name);
-	if ((*d).name == NULL)
+	if (!((*d).name))
 	{
 		free(d->name);
 		free(d);
@@ -65,7 +77,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	d->owner = _strdup(owner);
-	if ((*d).owner == NULL)
+	if (!((*d).owner))
 	{
 		free(d->owner);
 		free(d);
