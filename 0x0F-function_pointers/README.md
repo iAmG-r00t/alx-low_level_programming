@@ -15,3 +15,7 @@
 0. [What's my name](./0-print_name.c) : A function that prints a name.
 	- Prototype: `void print_name(char *name, void (*f)(char *));`
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/0-main.c 0-print_name.c -o a`
+1. [If you spend too much time thinking about a thing, you'll never get it done](1-array_iterator.c) : A function that executes a function given as a parameter on each element of an array.
+	- Prototype: `void array_iterator(int *array, size_t size, void (*action)(int));`
+	- Where `size` is the size of the array and `action` is a pointer to the function you need to use.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/1-main.c 1-array_iterator.c -o b`
