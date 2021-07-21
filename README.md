@@ -50,6 +50,7 @@
 - [0x0C](./0x0C-more_malloc_free) : More malloc, free.
 - [0x0D](./0x0D-preprocessor) : Preprocessor.
 - [0x0E](./0x0E-structures_typedef) : Structures, typedef.
+- [0x0F](./0x0F-function_pointers) : Function pointers.
 
 ---
 
