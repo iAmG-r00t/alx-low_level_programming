@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "variadic_functions.h"
+#include "../variadic_functions.h"
 
 /**
  * main - check the code for ALX School students.
