@@ -17,8 +17,8 @@
 
 int main(int argc, char *argv[])
 {
-	unsigned int index, num;
-	char *ptr = (char *)main;
+	int index, nbytes;
+	char *ptr = (char *) main;
 
 	if (argc != 2)
 	{
@@ -26,16 +26,19 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
-	num = atoi(argv[1]);
-	if (num < 0)
+	nbytes = atoi(argv[1]);
+	if (nbytes < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
 
-	for (index = 0; index < num - 1; index++)
-		printf("%02hhx ", ptr[index]);
-	printf("%02hhx\n", ptr[index]);
-
+	for (index = 0; index < nbytes; index++)
+	{
+		printf("%02x", ptr[index] & 0xFF);
+		if (index != nbytes - 1)
+			printf(" ");
+	}
+	printf("\n");
 	return (0);
 }
