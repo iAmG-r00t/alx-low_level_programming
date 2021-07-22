@@ -137,9 +137,11 @@
 	- If the number of bytes is negative, print `Error`, followed by a new line, and exit with the status of 2.
 	- You do not have to compile with any flags.
 	- **NOTE:** if you want to translate your opcodes to assembly instructions, you can use, for instance `udcli`.
-	- Compile the code this way: `gcc -std=gnu89 100-main_opcodes.c -o main`
-	- Run code this way: `./main 21`
-	- Test case 1: `objdump -d -j.text -M intel main`
-	- Test case 2: `./main 21 | udcli -64 -x -o 4005f6`
+	- Compile the code this way: `gcc -std=gnu89 100-main_opcodes.c -o main1`
+	- Run code this way: `./main1 21`
+	- Test case 1: `objdump -d -j.text -M intel main1`
+		- Then note the starting address of `<main>`
+	- Test case 2: `./main1 21 | udcli -64 -x -o 4005f6`
+		- `4005f6` is the starting address of `<main>`
 	- **Note 0:** `je` is equivalent to `jz`
 	- **Note 1:** Depending on how you write your `main` function, and on which machine you compile your program, the opcodes (and by extension the assembly code) might be different than the above example.
