@@ -10,7 +10,7 @@
 
 ## Tasks
 
-- All `*-main.c` files will be located in the [main](./main) directory.
+- All `*-main.c` files will be located in the [main](./main) directory, apart from `challenge 3` which is required in this directory for the checker to check for it.
 
 0. [What's my name](./0-print_name.c) : A function that prints a name.
 	- Prototype: `void print_name(char *name, void (*f)(char *));`
