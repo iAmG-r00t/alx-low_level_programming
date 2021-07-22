@@ -9,6 +9,7 @@
 - [0x0d typedef](../references/typedef.pdf)
 - [typedef](https://publications.gbdirect.co.uk//c_book/chapter8/typedef.html)
 - [Programming in C by Stephen Kochan Chapter 8, working with Structures pg 163-189](../references/Programming_in_C_4th_Edition_by_Stephen_Kochan.pdf) \- stephen g. kochan\(1\).pdf)
+- [More on structs](../references/structs.pdf)
 - [The Lost Art of C Structure Packing](http://www.catb.org/esr/structure-packing/) ***Advanced, not mandatory***
 
 ## Tasks
