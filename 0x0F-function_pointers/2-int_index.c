@@ -1,16 +1,13 @@
 #include <stddef.h>
-
-#define true 1
-#define false 0
-
-typedef enum {FALSE, TRUE} bool;
+#include "function_pointers.h"
 
 /**
  * int_index - a function that searches for an integer
  *
  * @array: pointer to array
  * @size: size of @array
- * @int: pointer to function to call
+ * @cmp: pointer to function call to check index in array
+ *       if it matches
  *
  * Return: Always 0 (Success)
 */
@@ -28,7 +25,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 		for (index = 0; index < size; index++)
 		{
 			y = cmp(array[index]);
-			if(y == TRUE)
+			if (y == TRUE)
 				return (index);
 		}
 	}
