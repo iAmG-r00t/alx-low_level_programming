@@ -10,6 +10,7 @@
 - [Holberton Betty Guide](https://github.com/holbertonschool/Betty/wiki) C coding style.
 - [Hash-bang under the hood](https://twitter.com/unix_byte/status/1024147947393495040?s=21).
 - [Linus Torvalds on C vs C++](http://harmful.cat-v.org/software/c++/linus).
+- [UPEvent: GCC and Makefiles](https://youtu.be/OnEF1MexJlI) **Important watch this**
 
 ## Tasks
 
