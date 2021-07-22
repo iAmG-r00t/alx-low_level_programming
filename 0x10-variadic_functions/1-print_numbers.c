@@ -19,7 +19,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_start(ap, n);
 
 	/* if separator is present */
-	if (*separator)
+	if (separator)
 	{
 		/* iterate through each argument*/
 		while (index < n)
