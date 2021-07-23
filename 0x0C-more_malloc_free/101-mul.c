@@ -3,63 +3,6 @@
 #include <stdio.h>
 
 /**
- * error_exit - prints error with _putchar
- *              and exits with 98
- *
- * Return: Error 98 and exit(98)
-*/
-
-int error_exit(void)
-{
-	char *err;
-	int i;
-
-	err = "Error";
-	for (i = 0; err[i] != '\0'; i++)
-		_putchar(err[i]);
-	_putchar('\n');
-	exit(98);
-}
-
-/**
- * check_number - checks if string has only
- *                numbers
- *
- * @str: string to check
- *
- * Return: 0 is true 1 if false
-*/
-
-int check_number(char *str)
-{
-	while (*str != '\0')
-	{
-		if (*str < '0' || *str > '9')
-			return (1);
-		str++;
-	}
-	return (0);
-}
-
-/**
- * _length - get the length of strings
- *
- * @str: string to get length of
- *
- * Return: length of string
-*/
-
-int _length(char *str)
-{
-	int i = 0;
-
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-
-
-/**
  * _memset - fills memory with a constant byte
  *
  * @s: input pointer that represents memory block
@@ -119,13 +62,18 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 void multiply(char *s1, char *s2)
 {
 	int i, l1, l2, total_l, f_digit, s_digit, res = 0, tmp;
-	int *ptr;
+	char *ptr;
+	void *temp;
 
 	l1 = _length(s1);
 	l2 = _length(s2);
 	tmp = l2;
 	total_l = l1 + l2;
 	ptr = _calloc(sizeof(int), total_l);
+
+	/* store our pointer address to free later */
+	temp = ptr;
+
 	for (l1--; l1 >= 0; l1--)
 	{
 		f_digit = s1[l1] - '0';
@@ -141,19 +89,17 @@ void multiply(char *s1, char *s2)
 		if (res)
 			ptr[l1 + l2 + 1] = res % 10;
 	}
+
 	while (*ptr == 0)
 	{
 		ptr++;
 		total_l--;
 	}
 
-
 	for (i = 0; i < total_l; i++)
 		printf("%i", ptr[i]);
-		/*_putchar(ptr[i]);*/
-
 	printf("\n");
-	/*_putchar('\n');*/
+	free(temp);
 }
 
 
