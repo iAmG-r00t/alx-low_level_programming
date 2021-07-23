@@ -47,3 +47,12 @@
 	- Don't forget to free `ptr` when it makes sense.
 	- **FYI:** The standard library provides a different function: `realloc`. Run `man realloc` to learn more.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-realloc.c -o e`
+5. [We must accept finite disappointment, but never lose infinite hope](./101-mul.c) : A program that multiplies two positive numbers.
+	- Usage: `mul num1 num2`
+	- `num1` and `num2` will be passed in base 10.
+	- Print the result, followed by a new line.
+	- If the number of arguments is incorrect, print `Error`, followed by a new line, and exit with a status of `98`.
+	- `num1` and `num2` should only be composed of digits. If not, print `Error`, followed by a new line, and exit with a status of `98`.
+	- You are allowed to use more that 5 functions in your file.
+	- You can use `bc` (`man bc`) to check your results.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-mul.c _putchar.c -o mul`
