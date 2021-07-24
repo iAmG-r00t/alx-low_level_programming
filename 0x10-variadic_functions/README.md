@@ -47,3 +47,6 @@
 	- You are allowed to use `printf`
 	- Print a new line at the end of your function.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/3-main.c 3-print_all.c -o d`
+4. [Real programmers can write assembly code in any language](./100-hello_holberton.asm) : Write a 64-bit program in asembly that prints `Hello, Holberton`, followed by a new line.
+	- You are only allowed to use the system call `write` (use `int` or `syscall`, not a call)
+	- Your program will be compiled using `nasm` and `gcc` (as follows) : `nasm -f elf64 100-hello_holberton.asm && gcc -no-pie -std=gnu89 100-hello_holberton.o -o hello`
