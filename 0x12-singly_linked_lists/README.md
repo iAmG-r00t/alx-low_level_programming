@@ -1,0 +1,51 @@
+# 0x12. C - Singly linked lists
+
+## Resource
+
+- Read about [data structures](https://www.notion.so/C-Programming-f13cdb9661db464f8ea326c5a2654e8e) first.
+- [Linked Lists](https://www.youtube.com/watch?v=udapt4FGY20&t=130s) 2008 UNSW Lecture.
+- [Linked Lists](https://www.youtube.com/playlist?list=PLIsXzR_wZY-xQSwyG_PAQHJtyo4o9WWXd) Youtube Playlist I created.
+
+---
+
+- All the `*-main.c` files will be stored in the [main](./main) directory.
+
+- Use this data structure.
+	```c
+	/**
+	 * struct list_s - singly linked list
+	 * @str: string - (malloc'ed string)
+	 * @len: length of the string
+	 * @next: points to the next node
+	 *
+	 * Description: singly linked list node structure
+	 * for Holberton project
+	*/
+	typedef struct list_s
+	{
+		char *str;
+		unsigned int len;
+		struct list_s *next;
+	} list_t;
+	```
+
+## Tasks
+
+0. [Print list](./0-print_list.c) : Write a function that prints all the elements of a `list_t` list.
+	- Prototype: `size_t print_list(const list_t *h);`
+	- Return: the number of nodes.
+	- Format:
+		```sh
+		julien@ubuntu:~/0x12. Singly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_list.c -o a
+		julien@ubuntu:~/0x12. Singly linked lists$ ./a 
+		[5] Hello
+		[5] World
+		-> 2 elements
+
+		[0] (nil)
+		[5] World
+		-> 2 elements
+		julien@ubuntu:~/0x12. Singly linked lists$ 
+		```
+	- If `str` is `NULL`, print `[0] (nil)`
+	- You are allowed to use `printf`.
