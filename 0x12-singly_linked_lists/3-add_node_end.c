@@ -33,22 +33,16 @@ list_t *add_node_end(list_t **head, const char *str)
 	/*copy our starting node pointer to temp*/
 	temp = *head;
 
-	/**
-	 * if temp is NULL place our new_node
-	 * at the beginning of the list
-	 * else if its not null we place our
-	 * new_node to temp->next hence adding
-	 * our new_node at the end of the list
-	*/
+	/*if temp is NULL place our new_node at the beginning of the list*/
+	/*else if its not null we place our new_node to temp->next hence*/
+	/*adding our new_node at the end of the list*/
 	if (temp == NULL)
 		*head = new_node;
 	else
 	{
 		/**
-		 * we iterate pointer next addr
-		 * if its not NULL our temp addr
-		 * points to the next addr or the
-		 * next node.
+		 * we iterate pointer next addr if its not NULL our temp addr
+		 * points to the next addr or the next node.
 		*/
 		while (temp->next != NULL)
 			temp = temp->next;
