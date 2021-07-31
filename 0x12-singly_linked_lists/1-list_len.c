@@ -10,7 +10,7 @@
 
 size_t list_len(const list_t *h)
 {
-	int node_count = 1;
+	size_t node_count = 1;
 
 	/*if head is null return 0 nodes*/
 	if (h == NULL)
