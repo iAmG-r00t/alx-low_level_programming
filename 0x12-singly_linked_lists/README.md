@@ -59,3 +59,9 @@
 	- `str` needs to be duplicated.
 	- You are allowed to use `strdup`.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/2-main.c 2-add_node.c 0-print_list.c -o c`
+3. [Add node at the end](./3-add_node_end.c) : A function that adds a new node at the end of a `list_t` list.
+	- Prototype: `list_t *add_node_end(list_t **head, const char *str);`
+	- Return: the address of the new element, or `NULL` if it failed.
+	- `str` needs to be duplicated.
+	- You are allowed to use `strdup`.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/3-main.c 3-add_node_end.c 0-print_list.c -o d`
