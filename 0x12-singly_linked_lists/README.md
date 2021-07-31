@@ -68,3 +68,11 @@
 4. [Free list](4-free_list.c) : A function that frees a `list_t` list.
 	- Prototype: `void free_list(list_t *head);`
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/4-main.c 4-free_list.c 3-add_node_end.c 0-print_list.c -o e`
+
+---
+
+![img](../.imgs/hare_and_tortoise.jpg)
+
+5. [The Hare and the Tortoise](./100-first.c) : A function that prints `You're beat! and yet, you must allow,\nI bore my house upon my back!\n` before the `main` function is executed.
+	- You are allowed to use the `printf` function.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/100-main.c 100-first.c -o first`
