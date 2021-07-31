@@ -6,7 +6,7 @@
  * @head: pointer to the first node of the list
  * @str: string to add to new node in the list
  *
- * Return: NULL if it fails
+ * Return: NULL if it fails / starting addr of the list
 */
 
 list_t *add_node(list_t **head, const char *str)
@@ -27,8 +27,11 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 
 	/**
-	 * initialize the next pointer of new_node
-	 * or move the new node to the head
+	 * initialize the next addr of new_node
+	 * to NULL if head is NULL, if it's not
+	 * move the first node to the addr of new_node
+	 * ->next hence adding new_node at the beginning
+	 *  of the list
 	*/
 	if (*head == NULL)
 		new_node->next = NULL;
