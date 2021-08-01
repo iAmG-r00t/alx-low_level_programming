@@ -25,3 +25,8 @@
 	- Prototype: `int _strlen_recursion(char *s);`
 	- **FYI:** The standard library provides a similar function: `strlen`. Run `man strlen` to learn more.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89  main/2-main.c 2-strlen_recursion.c -o 2-strlen_recursion`
+3. [You mustn't be afraid to dream a little bigger, darling](./3-factorial.c) : A function that returns the factorial of a given number.
+	- Prototype: `int factorial(int n);`
+	- If `n` is lower than `0`, the function should return `-1` to indicate error.
+	- Factorial of `0` is `1`.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/3-main.c 3-factorial.c -o 3-factorial`
