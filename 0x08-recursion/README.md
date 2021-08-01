@@ -35,3 +35,8 @@
 	- If `y` is lower than `0`, the function should return `-1`
 	- **FYI:** The standard library provides a different function: `pow`. Run `man pow` to learn more.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/4-main.c 4-pow_recursion.c -o 4-pow`
+5. [Your subconscious is looking for the dreamer](./5-sqrt_recursion.c) : A function that returns the natural square root of a number.
+	- Prototype: `int _sqrt_recursion(int n);`
+	- If `n` does not have a natural square root, the function should return `-1`
+	- **FYI:** The standard library provides a different function: `sqrt`. Run `man sqrt` to learn more.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/5-main.c 5-sqrt_recursion.c -o 5-sqrt`
