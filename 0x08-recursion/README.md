@@ -21,3 +21,7 @@
 1. [Why is it so important to dream? Because, in my dreams we are together](./1-print_rev_recursion.c) : A function that prints a string in reverse.
 	- Prototype: `void _print_rev_recursion(char *s);`
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/1-main.c 1-print_rev_recursion.c -o 1-print_rev_recursion`
+2. [Dreams feel real while we're in them. It's only when we wake up that we realize something was actually strange](./2-strlen_recursion.c)
+	- Prototype: `int _strlen_recursion(char *s);`
+	- **FYI:** The standard library provides a similar function: `strlen`. Run `man strlen` to learn more.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89  main/2-main.c 2-strlen_recursion.c -o 2-strlen_recursion`
