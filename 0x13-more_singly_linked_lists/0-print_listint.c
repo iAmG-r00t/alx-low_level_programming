@@ -22,7 +22,7 @@ size_t print_listint(const listint_t *h)
 		/*go to the next node*/
 		h = h->next;
 		/*count no of nodes*/
-		node_count ++;
+		node_count++;
 	}
 
 	/*print last node*/
