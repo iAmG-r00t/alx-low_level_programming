@@ -38,3 +38,7 @@
 1. [List length](./1-listint_len.c) : A function that returns the number of elements in a linked `listint_t` list.
 	- Prototype: `size_t listint_len(const listint_t *h);`
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/1-main.c 1-listint_len.c -o b`
+2. [Add node](./2-add_nodeint.c) : A function that adds a new node at the beginning of a `listint_t` list.
+	- Prototype: `listint_t *add_nodeint(listint_t **head, const int n);`
+	- Return: the address of the new element, or `NULL` if it failed.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/2-main.c 2-add_nodeint.c 0-print_listint.c -o c`
