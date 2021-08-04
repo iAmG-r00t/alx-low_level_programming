@@ -49,3 +49,7 @@
 4. [Free list](./4-free_listint.c) : A function that frees a `listint_t` list.
 	- Prototype: `void free_listint(listint_t *head);`
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/4-main.c 3-add_nodeint_end.c 0-print_listint.c 4-free_listint.c -o e`
+5. [Free](./5-free_listint2.c) : A function that frees a `listint_t` list.
+	- Prototype: `void free_listint2(listint_t **head);`
+	- The function sets the `head` to `NULL`
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/5-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c -o f`
