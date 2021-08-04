@@ -46,3 +46,6 @@
 	- Prototype: `listint_t *add_nodeint_end(listint_t **head, const int n);`
 	- Return: the address of the new element, or `NULL` if it failed.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/3-main.c 3-add_nodeint_end.c 0-print_listint.c -o d`
+4. [Free list](./4-free_listint.c) : A function that frees a `listint_t` list.
+	- Prototype: `void free_listint(listint_t *head);`
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/4-main.c 3-add_nodeint_end.c 0-print_listint.c 4-free_listint.c -o e`
