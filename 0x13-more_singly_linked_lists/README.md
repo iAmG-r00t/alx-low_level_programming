@@ -42,3 +42,7 @@
 	- Prototype: `listint_t *add_nodeint(listint_t **head, const int n);`
 	- Return: the address of the new element, or `NULL` if it failed.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/2-main.c 2-add_nodeint.c 0-print_listint.c -o c`
+3. [Add node at the end](./3-add_nodeint_end.c) : A function that adds a new node at the end of a `listint_t` list.
+	- Prototype: `listint_t *add_nodeint_end(listint_t **head, const int n);`
+	- Return: the address of the new element, or `NULL` if it failed.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/3-main.c 3-add_nodeint_end.c 0-print_listint.c -o d`
