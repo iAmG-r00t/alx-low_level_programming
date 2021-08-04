@@ -29,9 +29,12 @@
 
 ## Tasks
 
-0. [Print list](./0-print_listint.c) : Print list.
+0. [Print list](./0-print_listint.c) : A function that prints all the elements of a `listint_t` list.
 	- Prototype: `size_t print_listint(const listint_t *h);`
 	- Return: the number of nodes.
 	- Format: see example.
 	- You are allowed to use `printf`
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/0-main.c 0-print_listint.c -o a`
+1. [List length](./1-listint_len.c) : A function that returns the number of elements in a linked `listint_t` list.
+	- Prototype: `size_t listint_len(const listint_t *h);`
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/1-main.c 1-listint_len.c -o b`
