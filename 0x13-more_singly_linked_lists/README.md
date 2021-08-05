@@ -57,3 +57,8 @@
 	- Prototype: `int pop_listint(listint_t **head);`
 	- If the linked list is empty return `0`.
 	- Compile the code this way: ` gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/6-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c 6-pop_listint.c -o g`
+7. [Get node at index](./7-get_nodeint.c) : A function that returns the nth node of a `listint_t` linked list.
+	- Prototype: `listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);`
+	- Where `index` is the index of the node, starting at `0`.
+	- If the node does not exist, return `NULL`.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/7-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c 7-get_nodeint.c -o h`
