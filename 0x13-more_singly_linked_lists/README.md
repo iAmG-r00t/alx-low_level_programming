@@ -62,3 +62,7 @@
 	- Where `index` is the index of the node, starting at `0`.
 	- If the node does not exist, return `NULL`.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/7-main.c 3-add_nodeint_end.c 0-print_listint.c 5-free_listint2.c 7-get_nodeint.c -o h`
+8. [Sum list](./8-sum_listint.c) : A function that returns the sum of all the data (n) of a `listint_t` linked list.
+	- Prototype: `int sum_listint(listint_t *head);`
+	- If the list is empty, return `0`.
+	- Compile the code thi way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/8-main.c 3-add_nodeint_end.c 5-free_listint2.c 8-sum_listint.c -o i`
