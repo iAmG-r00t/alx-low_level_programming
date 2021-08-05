@@ -17,14 +17,14 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	current = *head;
 
-	if (idx != 0 && *head != NULL) /*if index where to add our new node is not 0*/
-	{				/*and head is not NULL*/
+	if (idx != 0) /*if index where to add our new node is not 0*/
+	{
 		/*iterate list to node at position idx - 1*/
-		for (index = 1; index < idx; index++)
+		for (index = 1; index < idx && head != NULL; index++)
 			current = current->next;
 	}
 
-	if (*head == NULL && idx != 0) /*if head is null and idx is not 0*/
+	if (head == NULL && idx != 0) /*if head is null and idx is not 0*/
 		return (NULL);	/*return NULL if current is NULL*/
 
 	new_node = malloc(sizeof(listint_t));
