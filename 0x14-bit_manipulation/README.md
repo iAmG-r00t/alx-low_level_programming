@@ -85,3 +85,8 @@
 	- Returns: `1` if it worked, or `-1` if an error occured.
 	- To enable debug mode that will print statements of what is happening add this `-D DEBUG` at the end of the compile line.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/4-main.c 4-clear_bit.c -o e`
+5. [101](./5-flip_bits.c) : A function that returns the number of bits you would need to flip to get from one number to another.
+	- Prototype: `unsigned int flip_bits(unsigned long int n, unsigned long int m);`
+	- You are not allowed to use the `%` or `/` operators.
+	- To enable debug mode that will print statements of what is happening add this `-D DEBUG` at the end of the compile line.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/5-main.c 5-flip_bits.c -o f`
