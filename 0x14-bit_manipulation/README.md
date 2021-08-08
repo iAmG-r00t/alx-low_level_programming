@@ -64,6 +64,7 @@
 	- You are not allowed to use arrays.
 	- You are not allowed to use `malloc`
 	- You are not allowed to use the `%` or `/` operators.
+	- If you are here for a solution for ALX, [checker version](https://github.com/iAmG-r00t/alx-low_level_programming/blob/48e0fcf3b39930ff4339b57e559115ad069f2775/0x14-bit_manipulation/1-print_binary.c).
 	- To enable debug mode that will print statements of what is happening add this `-D DEBUG` at the end of the compile line.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/1-main.c 1-print_binary.c _putchar.c -o b`
 2. [10](./2-get_bit.c) : A function that returns the value of a bit at a given index.

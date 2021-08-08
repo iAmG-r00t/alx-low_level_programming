@@ -1,12 +1,10 @@
-/**
- * With Debug Option, this won't work
- * with the checker copy the below url
- * https://github.com/iAmG-r00t/alx-low_level_programming/blob/48e0fcf3b39930ff4339b57e559115ad069f2775/0x14-bit_manipulation/1-print_binary.c
- * and check that one out that works
- * with the checker.
-*/
-
 #include "main.h"
+
+/*
+ * Description - this is a version With Debug Option, this won't work
+ *		with the checker copy go to the readme and click
+ *		checker version that one will work with the checker.
+*/
 
 /**
  * debug_1 - print debug statements
