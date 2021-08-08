@@ -19,7 +19,7 @@ void print_bin(unsigned long int number)
 }
 
 /**
- * set_bit - sets the value of a bit to 1 at a given
+ * clear_bit - sets the value of a bit to 1 at a given
  *           index.
  *
  * @n: number
