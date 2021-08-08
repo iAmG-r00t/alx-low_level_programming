@@ -79,3 +79,9 @@
 	- Returns: `1` if it worked, or `-1` if an error occurred.
 	- To enable debug mode that will print statements of what is happening add this `-D DEBUG` at the end of the compile line.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/3-main.c 3-set_bit.c -o d`
+4. [100](./4-clear_bit.c) : A function that sets the value of a bit to `0` at a given index.
+	- Prototype: `int clear_bit(unsigned long int *n, unsigned int index);`
+	- Where `index` is the index, starting from `0` of the bit you want to set.
+	- Returns: `1` if it worked, or `-1` if an error occured.
+	- To enable debug mode that will print statements of what is happening add this `-D DEBUG` at the end of the compile line.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/4-main.c 4-clear_bit.c -o e`
