@@ -34,6 +34,18 @@ void debug_2(unsigned long int n, unsigned long int mask)
 }
 
 /**
+ * debug_3 - print debug statements
+ *
+ * @mask: mask of value n
+ *
+ * Return: nothing
+*/
+void debug_3(unsigned long int mask)
+{
+	printf("\nValue of mask is %lu after right shifting by one.\n\n", mask);
+}
+
+/**
  * _length - find the length of @n
  *
  * @n: value to find its length
@@ -96,8 +108,8 @@ void print_binary(unsigned long int n)
 
 		mask >>= 1; /*shift mask to the right by 1*/
 
-		#ifdef DEBUG /*print debug statements*/
-		printf("\nValue of mask is %lu after right shifting by one.\n\n", mask);
+		#ifdef DEBUG
+		debug_3(mask);
 		#endif
 	}
 }
