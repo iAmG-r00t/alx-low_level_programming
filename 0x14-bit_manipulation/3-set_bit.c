@@ -43,7 +43,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	*n = (*n | mask);
 
 	#ifdef DEBUG
-	printf("\n %ld in binary is ", n_before);
+	printf("\n%ld in binary is ", n_before);
 	print_bin(n_before);
 	printf(" while mask right shifted to index %d is ", index);
 	print_bin(mask);
