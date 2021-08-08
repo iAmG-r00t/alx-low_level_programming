@@ -88,5 +88,26 @@
 5. [101](./5-flip_bits.c) : A function that returns the number of bits you would need to flip to get from one number to another.
 	- Prototype: `unsigned int flip_bits(unsigned long int n, unsigned long int m);`
 	- You are not allowed to use the `%` or `/` operators.
+	- If you are here for a solution for ALX, [checker version](https://github.com/iAmG-r00t/alx-low_level_programming/blob/0377351dc5aa5ff7bf5f41869b69165c878d5a36/0x14-bit_manipulation/5-flip_bits.c).
 	- To enable debug mode that will print statements of what is happening add this `-D DEBUG` at the end of the compile line.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/5-main.c 5-flip_bits.c -o f`
+6. [Endianness](./100-get_endianness.c) : A function that checks the endianness.
+	- Prototype: `int get_endianness(void);`
+	- Returns: `0` if big endian, `1` if little endian.
+	- Read more about it [here](https://cs-fundamentals.com/tech-interview/c/c-program-to-check-little-and-big-endian-architecture).
+	- Confirm your architecture version:
+		```sh
+		julien@ubuntu:~/0x14. Binary$ lscpu | head
+		Architecture:          x86_64
+		CPU op-mode(s):        32-bit, 64-bit
+		Byte Order:            Little Endian
+		CPU(s):                1
+		On-line CPU(s) list:   0
+		Thread(s) per core:    1
+		Core(s) per socket:    1
+		Socket(s):             1
+		NUMA node(s):          1
+		Vendor ID:             GenuineIntel
+		julien@ubuntu:~/0x14. Binary$
+		```
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/100-main.c 100-get_endianness.c -o h`
