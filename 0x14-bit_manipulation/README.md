@@ -66,3 +66,9 @@
 	- You are not allowed to use the `%` or `/` operators.
 	- To enable debug mode that will print statements of what is happening add this `-D DEBUG` at the end of the compile line.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/1-main.c 1-print_binary.c _putchar.c -o b`
+2. [10](./2-get_bit.c) : A function that returns the value of a bit at a given index.
+	- Prototype: `int get_bit(unsigned long int n, unsigned int index);`
+	- Where `index` is the index, starting from `0` of the bit you want to get.
+	- Returns: the value of the bit at index `index` or `-1` if an eror occured.
+	- To enable debug mode that will print statements of what is happening add this `-D DEBUG` at the end of the compile line.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/2-main.c 2-get_bit.c -o c`
