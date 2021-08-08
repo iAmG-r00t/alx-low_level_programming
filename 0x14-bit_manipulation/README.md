@@ -1,6 +1,6 @@
 # 0x14. C - Bit manipulation 
 
-[img](../.imgs/bit_manipulation.png)
+![img](../.imgs/bit_manipulation.png)
 
 ## Resource
 
@@ -49,3 +49,20 @@
 		- `b` is `NULL`
 	- To enable debug mode that will print statements of what is happening add this `-D DEBUG` at the end of the compile line.
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/0-main.c 0-binary_to_uint.c -o a`
+1. [1](./1-print_binary.c) : A function that prints the binary representation of a number.
+	- Prototype: `void print_binary(unsigned long int n);`
+	- Format: see below.
+		```sh
+		julien@ubuntu:~/0x14. Binary$ ./b 
+		0
+		1
+		1100010
+		10000000000
+		10000000001
+		julien@ubuntu:~/0x14. Binary$
+		```
+	- You are not allowed to use arrays.
+	- You are not allowed to use `malloc`
+	- You are not allowed to use the `%` or `/` operators.
+	- To enable debug mode that will print statements of what is happening add this `-D DEBUG` at the end of the compile line.
+	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/1-main.c 1-print_binary.c _putchar.c -o b`
