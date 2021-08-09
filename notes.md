@@ -23,3 +23,7 @@
 	- I have also learnt that I need to revisit some topics so I will update on that this month.
 	- I am also looking for a dev who is familiar with C really well for one on one sessions but we are still good.
 	- Soon to start learning ASM/Assembly programming.
+- Date `9th August 2021` Time: `5:05am`
+	- Caught up but I have alot to revisit to make sure I have grasped the concept.
+	- No pressure though, also haven't finished `recursion` and `more singly linked lists`
+	- I love the growth mindset though.
