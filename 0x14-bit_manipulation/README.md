@@ -41,6 +41,10 @@
 
 ## Tasks
 
+- All `*-main.c` are in the [main](./main) directory.
+
+---
+
 0. [0](./0-binary_to_uint.c) : A function that converts a binary number to an `unsigned int`.
 	- Prototype: `unsigned int binary_to_uint(const char *b);`
 	- Where `b` is pointing to a string of `0` and `1` chars.
