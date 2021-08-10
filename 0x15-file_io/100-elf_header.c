@@ -32,8 +32,6 @@ void check_if_elf(unsigned char *e_ident)
 			dprintf(STDERR_FILENO, "Error: Not an ELF file\n");
 			exit(98);
 		}
-		else
-			printf("ELF Header:\n");
 
 		index++;
 	}
@@ -132,11 +130,10 @@ void print_data(unsigned char *e_ident)
 */
 void print_version(unsigned char *e_ident)
 {
-	printf("  Version:                           %d",
-		e_ident[EI_VERSION]);/*EI_VERSION - File version*/
+	printf("  Version:                           ");/*EI_VERSION - File version*/
 
 	if (e_ident[EI_VERSION] == EV_CURRENT)
-		printf("%i (current)\n", EV_CURRENT);
+		printf("%d (current)\n", e_ident[EI_VERSION]);
 	else
 		printf("%i\n", e_ident[EI_VERSION]);
 }
@@ -330,6 +327,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		exit(98);
 	}
 	check_if_elf(elf->e_ident);
+	printf("ELF Header:\n");
 	print_magic(elf->e_ident);
 	print_class(elf->e_ident);
 	print_data(elf->e_ident);
