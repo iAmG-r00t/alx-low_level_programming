@@ -32,6 +32,9 @@ void check_if_elf(unsigned char *e_ident)
 			dprintf(STDERR_FILENO, "Error: Not an ELF file\n");
 			exit(98);
 		}
+		else
+			printf("ELF Header:\n");
+
 		index++;
 	}
 }
@@ -132,15 +135,10 @@ void print_version(unsigned char *e_ident)
 	printf("  Version:                           %d",
 		e_ident[EI_VERSION]);/*EI_VERSION - File version*/
 
-	switch (e_ident[EI_VERSION])
-	{
-		case EV_CURRENT:
-			printf(" (current)\n");
-			break;
-		default:
-			printf("\n");
-			break;
-	}
+	if (e_ident[EI_VERSION] == EV_CURRENT)
+		printf("%i (current)\n", EV_CURRENT);
+	else
+		printf("%i\n", e_ident[EI_VERSION]);
 }
 
 /**
@@ -157,7 +155,7 @@ void print_osabi(unsigned char *e_ident)
 
 	switch (e_ident[EI_OSABI])/*EI_OSABI = OS Application Binary Interface*/
 	{
-		case ELFOSABI_NONE:
+		case ELFOSABI_SYSV:
 			printf("UNIX - System V\n");
 			break;
 		case ELFOSABI_HPUX:
@@ -228,7 +226,7 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 	switch (e_type)
 	{
 		case ET_NONE:
-			printf("NONE (None)\n");
+			printf("NONE (Unknown type)\n");
 			break;
 		case ET_REL:
 			printf("REL (Relocatable file)\n");
@@ -332,7 +330,6 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		exit(98);
 	}
 	check_if_elf(elf->e_ident);
-	printf("ELF Header:\n");
 	print_magic(elf->e_ident);
 	print_class(elf->e_ident);
 	print_data(elf->e_ident);

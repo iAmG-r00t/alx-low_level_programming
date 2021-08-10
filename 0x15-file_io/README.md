@@ -89,7 +89,7 @@
 	- man `elf`, `readelf` will give you details on the functions they use and struct type.
 	- Compile the code this way: ``
 	- Confirm if the code is running by following the below steps:
-		- Run `readelf` first with the `--header` option: `readelf -h /lib/ld-linux.so.2`
+		- Run `readelf` first with the `--header` / `-h` option:
 			```sh
 			 [main !?] root@0331426d386b : [ ~/alx-low_level_programming/0x15-file_io ] 
 			 $ readelf -h /lib/ld-linux.so.2
