@@ -4,13 +4,15 @@
 
 
 /**
- * __exit - prints error messages and exits with exit value
- * @error: num is either exit value or file descriptor
- * @s: str is a name, either of the two filenames
+ * __exit - prints error messages and exits with exit number
+ *
+ * @error: either the exit number or file descriptor
+ * @str: name of either file_in or file_out
  * @fd: file descriptor
+ *
  * Return: 0 on success
 */
-int __exit(int error, char *s, int fd)
+int __exit(int error, char *str, int fd)
 {
 	switch (error)
 	{
