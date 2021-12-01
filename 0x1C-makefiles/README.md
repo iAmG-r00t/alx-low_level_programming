@@ -37,3 +37,8 @@
 <summary><a href="./5-island_perimeter.py">5. Island Perimeter</a></summary><br>
 <a href='https://postimg.cc/F1j0JzGr' target='_blank'><img src='https://i.postimg.cc/T2s0FWDD/image.png' border='0' alt='image'/></a>
 </details>
+
+<details>
+<summary><a href="./100-Makefile">6. make -f 100-Makefile</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/Yq6HSkkb/image.png' border='0' alt='image'/></a>
+</details>
