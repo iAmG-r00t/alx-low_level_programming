@@ -22,3 +22,8 @@
 <summary><a href="./2-Makefile">2. make -f 2-Makefile</a></summary><br>
 <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/Kvf6ywqk/image.png' border='0' alt='image'/></a>
 </details>
+
+<details>
+<summary><a href="./3-Makefile">3. make -f 3-Makefile</a></summary><br>
+<a href='https://postimg.cc/Wqpm17MD' target='_blank'><img src='https://i.postimg.cc/x8M6gx8P/image.png' border='0' alt='image'/></a>
+</details>
