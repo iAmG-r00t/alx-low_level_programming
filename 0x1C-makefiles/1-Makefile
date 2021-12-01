@@ -1,0 +1,5 @@
+CC = gcc
+SRC = %.c
+
+all:
+	CC SRC -o school
