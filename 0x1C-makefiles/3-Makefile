@@ -7,9 +7,6 @@ RM = rm
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-o_files: $(SRC)
-	$(CC) $(SRC) -c
-
 clean:
 	$(RM) -f *~ $(NAME)
 
