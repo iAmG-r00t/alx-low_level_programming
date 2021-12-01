@@ -27,3 +27,8 @@
 <summary><a href="./3-Makefile">3. make -f 3-Makefile</a></summary><br>
 <a href='https://postimg.cc/Wqpm17MD' target='_blank'><img src='https://i.postimg.cc/x8M6gx8P/image.png' border='0' alt='image'/></a>
 </details>
+
+<details>
+<summary><a href="./4-Makefile">4. A complete Makefile</a></summary><br>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/05T19hqc/image.png' border='0' alt='image'/></a>
+</details>
