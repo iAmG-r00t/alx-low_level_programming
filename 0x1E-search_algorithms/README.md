@@ -22,3 +22,8 @@
 <br>Compile the code this way:
 <pre>gcc -Wall -Wextra -Werror -pedantic -std=gnu89 1-main.c 1-binary.c -o 1-binary</pre>
 </details>
+
+<details>
+<summary><a href="./2-O">2. Big O #0</a></summary><br>
+What is the time complexity (worst case) of a linear search in an array of size n
+</details>
