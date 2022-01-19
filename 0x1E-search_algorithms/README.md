@@ -95,3 +95,11 @@ What is the `time complexity` (average case) of a jump search in an array of siz
 - Compile the code this way: `gcc -Wall -Wextra -Werror -pedantic -std=gnu89 102-main.c 102-interpolation.c -o 102-interpolation`
 
 </details>
+
+<details>
+<summary><a href="./103-exponential.c">10. Exponential search</a></summary>
+
+<a href='https://postimg.cc/ZC3VyBHm' target='_blank'><img src='https://i.postimg.cc/c4kj2f8v/image.png' border='0' alt='image'/></a>
+- Compile the code this way: `gcc -Wall -Wextra -Werror -pedantic -std=gnu89 103-main.c 103-exponential.c -o 103-exponential`
+
+</details>
