@@ -6,6 +6,9 @@
 - [Space complexity (1)](https://www.geeksforgeeks.org/g-fact-86/)
 - [Linear search algorithm](https://en.wikipedia.org/wiki/Linear_search)
 - [Binary search algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+- [Jump search algorithm](https://en.wikipedia.org/wiki/Jump_search)
+- [Interpolation search algorithm](https://en.wikipedia.org/wiki/Interpolation_search)
+- [Exponential search algorithm](https://en.wikipedia.org/wiki/Exponential_search)
 
 ## Tasks
 
@@ -101,5 +104,13 @@ What is the `time complexity` (average case) of a jump search in an array of siz
 
 <a href='https://postimg.cc/ZC3VyBHm' target='_blank'><img src='https://i.postimg.cc/c4kj2f8v/image.png' border='0' alt='image'/></a>
 - Compile the code this way: `gcc -Wall -Wextra -Werror -pedantic -std=gnu89 103-main.c 103-exponential.c -o 103-exponential`
+
+</details>
+
+<details>
+<summary><a href="./104-advanced_binary.c">11. Advanced binary search</a></summary>
+
+<a href='https://postimg.cc/r0n6PhY5' target='_blank'><img src='https://i.postimg.cc/QCsXVwQY/image.png' border='0' alt='image'/></a>
+- Compile the code this way: `gcc -Wall -Wextra -Werror -pedantic -std=gnu89 104-main.c 104-advanced_binary.c -o 104-advanced_binary`
 
 </details>
