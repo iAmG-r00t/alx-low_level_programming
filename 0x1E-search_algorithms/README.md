@@ -11,8 +11,8 @@
 
 <details>
 <summary><a href="./0-linear.c">0. Linear search</a></summary>
-<a href='https://postimg.cc/30w90LLf' target='_blank'><img src='https://i.postimg.cc/D0rNDH1h/image.png' border='0' alt='image'/></a>
 
+<a href='https://postimg.cc/30w90LLf' target='_blank'><img src='https://i.postimg.cc/D0rNDH1h/image.png' border='0' alt='image'/></a>
 - Compile the code this way: `gcc -Wall -Wextra -Werror -pedantic -std=gnu89 0-main.c 0-linear.c -o 0-linear`
 
 </details>
@@ -21,7 +21,6 @@
 <summary><a href="./1-binary.c">1. Binary search</a></summary>
 
 <a href='https://postimg.cc/VJL1LMP7' target='_blank'><img src='https://i.postimg.cc/pLKdCYGt/image.png' border='0' alt='image'/></a>
-
 - Compile the code this way: `gcc -Wall -Wextra -Werror -pedantic -std=gnu89 1-main.c 1-binary.c -o 1-binary`
 
 </details>
@@ -76,6 +75,7 @@ int **allocate_map(int n, int m)
 
 <details>
 <summary><a href="./100-jump.c">7. Jump search</a></summary>
+
 <a href='https://postimg.cc/3dnV9p97' target='_blank'><img src='https://i.postimg.cc/zGrNzFgL/image.png' border='0' alt='image'/></a>
 - Compile the code this way: `gcc -Wall -Wextra -Werror -pedantic -std=gnu89 100-main.c 100-jump.c -lm -o 100-jump`
 
@@ -85,5 +85,13 @@ int **allocate_map(int n, int m)
 <summary><a href="./101-O">8. Big O #5</a></summary><br>
 
 What is the `time complexity` (average case) of a jump search in an array of size `n`, using `step = sqrt(n)` ?
+
+</details>
+
+<details>
+<summary><a href="./102-interpolation.c">9. Interpolation search</a></summary>
+
+<a href='https://postimg.cc/nXB1L9rB' target='_blank'><img src='https://i.postimg.cc/DwYpBqKj/image.png' border='0' alt='image'/></a>
+- Compile the code this way: `gcc -Wall -Wextra -Werror -pedantic -std=gnu89 102-main.c 102-interpolation.c -o 102-interpolation`
 
 </details>
