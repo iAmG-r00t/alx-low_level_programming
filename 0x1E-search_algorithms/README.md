@@ -304,3 +304,17 @@ Found 999 at index: (nil)
 - Compile the code this way: `gcc -Wall -Wextra -Werror -pedantic -std=gnu89 106-main.c 106-linear_skip.c skiplist/*.c -lm -o 106-linear`
 
 </details>
+
+<details>
+<summary><a href="./107-O">14. Big O #6</a></summary><br>
+
+What is the `time complexity` (average case) of a jump search in a singly linked list of size `n`, using `step = sqrt(n)` ?
+
+</details>
+
+<details>
+<summary><a href="./108-O">15. Big O #7</a></summary><br>
+
+What is the `time complexity` (average case) of a jump search in a skip list of size `n`, with an express lane using `step = sqrt(n)` ?
+
+</details>
