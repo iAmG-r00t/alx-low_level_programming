@@ -73,3 +73,10 @@ int **allocate_map(int n, int m)
 ```
 
 </details>
+
+<details>
+<summary><a href="./100-jump.c">7. Jump search</a></summary>
+<a href='https://postimg.cc/3dnV9p97' target='_blank'><img src='https://i.postimg.cc/zGrNzFgL/image.png' border='0' alt='image'/></a>
+- Compile the code this way: `gcc -Wall -Wextra -Werror -pedantic -std=gnu89 100-main.c 100-jump.c -lm -o 100-jump`
+
+</details>
