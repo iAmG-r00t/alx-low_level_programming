@@ -80,3 +80,10 @@ int **allocate_map(int n, int m)
 - Compile the code this way: `gcc -Wall -Wextra -Werror -pedantic -std=gnu89 100-main.c 100-jump.c -lm -o 100-jump`
 
 </details>
+
+<details>
+<summary><a href="./101-O">8. Big O #5</a></summary><br>
+
+What is the `time complexity` (average case) of a jump search in an array of size `n`, using `step = sqrt(n)` ?
+
+</details>
