@@ -1,9 +1,5 @@
 # 0x00. C -Hello, World
 
-<p align="center">
-  <img src="https://i.postimg.cc/rprHShJ1/C-compilation-process.gif" />
-</p>
-
 ## Resources
 
 - C [Books and PDF's](../references) to check out and use as a reference.
