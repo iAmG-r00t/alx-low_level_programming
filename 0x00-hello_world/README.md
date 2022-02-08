@@ -1,5 +1,9 @@
 # 0x00. C -Hello, World
 
+<p align="center">
+  <img src="https://i.postimg.cc/rprHShJ1/C-compilation-process.gif" />
+</p>
+
 ## Resources
 
 - C [Books and PDF's](../references) to check out and use as a reference.
@@ -14,46 +18,78 @@
 
 ## Tasks
 
-0. [Preprocessor](./0-preprocessor) : A script that runs a C code file through the preprocessor and save the result into another file.
-   - The C file name will be saved in the variable *[$CFILE](./main.c)*.
-   - The output should be saved in the file `c`.
-   - Export main c file : `export CFILE=main.c` then run script.
-1. [Compiler](./1-compiler) : A script that compiles a C code file but does not link.
-   - The C file name will be saved in the variable *[$CFILE](./main.c)*.
-   - The output file should be named the same as the C file, but with the extension `.o` instead of `.c`.
-    - **Example:** if the C file is `main.c`, the output file should be `main.o`.
-2. [Assembler](./2-assembler) : A script that generates the assembly code of a C code and save it in an output file.
-   - The C file name will be saved in the variable *[$CFILE](./main.c)*.
-   - The output file should be named the same as the C file, but with the extension `.s` instead of `.c`
-    - **Example:** if the C file is `main.c`, the output file should be `main.s`.
-3. [Name](./3-name) : A script that compiles a C file and creates an executable named `cisfun`.
-   - The C file name will be saved in the variable *[$CFILE](./main.c)*.
-4. [Hello, puts](./4-puts.c) : A C program that prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line.
-    - Use the function `puts`.
-    - You are not allowed to use `printf`.
-    - Your program should end with the value `0`.
-	- Compile and run this way: `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 4-puts.c && ./a.out`.
-5. [Hello, printf](./5-printf.c) : A C program that prints exactly `with proper grammar, but the outcome is a piece of art,`, followed by a new line.
-	- Use the funtion `printf`.
-	- You are not allowed to use the funtion `puts`.
-	- Your program should return `0`.
-	- Your program should compile without warning when using the `-Wall` `gcc` option.
-	- Compile this way: `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 5-printf.c`.
-	- Run the `a.out` executable file.
-6. [Size is not grandeur, and territory does not make a nation](./6-size.c) : A C program that prints the size of various types on the computer it is compiled and run on.
-	- You should produce the exact same output as in the example.
-	- Warnings are allowed.
-	- Your program should return `0`.
-	- You might have to install the package `libc6-dev-i386` on your linux (Vagrant) to test the `-m32` `gcc` option.
-	- Compile this way: `gcc 6-size.c -m32 -o size32 2> /tmp/32` & `gcc 6-size.c -m64 -o size64 2> /tmp/64`
-	- Compare outputs for the `size32` and `size64`.
-7. [Intel](./100-intel) : A script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
-	- The C file name will be saved in the variable *[$CFILE](./main.c)*.
-	- The output file should be named the same as the C file, but with the extension `.s` instead of `.c`.
-		- **Example:** if the C file is `main.c`, the output file should be `main.s`.
-8. [UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity](./101-quote.c) : A C program that prints exactly `and that piece of art is useful" - Dora Korpar, 2015-10-19`, followed by a new line, to the standard error.
-	- You are not allowed to use any funtions listed in the NAME section of the man (3) `printf` or man (3) `puts`.
-	- Your program should return 1.
-	- Your program should compile without any warnings when using the `-Wall` `gcc` option.
-	- Compile this way: `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -o quote 101-quote.c`.
-	- Run the `quote` executable file.
+<details>
+<summary><a href="./0-preprocessor">0. Preprocessor</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/R0TYHDp0/image.png' border='0' alt='image'/></a>
+- Here is the *[$CFILE](./main/main.c)* file.
+
+</details>
+
+<details>
+<summary><a href="./1-compiler">1. Compiler</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/KYXbNw5r/image.png' border='0' alt='image'/></a>
+- Here is the *[$CFILE](./main/main.c)* file.
+
+</details>
+
+<details>
+<summary><a href="./2-assembler">2. Assembler</a></summary><br>
+
+<a href='https://postimg.cc/kDBC1dZw' target='_blank'><img src='https://i.postimg.cc/nV1LLF18/image.png' border='0' alt='image'/></a>
+- Here is the *[$CFILE](./main/main.c)* file.
+
+</details>
+
+<details>
+<summary><a href="./3-name">3. Name</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/qRyzw2ng/image.png' border='0' alt='image'/></a>
+- Here is the *[$CFILE](./main/main.c)* file.
+
+</details>
+
+
+<details>
+<summary><a href="./4-puts.c">4. Hello, puts</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/bJt257Xy/image.png' border='0' alt='image'/></a>
+- Compile and run this way: `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 4-puts.c -o puts`.
+
+</details>
+
+
+<details>
+<summary><a href="./5-printf.c">5. Hello, printf</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/14xVPJQG/image.png' border='0' alt='image'/></a>
+- Compile this way: `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 5-printf.c -o printf`.
+
+</details>
+
+
+<details>
+<summary><a href="./6-size.c">6. Size is not grandeur, and territory does not make a nation</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/3rqgnFPJ/image.png' border='0' alt='image'/></a>
+- Compile this way: `gcc 6-size.c -m32 -o size32 2> /tmp/32` & `gcc 6-size.c -m64 -o size64 2> /tmp/64`
+- Compare outputs for the `size32` and `size64`.
+
+</details>
+
+<details>
+<summary><a href="./100-intel">7. Intel</a></summary><br>
+
+<a href='https://postimg.cc/PNS1z1D0' target='_blank'><img src='https://i.postimg.cc/BQ0N3gnZ/image.png' border='0' alt='image'/></a>
+- Here is the *[$CFILE](./main/main.c)* file.
+
+</details>
+
+<details>
+<summary><a href="./101-quote.c">8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/HkGmdF7c/image.png' border='0' alt='image'/></a>
+- Compile this way: `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -o quote 101-quote.c`.
+
+</details>
