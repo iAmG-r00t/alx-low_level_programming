@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -10,13 +10,13 @@
 
 int main(void)
 {
-	char alpha;
+	char ch = 'a';
 
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	while (ch <= 'z')
 	{
-		putchar(alpha);
+		putchar(ch);
+		++ch;
 	}
-
 	putchar('\n');
 
 	return (0);
