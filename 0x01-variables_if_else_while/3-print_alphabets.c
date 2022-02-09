@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -10,21 +10,22 @@
 
 int main(void)
 {
-	char alpha;
+	char ch = 'a';
+	char CH = 'A';
 
-	/*for loop that prints a-z*/
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	/*prints a - z*/
+	while (ch <= 'z')
 	{
-		putchar(alpha);
+		putchar(ch);
+		++ch;
 	}
 
-	/*for loop that print A-Z*/
-	for (alpha = 'A'; alpha <= 'Z'; alpha++)
+	/*print A - Z*/
+	while (CH <= 'Z')
 	{
-		putchar(alpha);
+		putchar(CH);
+		++CH;
 	}
-
-
 	putchar('\n');
 
 	return (0);

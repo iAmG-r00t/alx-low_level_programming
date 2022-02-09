@@ -10,15 +10,13 @@
 
 int main(void)
 {
-	char alpha = 'z';
+	char ch = 'z';
 
-	/*while loop that prints z-a*/
-	while (alpha >= 'a')
+	while (ch >= 'a')
 	{
-		putchar(alpha);
-		alpha--;
+		putchar(ch);
+		--ch;
 	}
-
 	putchar('\n');
 
 	return (0);

@@ -11,15 +11,14 @@
 
 int main(void)
 {
-	int i;
+	int digit = 0;
 
-	/*for loop that print 0-9*/
-	for (i = 0; i <= 9; i++)
+	while (digit <= 9)
 	{
-		/*convert single-digit int into ASCII*/
-		putchar(i + '0');
+		/*convert digit to ASCII representation*/
+		putchar(digit + '0');
+		++digit;
 	}
-
 	putchar('\n');
 
 	return (0);

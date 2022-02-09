@@ -2,7 +2,7 @@
 
 ## Resources
 
-- C [Books and PDF's](../references) to check out and use as a reference.
+- [C - Books and PDF's](../references) to check out and use as a reference.
 - [Keywords and identifiers](https://publications.gbdirect.co.uk//c_book/chapter2/keywords_and_identifiers.html).
 - [Integral types](https://publications.gbdirect.co.uk//c_book/chapter2/integral_types.html).
 - [Arithmetic Operators in C](https://www.tutorialspoint.com/cprogramming/c_arithmetic_operators.htm).
@@ -15,108 +15,118 @@
 
 ## Tasks
 
-- How to run most of the tasks;
-	- File name is the C program file with extension `.c`
+<details>
+<summary><a href="./0-positive_or_negative.c">0. Positive anything is better than negative nothing</a></summary><br>
 
-		```sh
-		gcc -Wall -pedantic -Werror -Wextra -std=gnu89 $filename_.c -o $filename
-		```
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/xjvjqfnG/image.png' border='0' alt='image'/></a>
+- [Source Code](https://github.com/holbertonschool/0x01.c/blob/master/0-positive_or_negative_c)
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-positive_or_negative.c -o 0-positive_or_negative`
 
----
+</details>
 
-0. [Positive anything is better than negative nothing](./0-positive_or_negative.c) : A C program that will assign a random number to the variable `n` each time it is executed. Complete the source code in order to print whether the number stored in the variable `n` is positive or negative.
-	- [Source Code](https://github.com/holbertonschool/0x01.c/blob/master/0-positive_or_negative_c)
-	- The variable `n` will store a different value everytime you will run this program.
-	- You don't have to understand what `rand`, `srand`, `RAND_MAX` do.
-	- The output of the program should be:
-		- The number, followed by
-			- if the number is greater than 0: `is positive`
-			- if the number is 0: `is zero`
-			- if the number is less than 0: `is negative`
-		- Followed by a new line.
-1. [The last digit](./1-last_digit.c) : A C program that will assign a random number to the variable `n` each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable `n`.
-	- [Source Code](./https://github.com/holbertonschool/0x01.c/blob/master/1-last_digit_c)
-	- The variable `n` will store a different value everytime you will run this program.
-	- You don't have to understand what `rand`, `srand`, `RAND_MAX` do.
-	-  The output of the program should be:
-		- The string `Last digit of`, followed by
-		- `n`, followed by
-		- The string `is`, followed by
-			- If the last digit of `n` is greater than 5: the string `and is greater than 5`.
-			- If the last digit of `n` is 0: the string `and is 0`.
-			- If the last digit of `n` is less than 6 and not 0: the string `and is less than 6 and not 0`.
-2. [I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game](./2-print_alphabet.c) : A C program that prints the alphabet in lowercase, followed by a new line.
-	- You can only use the `putchar` function (every other function(`printf`, `puts`, etc ..) is forbidden).
-	- All your code should be in the `main` function.
-	- You can only use `putchar` twice in your code.
-3. [alphABET](./3-print_alphabets.c) : A C program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
-	- You can only use the `putchar` function (every other function(`printf`, `puts`, etc ..) is forbidden).
-	- All your code should be in the `main` function.
-	- You can only use `putchar` three times in your code.
-4. [When I was having that alphabet soup, I never thought that it would pay off](./4-print_alphabt.c) : A C program that prints the alphabet in lowercase, followed by a new line.
-	- Print all the letters except `q` and `e`.
-	- You can only use the `putchar` function (every other function(`printf`, `puts`, etc ..) is forbidden).
-	- All your code should be in the `main` function.
-	- You can only use `putchar` twice in your code.
-5. [Numbers](./5-print_numbers.c) : A C program that prints all single digit numbers of base 10 starting from `0`, followed by a new line.
-	- All your code should be in the main function.
-6. [Numberz](./6-print_numberz.c) : A C program that prints all single digit numbers of base 10 starting from `0`, followed by a new line.
-	- You are not allowed to use any variable of type `char`.
-	- You can only use the `putchar` function (every other function(`printf`, `puts`, etc ..) is forbidden).
-	- You can only use `putchar` twice in your code.
-	- All your code should be in the main function.
-	- This [ASCII](https://ascii.cl/) table will help you understand my solution.
-		- For this you need to understand that `putchar` holds the ASCII value of a variable.
-			- So we add `0 == 48` 48 is the ASCII value to our single digit integer to convert it into its character representation.
-			- Better explanation [here](https://stackoverflow.com/questions/21255038/what-does-putchar0-num-do)
-7. [Smile in the mirror](./7-print_tebahpla.c) : A C program that prints the lowercase alphabet in reverse, followed by a new line.
-	- You can only use the `putchar` function (every other function(`printf`, `puts`, etc ..) is forbidden).
-	- All your code should be in the `main` function.
-	- You can only use `putchar` twice in your code.
-	- I have two solutions for this, one which is the main one using a while loop, while the [second one](./7-print_tebahpla.2.c) uses a for loop.
-8. [Hexadecimal](./8-print_base16.c) : A C program that prints all the numbers os base 16 in lowercase, followed by a new line.
-	- You can only use the `putchar` function (every other function(`printf`, `puts`, etc ..) is forbidden).
-	- All your code should be in the `main` function.
-	- You can only use `putchar` three times in your code.
-	- I have another solution [here](./8-print_base16.2.c), you can check it out.
-	- This [ASCII](https://ascii.cl/) table will help you understand the second solution.
-		- So for the second solution, you need to understand that `putchar` will store the ASCII value of the variable, always **REMEMBER** that.
-9. [Patience, persistence and perspiration make an unbeatable combination for success](./9-print_comb.c) : A C program that prints all possible combinations of single-digit numbers.
-	- Numbers must be separated by `,`, followed by a space.
-	- Numbers should be printed in ascending order: `lowest - highest`.
-	- You can only use the `putchar` function (every other function(`printf`, `puts`, etc ..) is forbidden).
-	- All your code should be in the `main` function.
-	- You can only use `putchar` four times in your code.
-	- You are not allowed to use variable any variable of type `char`.
-10. [Inventing is a combination of brains and materials. The more brains you use, the less material you need](./100-print_comb3.c) : A C program that prints all possible different combinations of two digits.
-	- Numbers must be separated by `,`, followed by space.
-	- Two digits must be different.
-	- `01` and `10` are considered the same combination of the two digits `0` and `1`.
-	- Print only the smallest combination of two digits.
-	- Numbers should be printed in ascending order, with two digits.
-	- You can only use the `putchar` function (every other function(`printf`, `puts`, etc ..) is forbidden).
-	- You can only use `putchar` five times maximum in your code.
-	- You are not allowed to use variable any variable of type `char`.
-	- All your code should be in the `main` function.
-	- Second [solution](./100-print_comb3.2.c) is here using a while loop, while my first solution I am using a for loop.
-11. [The success combination in business is: Do what you do better... and: do more of what you do... ](./101-print_comb4.c) : A C program that prints all possible different combinations of three digits.
-	- Numbers must be separated by `,`, followed by space.
-	- The three digits must be different.
-	- `012`, `120`, `102`, `021`, `201`, `210` are considered the same combination of the three digits `0`, `1` and `2`.
-	- Print only the smallest combination of three digits
-	- Numbers should be printed in ascending order, with three digits
-	- You can only use the `putchar` function (every other function(`printf`, `puts`, etc ..) is forbidden).
-	- You can only use `putchar` six times maximum in your code.
-	- You are not allowed to use variable any variable of type `char`.
-	- All your code should be in the `main` function.
-12. [Software is eating the World](./102-print_comb5.c) : A C program that prints all possible combinations of two-digit numbers.
-	- The numbers should range from `0` to `99`.
-	- The two numbers should be separated by a space.
-	- All numbers should be printed with two digits. `1` should be printed as `01`.
-	- The combination of numbers must be separated by comma, followed by a space.
-	- The combinations of numbers should be printed in ascending order.
-	- `00`, `01` and `01`, `00` are considered as the same combination of the numbers `0` and `1`.
-	- You can only use the `putchar` function (every other function(`printf`, `puts`, etc ..) is forbidden).
-	- You can only use `putchar` eight times maximum in your code.
-	- You are not allowed to use variable any variable of type `char`.
-	- All your code should be in the `main` function.
+
+<details>
+<summary><a href="./1-last_digit.c">1. The last digit</a></summary><br>
+
+<a href='https://postimg.cc/6TD40Kzx' target='_blank'><img src='https://i.postimg.cc/tCgd9CxJ/image.png' border='0' alt='image'/></a>
+- [Source Code](./https://github.com/holbertonschool/0x01.c/blob/master/1-last_digit_c)
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-last_digit.c -o 1-last_digit`
+
+</details>
+
+<details>
+<summary><a href="./2-print_alphabet.c">2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/W1qSGbSz/image.png' border='0' alt='image'/></a>
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-print_alphabet.c -o 2-print_alphabet`
+
+<a href='https://postimg.cc/vghQ59Q3' target='_blank'><img src='https://i.postimg.cc/QCGHGkvG/image.png' border='0' alt='image'/></a>
+
+</details>
+
+<details>
+<summary><a href="./3-print_alphabets.c">3. alphABET</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/8P1mXYfS/image.png' border='0' alt='image'/></a>
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-print_alphabets.c -o 3-print_alphabets`
+
+</details>
+
+<details>
+<summary><a href="./4-print_alphabt.c">4. When I was having that alphabet soup, I never thought that it would pay off</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/JhGLNK53/image.png' border='0' alt='image'/></a>
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-print_alphabt.c -o 4-print_alphabt`
+
+</details>
+
+
+<details>
+<summary><a href="./5-print_numbers.c">5. Numbers</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/3R8bjwTs/image.png' border='0' alt='image'/></a>
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-print_numbers.c -o 5-print_numbers`
+
+</details>
+
+<details>
+<summary><a href="./6-print_numberz.c">6. Numberz</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/SxDpwHKb/image.png' border='0' alt='image'/></a>
+- This [ASCII](https://ascii.cl/) table will help you understand my solution.
+	- For this you need to understand that `putchar` holds the decimal representation of the variable.
+	- So we add `0 == 48` 48 is the decimal value to our single digit integer to convert it into its character representation.
+	- Better explanation [here](https://stackoverflow.com/questions/21255038/what-does-putchar0-num-do)
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 6-print_numberz.c -o 6-print_numberz`
+
+</details>
+
+<details>
+<summary><a href="./7-print_tebahpla.c">7. Smile in the mirror</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/7hfC2SQf/image.png' border='0' alt='image'/></a>
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 7-print_tebahpla.c -o 7-print_tebahpla`
+
+</details>
+
+<details>
+<summary><a href="./8-print_base16.c">8. Hexadecimal</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/pLT2XP4L/image.png' border='0' alt='image'/></a>
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 8-print_base16.c -o 8-print_base16`
+
+</details>
+
+<details>
+<summary><a href="./9-print_comb.c">9. Patience, persistence and perspiration make an unbeatable combination for success</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/5tHb81BN/image.png' border='0' alt='image'/></a>
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 9-print_comb.c -o 9-print_comb`
+
+</details>
+
+<details>
+<summary><a href="./100-print_comb3.c">10. Inventing is a combination of brains and materials. The more brains you use, the less material you need</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/vmj9vQCP/image.png' border='0' alt='image'/></a>
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-print_comb3.c -o 100-print_comb3`
+
+</details>
+
+
+<details>
+<summary><a href="./101-print_comb4.c">11. The success combination in business is: Do what you do better... and: do more of what you do...</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/D0V76Dvk/image.png' border='0' alt='image'/></a>
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-print_comb4.c -o 101-print_comb4`
+
+</details>
+
+
+<details>
+<summary><a href="./102-print_comb5.c">12. Software is eating the World</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/90G1w4g5/image.png' border='0' alt='image'/></a>
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 102-print_comb5.c -o 102-print_comb5`
+
+</details>

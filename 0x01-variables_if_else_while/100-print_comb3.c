@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
  * main - Entry point
@@ -11,35 +11,28 @@
 
 int main(void)
 {
-	int a;
-	int b;
+	int digit1 = 0, digit2;
 
-	/*print the first digit of the combination*/
-	for (a = 0; a < 10; a++)
+	while (digit1 <= 9)
 	{
-		/*print the second digit of the combination*/
-		for (b = 0; b < 10; b++)
+		digit2 = 0;
+		while (digit2 <= 9)
 		{
-			/**
-			 * don't print same two digits
-			 * and make sure first digit is
-			 * less than second digit
-			*/
-			if (a != b && a < b)
+			if (digit1 != digit2 && digit1 < digit2)
 			{
-				putchar(a + '0');
-				putchar(b + '0');
+				putchar(digit1 + 48);
+				putchar(digit2 + 48);
 
-				if (a + b != 17)
+				if (digit1 + digit2 != 17)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
+			++digit2;
 		}
+		++digit1;
 	}
-
-
 	putchar('\n');
 
 	return (0);

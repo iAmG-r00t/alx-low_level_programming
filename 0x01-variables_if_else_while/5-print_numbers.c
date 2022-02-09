@@ -10,14 +10,13 @@
 
 int main(void)
 {
-	int i;
+	int digit = 0;
 
-	/*for loop that prints 0-9*/
-	for (i = 0; i <= 9; i++)
+	while (digit <= 9)
 	{
-		printf("%d", i);
+		printf("%i", digit);
+		++digit;
 	}
-
 	printf("\n");
 
 	return (0);

@@ -11,42 +11,38 @@
 
 int main(void)
 {
-	int a;
-	int b;
-	int c;
+	int digit1 = 0;
+	int digit2, digit3;
 
-	/*print first digit*/
-	for (a = 0; a < 10; a++)
+	while (digit1 <= 9)
 	{
-		/*print second digit*/
-		for (b = 0; b < 10; b++)
+		digit2 = 0;
+		while (digit2 <= 9)
 		{
-			/*print third digit*/
-			for (c = 0; c < 10; c++)
+			digit3 = 0;
+			while (digit3 <= 9)
 			{
-				/**
-				 * don't print three matching digits and
-				 * make sure first digit is less than
-				 * the second digit and the second digit is
-				 * less than the third digit.
-				*/
-				if (a != b && a < b && b != c && b < c)
+				if (digit1 != digit2 &&
+				    digit1 < digit2 &&
+				    digit2 != digit3 &&
+				    digit2 < digit3)
 				{
-					putchar(a + '0');
-					putchar(b + '0');
-					putchar(c + '0');
+					putchar(digit1 + 48);
+					putchar(digit2 + 48);
+					putchar(digit3 + 48);
 
-					/* dont place a comma and space after 789*/
-					if (a + b + c != 24)
+					if (digit1 + digit2 + digit3 != 24)
 					{
 						putchar(',');
 						putchar(' ');
 					}
 				}
+				++digit3;
 			}
+			++digit2;
 		}
+		++digit1;
 	}
-
 	putchar('\n');
 
 	return (0);
