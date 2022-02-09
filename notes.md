@@ -39,7 +39,7 @@
 
 </details>
 
-## Redo Log
+## Re-Do Log
 
 <details>
 <summary>Day 1: 9th Feb 2022</summary>
