@@ -27,3 +27,32 @@
 	- Caught up but I have alot to revisit to make sure I have grasped the concept.
 	- No pressure though, also haven't finished `recursion` and `more singly linked lists`
 	- I love the growth mindset though.
+
+<details>
+<summary>New Year, new mindset... 😂😂😂</summary>
+
+- So this is a new year and I am hoping that I can try and tackle the C projects once again but this time with a different strategy to master the art.
+- Changes:
+	+ I will go an extra step to debug some of the programs using GDB to understand how they work underneath.
+	+ Will do extra challenges on the side for each topic.
+	+ Along the way create vulnerable codes using libraries we are adviced not to use. (**given the opportunity, time will tell**)
+
+</details>
+
+## Redo Log
+
+<details>
+<summary>Day 1: 9th Feb 2022</summary>
+
+- [0x01: Hello, World](./0x00-hello_world)
+
+</details>
+
+<details>
+<summary>Day 2: 10th Feb 2022</summary>
+
+- [0x02: Variables,if,else,while](./0x01-variables_if_else_while)
+- Most of the codes were using for loops, so wrote them once more using while loops.
+- I learnt how to view a loop in GDB.
+
+</details>
