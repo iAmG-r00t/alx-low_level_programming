@@ -11,18 +11,18 @@ int main(void)
 {
 	int firstDigit = 0, seconDigit;
 
-	while (firstDigit <= 98)
+	while (firstDigit <= 99)
 	{
-		seconDigit = 1;
+		seconDigit = firstDigit;
 		while (seconDigit <= 99)
 		{
-			if (firstDigit < seconDigit)
+			if (seconDigit != firstDigit)
 			{
-				putchar(firstDigit / 10 + 48);
-				putchar(seconDigit % 10 + 48);
+				putchar((firstDigit / 10) + 48);
+				putchar((firstDigit % 10) + 48);
 				putchar(' ');
-				putchar(seconDigit / 10 + 48);
-				putchar(seconDigit % 10 + 48);
+				putchar((seconDigit / 10) + 48);
+				putchar((seconDigit % 10) + 48);
 
 				if (firstDigit != 98 || seconDigit != 99)
 				{
