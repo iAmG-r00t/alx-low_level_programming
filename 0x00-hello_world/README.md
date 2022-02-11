@@ -2,7 +2,7 @@
 
 ## Resources
 
-- C [Books and PDF's](../references) to check out and use as a reference.
+- [C - Books and PDF's](../references) to check out and use as a reference.
 - [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie) creator of C.
 - "C" Programming Language: Brian Kernighan - [Computerphile](https://www.youtube.com/watch?v=de2Hsvxaf8M).
 - Learning to Program in C by Jonathan Engelsma [Youtube Playlist](https://youtube.com/playlist?list=PLIsXzR_wZY-yQMHOK7D3Dls4VoTGuRovd)
