@@ -6,56 +6,114 @@
 - [C - Functions](https://www.tutorialspoint.com/cprogramming/c_functions.htm)
 - [What is the purpose of a function prototype?](https://www.geeksforgeeks.org/what-is-the-purpose-of-a-function-prototype/)
 - [C - Header Files](https://www.tutorialspoint.com/cprogramming/c_header_files.htm)
-- C [Books and PDF's](../references) to check out and use as reference.
+- [C - Books and PDF's](../references) to check out and use as reference.
 
 ## Tasks
 
 - **Note** for all these challenges we will not be using global variables and any standard library.
-- We will be using function prototypes that will be included in our header file called, [holberton.h](./holberton.h).
+- We will be using function prototypes that will be included in our header file called, [main.h](./main.h).
+- We are allowed to use the prototype funtion [\_putchar](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c).
 - All `*-main.c` files will be located in the [main](./main) directory
 
 ---
 
-0. [\_putchar](./0-holberton.c) : A C program that prints `Holberton`, followed by a new line.
-	- The program should return `0`.
-	- In this task we will be using prototype of funtion [\_putchar](./_putchar.c).
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-holberton.c -o 0-holberton`
-1. [I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game](./1-alphabet.c) : A C program function that prints the alphabet, in lowercase, followed by a new line.
-	- Prototype: `void print_alphabet(void);`.
-	- You can only use `_putchar` twice in your code.
-	- Use this [main.c](./main/1-main.c) C program file to check if the code works correctly.
-	- Run the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/1-main.c 1-alphabet.c -o 1-alphabet`
-2. [10 x alphabet](./2-print_alphabet_x10.c) : A C program function that prints the alphabet, in lowercase, followed by a new line.
-	- Prototype: `void print_alphabet_x10(void);`.
-	- You can use `_putchar` twice in your code.
-	- Use this [main.c](./main/2-main.c) C program file to check if the code works correctly.
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/2-main.c 2-print_alphabet_x10.c -o 2-alphabet_x10`
-3. [islower](./3-islower.c) : A C program function that checks for lowercase character.
-	- Prototype: `int _islower(int c);`.
-	- Return `1` if `c` is lowercase.
-	- Returns `0` otherwise.
-	- **FYI:** The standard library provides a similar function: `islower`. Run `man islower` to learn more.
-	- Use this [main.c](./main/3-main.c) C program file to check if the code works correctly.
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/3-main.c 3-islower.c -o 3-islower`
-4. [isalpha](./4-isalpha.c) : A C program function that checks for alphabetic character.
-	- Prototype: `int _isalpha(int c);`
-	- Returns `1` if `c` is a letter, lowercase or uppercase.
-	- Returns `0` otherwise.
-	- **FYI:** The standard library provides a similar function: `isalpha`. Run `man isalpha` to learn more.
-	- Use this [main.c](./main/4-main.c) C program file to check if the code works correctly.
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/4-main.c 4-isalpha.c -o 4-isalpha`
-5. [Sign](./5-sign.c) : A C program function that prints the sign of a number.
-	- Prototype: `int print_sign(int n);`
-	- Return `1` and prints `+` if `n` is greater than zero.
-	- Return `0` and prints `0` if `n` is zero.
-	- Return `-1` and prints `-` if `n` is less than zero.
-	- Use this [main.c](./main/5-main.c) C program file to check if the code works correctly.
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/5-main.c 5-sign.c -o 5-sign`
-6. [There is no such thing as absolute value in this world. You can only estimate what a thing is worth to you](./6-abs.c) : A C program function that will compute the absolute value of an integer.
-	- Prototype: `int _abs(int);`
-	- **FYI:** The standard library provides a similar function: `abs`. Run `man abs` to learn more.
-	- Use this [main.c](./main/6-main.c) C program file to check if the code works correctly.
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/6-main.c 6-abs.c -o 6-abs` 
+<details>
+<summary><a href="./0-putchar.c">0. _putchar</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/N0SpVLPs/image.png' border='0' alt='image'/></a>
+
+- Below is the assembly code of the program with comments.
+
+```asm
+<main>: endbr64
+<main+4>: push rbp                                  ; \ standard function
+<main+5>: mov rbp,rsp                               ; / prologue code
+<main+8>: sub rsp,0x20                              ; allocate space for stack array
+<main+12>: mov rax,QWORD PTR fs:0x28                ; stack-guard moved to rax
+<main+21>: mov QWORD PTR [rbp-0x8],rax              ; stack-guard moved to rbp-0x8
+<main+25>: xor eax,eax                              ; zeroing out eax
+<main+27>: movabs rax,0x726168637475705f            ; string '_putchar' moved to rax
+<main+37>: mov QWORD PTR [rbp-0x11],rax             ; string moved to rbp-0x11
+<main+41>: mov BYTE PTR [rbp-0x9],0x0               ; rbp-0x9 = 0
+<main+45>: mov DWORD PTR [rbp-0x18],0x0             ; rbp-0x18 (ch) = 0
+<main+52>: jmp 0x5555555551e0 <main+78>             ; jump
+<main+54>: mov eax,DWORD PTR [rbp-0x18]             ; move rbp-0x18 (ch) to eax
+<main+57>: cdqe                                     ; rax = eax (ch)
+<main+59>: movzx eax,BYTE PTR [rbp+rax*1-0x11]      ; eax = rbp-0x11[ch]
+<main+64>: movsx eax,al                             ; mov 8-bit str chr value to eax
+<main+67>: mov edi,eax                              ; mov str chr to edi (arg1)
+<main+69>: call 0x555555555169 <_putchar>           ; print character
+<main+74>: add DWORD PTR [rbp-0x18],0x1             ; increament rbp-0x18 by 1
+<main+78>: cmp DWORD PTR [rbp-0x18],0x8             ; is ch <= 8
+<main+82>: jle 0x5555555551c8 <main+54>             ; jump
+<main+84>: mov edi,0xa                              ; mov char '\n' to edi (arg1)
+<main+89>: call 0x555555555169 <_putchar>           ; print new line char
+<main+94>: mov eax,0x0                              ; eax = 0
+<main+99>: mov rdx,QWORD PTR [rbp-0x8]              ; mv stack-guard to rdx
+<main+103>: sub rdx,QWORD PTR fs:0x28               ; rdx should be 0
+<main+112>: je 0x555555555209 <main+119>            ; leave function when equal
+<main+114>: call 0x555555555070 <__stack_chk_fail@plt>
+<main+119>: leave
+<main+120>: ret
+```
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-putchar.c -o 0-putchar`
+
+</details>
+
+<details>
+<summary><a href="./1-alphabet.c">1.I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/QN5wDt0t/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/1-main.c 1-alphabet.c -o 1-alphabet`
+
+</details>
+
+<details>
+<summary><a href="./2-print_alphabet_x10.c">2.10 x alphabet</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/RVRLc6MN/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/2-main.c 2-print_alphabet_x10.c -o 2-alphabet_x10`
+
+</details>
+
+<details>
+<summary><a href="./3-islower.c">3.islower</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/mkbf5zKt/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/3-main.c 3-islower.c -o 3-islower`
+
+</details>
+
+<details>
+<summary><a href="./4-isalpha.c">4.isalpha</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/bwvFCG9F/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/4-main.c 4-isalpha.c -o 4-isalpha`
+
+</details>
+
+<details>
+<summary><a href="./5-sign.c">5.Sign</a></summary><br>
+
+<a href='https://postimg.cc/SnQQHhYB' target='_blank'><img src='https://i.postimg.cc/MpVcMZ6p/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/5-main.c 5-sign.c -o 5-sign`
+
+</details>
+
+<details>
+<summary><a href="./6-abs.c">6.There is no such thing as absolute value in this world. You can only estimate what a thing is worth to you</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/NMryvRNb/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/6-main.c 6-abs.c -o 6-abs`
+
+</details>
+
 7. [There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important](./7-print_last_digit.c) : A C program function that will print the last digit of a number.
 	- Prototype: `int print_last_digit(int);`
 	- Returns the value of the last digit.

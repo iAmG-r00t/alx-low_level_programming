@@ -44,15 +44,25 @@
 <details>
 <summary>Day 1: 9th Feb 2022</summary>
 
-- [0x01: Hello, World](./0x00-hello_world)
+- [0x00: Hello, World](./0x00-hello_world)
 
 </details>
 
 <details>
 <summary>Day 2: 10th Feb 2022</summary>
 
-- [0x02: Variables,if,else,while](./0x01-variables_if_else_while)
+- [0x01: Variables,if,else,while](./0x01-variables_if_else_while)
 - Most of the codes were using for loops, so wrote them once more using while loops.
 - I learnt how to view a loop in GDB.
+
+</details>
+
+<details>
+<summary>Day 3 & 4: 12th - 14th Feb 2022</summary>
+
+- [0x02: Functions, nested loops](./0x02-functions_nested_loops)
+- So the weekend was long, never had internet the whole of friday night and half of the day on saturday.
+- Ended up looking at the [0 task: _putchar](0x02-functions_nested_loops/0-putchar.c) under GDB and would say it was a well spent day.
+- 14th Feb done some tasks from 1-6 will try and finish the rest today evening.
 
 </details>
