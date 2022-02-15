@@ -1,4 +1,4 @@
-#include"holberton.h"
+#include"main.h"
 
 /**
  * add - add two integers
@@ -6,14 +6,12 @@
  * @a: first input
  * @b: second input
  *
- * Return: results of addition
+ * Return: sum of a & b
 */
 
 int add(int a, int b)
 {
-	int result;
+	int sum = a + b;
 
-	result = a + b;
-
-	return (result);
+	return (sum);
 }

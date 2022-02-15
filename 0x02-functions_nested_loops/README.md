@@ -61,7 +61,7 @@
 </details>
 
 <details>
-<summary><a href="./1-alphabet.c">1.I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game</a></summary><br>
+<summary><a href="./1-alphabet.c">1. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game</a></summary><br>
 
 <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/QN5wDt0t/image.png' border='0' alt='image'/></a>
 
@@ -70,7 +70,7 @@
 </details>
 
 <details>
-<summary><a href="./2-print_alphabet_x10.c">2.10 x alphabet</a></summary><br>
+<summary><a href="./2-print_alphabet_x10.c">2. 10 x alphabet</a></summary><br>
 
 <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/RVRLc6MN/image.png' border='0' alt='image'/></a>
 
@@ -79,7 +79,7 @@
 </details>
 
 <details>
-<summary><a href="./3-islower.c">3.islower</a></summary><br>
+<summary><a href="./3-islower.c">3. islower</a></summary><br>
 
 <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/mkbf5zKt/image.png' border='0' alt='image'/></a>
 
@@ -88,7 +88,7 @@
 </details>
 
 <details>
-<summary><a href="./4-isalpha.c">4.isalpha</a></summary><br>
+<summary><a href="./4-isalpha.c">4. isalpha</a></summary><br>
 
 <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/bwvFCG9F/image.png' border='0' alt='image'/></a>
 
@@ -97,7 +97,7 @@
 </details>
 
 <details>
-<summary><a href="./5-sign.c">5.Sign</a></summary><br>
+<summary><a href="./5-sign.c">5. Sign</a></summary><br>
 
 <a href='https://postimg.cc/SnQQHhYB' target='_blank'><img src='https://i.postimg.cc/MpVcMZ6p/image.png' border='0' alt='image'/></a>
 
@@ -106,7 +106,7 @@
 </details>
 
 <details>
-<summary><a href="./6-abs.c">6.There is no such thing as absolute value in this world. You can only estimate what a thing is worth to you</a></summary><br>
+<summary><a href="./6-abs.c">6. There is no such thing as absolute value in this world. You can only estimate what a thing is worth to you</a></summary><br>
 
 <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/NMryvRNb/image.png' border='0' alt='image'/></a>
 
@@ -114,31 +114,47 @@
 
 </details>
 
-7. [There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important](./7-print_last_digit.c) : A C program function that will print the last digit of a number.
-	- Prototype: `int print_last_digit(int);`
-	- Returns the value of the last digit.
-	- Use this [main.c](./main/7-main.c) C program file to check if the code works correctly.
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/7-main.c 7-print_last_digit.c -o 7-last_digit`
-8. [I'm federal agent Jack Bauer, and today is the longest day of my life](./8-24_hours.c): A C program function that prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
-	- Prototype: `void jack_bauer(void);`
-	- You can listen to this [soundtrack](https://www.youtube.com/watch?v=btAfXqgMkPs) while coding :)
-	- Use this [main.c](./main/8-main.c) C program file to check if the code works correctly.
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/8-main.c 8-24_hours.c -o 8-24`
-9. [Learn your times table](./9-times_table.c) : A C program function that prints the 9 times table, starting with 0.
-	- Prototype: `void time_table(void);`
-	- Comiple and run the code this way: `./9-times_table | cat -e` to see the format.
-	- Use this [main.c](./main/9-main.c) C program file to check if the code works correctly.
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/9-main.c 9-times_table.c -o 9-times_table`
-10. [a+b](./10-add.c) : A C program function that adds two integers and returns the result.
-	- Prototype: `int add(int, int);`
-	- Use this [main.c](./main/10-main.c) C program file to check if the code works correctly.
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/10-main.c 10-add.c -o 10-add`
-11. [Holberton School, 98 Battery Street, the OG](./11-print_to_98.c) : A C program function that prints all natural numbers from `n` to `98`, followed by a new line.
-	- Prototype: `void print_to_98(int n);`
-	- Numbers must be separated by a comma, followed by a space.
-	- Numbers should be printed in order.
-	- The first number should be the number passed to your function.
-	- The last printed number should be `98`.
-	- You are allowed to use the standard library.
-	- Use this [main.c](./main/11-main.c) C program file to check if the code works correctly.
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/11-main.c 11-print_to_98.c -o 11-98`
+<details>
+<summary><a href="./7-print_last_digit.c">7. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/tC5wPW10/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/7-main.c 7-print_last_digit.c -o 7-last_digit`
+
+</details>
+
+<details>
+<summary><a href="./8-24_hours.c">8. I'm federal agent Jack Bauer, and today is the longest day of my life</a></summary><br>
+
+<a href='https://postimg.cc/S2X4H6Vq' target='_blank'><img src='https://i.postimg.cc/bJgvDLtG/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/8-main.c 8-24_hours.c -o 8-24`
+
+</details>
+
+<details>
+<summary><a href="./9-times_table.c">9. Learn your times table</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/43jbx1Vq/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/9-main.c 9-times_table.c -o 9-times_table`
+
+</details>
+
+<details>
+<summary><a href="./10-add.c">10. a+b</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/7LsDGmVH/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/10-main.c 10-add.c -o 10-add`
+
+</details>
+
+<details>
+<summary><a href="./11-print_to_98.c">11. 98 Battery Street, the OG</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/CMsVcXxM/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/11-main.c 11-print_to_98.c -o 11-98`
+
+</details>
