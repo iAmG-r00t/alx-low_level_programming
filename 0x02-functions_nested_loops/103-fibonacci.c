@@ -4,16 +4,15 @@
  * main - Entry point
  *
  * Description: Prints the sum of even-valued
- *		Fibonacci sequence starting
- *		with 1 and 2 whose values do
- *		not exceed 4million
+ *		Fibonacci sequence not exceed
+ *		4million
  *
  * Return: Always 0 (Success)
 */
 
 int main(void)
 {
-	unsigned long fib1 = 1, fib2 = 2, sum;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 	float total_sum;
 
 	while (1)
