@@ -185,3 +185,12 @@
 - Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 102-fibonacci.c -o 102-fibonacci`
 
 </details>
+
+<details>
+<summary><a href="./103-fibonacci.c">15. Even Liber Abbaci</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/8kmtkJ1b/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 103-fibonacci.c -o 103-fibonacci`
+
+</details>

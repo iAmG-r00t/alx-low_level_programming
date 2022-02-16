@@ -14,7 +14,7 @@ int main(void)
 	int count;
 	unsigned long fib1 = 1, fib2 = 2, sum;
 
-	printf("1, 2, "); /*print the first two digits*/
+	printf("%lu, %lu, ", fib1, fib2); /*print the first two digits*/
 
 	for (count = 0; count < 48; ++count)
 	{
