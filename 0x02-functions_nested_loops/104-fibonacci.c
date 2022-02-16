@@ -12,11 +12,9 @@
 int main(void)
 {
 	int count;
-	unsigned long fib1 = 1, fib2 = 2, sum;
+	unsigned long int fib1 = 0, fib2 = 1, sum;
 
-	printf("%lu, %lu, ", fib1, fib2);
-
-	for (count = 0; count < 96; ++count)
+	for (count = 0; count < 98; ++count)
 	{
 		sum = fib1 + fib2;
 		printf("%lu", sum);
@@ -24,11 +22,10 @@ int main(void)
 		fib1 = fib2;
 		fib2 = sum;
 
-		if (count == 95)
-			printf("\n");
-		else
+		if (count < 97)
 			printf(", ");
 	}
+	printf("\n");
 
 	return (0);
 }
