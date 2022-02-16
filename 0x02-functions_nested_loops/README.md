@@ -176,3 +176,12 @@
 - Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-natural.c -o 101-natural`
 
 </details>
+
+<details>
+<summary><a href="./102-fibonacci.c">14. In computer class, the first assignment was to write a program to print the first 100 Fibonacci numbers. Instead, I wrote a program that would steal passwords of students. My teacher gave me an A</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/0yjz3yVM/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 102-fibonacci.c -o 102-fibonacci`
+
+</details>
