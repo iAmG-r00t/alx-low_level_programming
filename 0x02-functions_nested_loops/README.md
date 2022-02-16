@@ -158,3 +158,21 @@
 - Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/11-main.c 11-print_to_98.c -o 11-98`
 
 </details>
+
+<details>
+<summary><a href="./100-times_table.c">12. The World looks like a multiplication-table, or a mathematical equation, which, turn it how you will, balances itself</a></summary><br>
+
+<a href='https://postimg.cc/wts1FBF3' target='_blank'><img src='https://i.postimg.cc/8CZLpJ6d/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/100-main.c 100-times_table.c -o 100-times_table`
+
+</details>
+
+<details>
+<summary><a href="./101-natural.c">13. Nature made the natural numbers; All else is the work of women</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/XJbz9n6q/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-natural.c -o 101-natural`
+
+</details>
