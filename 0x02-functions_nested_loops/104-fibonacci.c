@@ -12,11 +12,9 @@
 int main(void)
 {
 	int count;
-	unsigned long fib1 = 1, fib2 = 2, sum;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 	unsigned long fib1_hlf1, fib1_hlf2, fib2_hlf1, fib2_hlf2;
 	unsigned long half1, half2;
-
-	printf("%lu, %lu, ", fib1, fib2);
 
 	for (count = 1; count < 92; ++count)
 	{
