@@ -23,9 +23,15 @@
 
 </details>
 
-1. [Like, comment, subscribe](./1-main.c) : A C program where I have commented the areas of code that were causing the output to go into an infinite loop.
-	- No need to compile the code with `-Wall -Werror -Wextra -pedantic` for this task.
-	- Compile the code this way: `gcc -std=gnu89 1-main.c -o 1-main`
+<details>
+<summary><a href="./1-main.c">1. Like, comment, subscribe</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/Xq4qNHnn/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -std=gnu89 1-main.c -o 1-main`
+
+</details>
+
 2. [0 > 972](./2-main.c) : A C program that prints the largest of three integers.
 	- For this task we are given the main C program file that utilizes a function prototype called [2-largest_number](./2-largest_number_original.c), where when the code compiled and executed it shows `0` to be the largest number from our main program file which shouldn't be the case.
 	- We are tasked to fix the prototype function code. This is the [2-largest_number](./2-largest_number.c) prototype function code that works correctly.
