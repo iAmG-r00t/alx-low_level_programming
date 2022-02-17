@@ -74,5 +74,13 @@
 - 15th completed task 7 - 11
 - 16th completed first 4 advanced tasks
 - 17th @5am finished last advanced task (yet to understand the solution) raised a github [issue](https://github.com/Trikcode/alx-low_level_programming/issues/1)
+- Managed to finish RET2 systems Deus x64 Wargame first task.
+
+<details>
+<summary>Stage 1 completion</summary>
+
+<a href='https://postimg.cc/JGS5kx4g' target='_blank'><img src='https://i.postimg.cc/P5530FGt/image.png' border='0' alt='image'/></a>
+
+</details>
 
 </details>
