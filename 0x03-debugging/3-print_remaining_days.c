@@ -2,11 +2,11 @@
 
 /**
 * print_remaining_days - takes a date and prints how many days are
-* left in the year, taking leap years into account
+*		left in the year, taking leap years into account
+*
 * @month: month in number format
 * @day: day of month
 * @year: year
-* Return: void
 */
 
 void print_remaining_days(int month, int day, int year)
@@ -36,7 +36,8 @@ void print_remaining_days(int month, int day, int year)
 	/*if its not a leap year then ..*/
 	else
 	{
-		/* check if month is february and if days
+		/**
+		 * check if month is february and if days
 		 * are equal to 60 then its an invalid date
 		*/
 		if (month == 2 && day == 60)

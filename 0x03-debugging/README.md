@@ -258,7 +258,7 @@ Day of the year: 91
 Remaining days: 274
 carrie@ubuntu:/debugging$
 ```
-<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/xjsGphYv/image.png' border='0' alt='image'/></a><br /><a href='https://postimages.org/'>host image</a><br />
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/xjsGphYv/image.png' border='0' alt='image'/></a>
 
 - Compile this way: `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 3-convert_day.c 3-print_remaining_days.c main/3-main_b.c -o 3-main_b`
 
