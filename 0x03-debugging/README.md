@@ -19,7 +19,7 @@
 <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/vmWN7cL0/image.png' border='0' alt='image'/></a>
 
 - First compilation: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 positive_or_negative.c main/main.c -o first`
-- Second compilation: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 positive_or_negative.c main/0-main.c -o 0-main`
+- Second compilation: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 positive_or_negative.c 0-main.c -o 0-main`
 
 </details>
 
@@ -32,10 +32,85 @@
 
 </details>
 
-2. [0 > 972](./2-main.c) : A C program that prints the largest of three integers.
-	- For this task we are given the main C program file that utilizes a function prototype called [2-largest_number](./2-largest_number_original.c), where when the code compiled and executed it shows `0` to be the largest number from our main program file which shouldn't be the case.
-	- We are tasked to fix the prototype function code. This is the [2-largest_number](./2-largest_number.c) prototype function code that works correctly.
-	- Compile the code this way: `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 2-largest_number.c 2-main.c -o 2-main`
+<details>
+<summary><a href="./2-largest_number.c">2. 0 > 972?</a></summary><br>
+
+- This program prints the largest of three integers.
+
+```bash
+carrie@ubuntu:/debugging$ cat 2-main.c
+#include <stdio.h>
+#include "main.h"
+
+/**
+* main - prints the largest of 3 integers
+* Return: 0
+*/
+
+int main(void)
+{
+        int a, b, c;
+        int largest;
+
+        a = 972;
+        b = -98;
+        c = 0;
+
+        largest = largest_number(a, b, c);
+
+        printf("%d is the largest number\n", largest);
+
+        return (0);
+}
+carrie@ubuntu:/debugging$ 
+```
+
+```bash
+carrie@ubuntu:/debugging$ cat 2-largest_number.c
+#include "main.h"
+
+/**
+ * largest_number - returns the largest of 3 numbers
+ * @a: first integer
+ * @b: second integer
+ * @c: third integer
+ * Return: largest number
+ */
+
+int largest_number(int a, int b, int c)
+{
+    int largest;
+
+    if (a > b && b > c)
+    {
+        largest = a;
+    }
+    else if (b > a && a > c)
+    {
+        largest = b;
+    }
+    else
+    {
+        largest = c;
+    }
+
+    return (largest);
+}
+
+carrie@ubuntu:/debugging$
+```
+```bash
+carrie@ubuntu:/debugging$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 2-largest_number.c 2-main.c -o 2-main
+carrie@ubuntu:/debugging$ ./2-main
+0 is the largest number
+carrie@ubuntu:/debugging$
+```
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/c46hdXCR/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -Werror -Wextra -pedantic -std=gnu89 2-largest_number.c main/2-main.c -o 2-main`
+
+</details>
+
 3. [Leap year](./3-main_a.c) : A C program that converts a date to the day of the year and determines how many days are left in the year, taking leap year into consideration.
 	- In this task we are tasked to fix a prototype function `print_remaining_days()` that calculates the remaining days of the year.
 	- You can assume that all test cases have valid months (i.e. the value of `month` will never be less than `1` or greater than `12`) and valid days (i.e. the value of `day` will never be less than `1` or greater than `31`).
