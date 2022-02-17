@@ -12,34 +12,22 @@
 void print_remaining_days(int month, int day, int year)
 {
 	/**
-	 * check is the year is a leap year, where it is a leap year
-	 * if the year can be divided by 4 evenly, and if the year
-	 * can be divided evenly by 100 then its not a leap year
-	 * unless it is divisible by 400
+	 * leap year when it can be divided
+	 * by 100 and 400 or by 4 evenly
 	*/
-	if (year % 4 == 0 && ((year % 100 == 0) && (year % 400 == 0)))
+	if ((year % 100 == 0 && year % 400 == 0) || (year % 4 == 0))
 	{
-		/**
-		 * if its a leap year then check if the month
-		 * is february and if its days are larger or
-		 * equal to 60 and if it is add one day
-		*/
 		if (month > 2 && day >= 60)
 		{
 			day++;
 		}
 
-	printf("Day of the year: %d\n", day);
-	printf("Remaining days: %d\n", 366 - day);
+		printf("Day of the year: %d\n", day);
+		printf("Remaining days: %d\n", 366 - day);
 
 	}
-	/*if its not a leap year then ..*/
 	else
 	{
-		/**
-		 * check if month is february and if days
-		 * are equal to 60 then its an invalid date
-		*/
 		if (month == 2 && day == 60)
 		{
 			printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
