@@ -1,4 +1,33 @@
+/**
+ * Solution was copied from Nobert Patrick
+ *	Wise, github handle: Trikcode
+*/
+
 #include"main.h"
+
+/**
+ * numLength - returns the length of string
+ *
+ * @num: operand number
+ *
+ * Return: number of digits
+*/
+
+int numLength(int num)
+{
+	int length = 0;
+
+	if (!num)
+		return(1);
+
+	while (num)
+	{
+		num = num / 10;
+		length += 1;
+	}
+
+	return (length);
+}
 
 /**
  * main - Entry point
@@ -11,47 +40,35 @@
 
 int main(void)
 {
-	int count;
-	unsigned long fib1 = 0, fib2 = 1, sum;
-	unsigned long fib1_hlf1, fib1_hlf2, fib2_hlf1, fib2_hlf2;
-	unsigned long half1, half2;
+	int count, initial0s;
+	unsigned long int f1 = 1, f2 = 2, sum, mx = 100000000, f1o = 0, f2o = 0, sumo = 0;
 
-	for (count = 1; count < 92; ++count)
+	for (count = 1; count <= 98; ++count)
 	{
-		sum = fib1 + fib2;
-		printf("%lu, ", sum);
+		if (f1o > 0)
+			printf("%lu", f1o);
+		initial0s = numLength(mx) - 1 - numLength(f1);
 
-		fib1 = fib2;
-		fib2 = sum;
-	}
-
-	fib1_hlf1 = fib1 / 10000000000;
-	fib2_hlf1 = fib2 / 10000000000;
-	fib1_hlf2 = fib1 % 10000000000;
-	fib2_hlf2 = fib2 % 10000000000;
-
-	for (count = 93; count < 99; ++count)
-	{
-		half1 = fib1_hlf1 + fib2_hlf1;
-		half2 = fib1_hlf2 + fib2_hlf2;
-		
-		if (fib1_hlf2 + fib2_hlf2 > 9999999999)
+		while (f1o > 0 && initial0s > 0)
 		{
-			half1 += 1;
-			half2 %= 10000000000;
+			printf("%d", 0);
+			--initial0s;
 		}
-
-		printf("%lu%lu", half1, half2);
+		
+		printf("%lu", f1);
+		
+		sum = (f1 + f2) % mx;
+		sumo = f1o + f2o + (f1 + f2) / mx;
+		f1 = f2;
+		f1o = f2o;
+		f2 = sum;
+		f2o = sumo;
 
 		if (count != 98)
 			printf(", ");
-
-		fib1_hlf1 = fib2_hlf1;
-		fib1_hlf2 = fib2_hlf2;
-		fib2_hlf1 = half1;
-		fib2_hlf2 = half2;
+		else
+			printf("\n");
 	}
-	printf("\n");
 
 	return (0);
 }

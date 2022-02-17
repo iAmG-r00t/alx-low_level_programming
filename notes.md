@@ -66,3 +66,13 @@
 - 14th Feb done some tasks from 1-6 will try and finish the rest today evening.
 
 </details>
+
+<details>
+<summary>Day 5: 15th - 17th Feb 2022</summary>
+
+- [0x02: Functions, nested loops](./0x02-functions_nested_loops)
+- 15th completed task 7 - 11
+- 16th completed first 4 advanced tasks
+- 17th @5am finished last advanced task (yet to understand the solution) raised a github [issue](https://github.com/Trikcode/alx-low_level_programming/issues/1)
+
+</details>
