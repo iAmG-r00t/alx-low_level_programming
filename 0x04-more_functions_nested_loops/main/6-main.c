@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "../main.h"
 
 /**
  * main - check the code for ALX School students.
@@ -8,6 +8,9 @@
 
 int main(void)
 {
-	print_numbers();
+	print_line(0);
+	print_line(2);
+	print_line(10);
+	print_line(-4);
 	return (0);
 }
