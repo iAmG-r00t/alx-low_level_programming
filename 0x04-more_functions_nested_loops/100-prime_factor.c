@@ -25,12 +25,12 @@ double _sqrt(double x)
 }
 
 /**
- * prime_factors - finds and prints the largest prime factor of number (num)
+ * largest_prime_factor - finds and prints the largest prime factor of number (num)
  *
  * @num: number to find
 */
 
-void prime_factors(long int num)
+void largest_prime_factor(long int num)
 {
 	int prmNu, largest;
 
@@ -62,7 +62,7 @@ void prime_factors(long int num)
 int main(void)
 {
 
-	prime_factors(612852475143);
+	largest_prime_factor(612852475143);
 
 	return (0);
 }
