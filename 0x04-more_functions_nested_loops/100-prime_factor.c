@@ -25,7 +25,8 @@ double _sqrt(double x)
 }
 
 /**
- * largest_prime_factor - finds and prints the largest prime factor of number (num)
+ * largest_prime_factor - finds and prints the largest
+ *			prime factor of number (num)
  *
  * @num: number to find
 */

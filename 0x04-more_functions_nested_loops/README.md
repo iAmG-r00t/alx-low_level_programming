@@ -165,3 +165,12 @@
 - Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-prime_factor.c -o 100-prime_factor -lm`
 
 </details>
+
+<details>
+<summary><a href="./101-print_number.c">12. Numbers have life; they're not just symbols on paper</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/kgKjrr4R/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/101-main.c 101-print_number.c -o 101-print_numbers`
+
+</details>
