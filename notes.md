@@ -82,3 +82,14 @@
 	</details>
 
 </details>
+
+<details>
+<summary>Log 6: 24th February 2022</summary>
+
+- I have forgotten the dates so now I will just log this way.
+- [0x03 : Debugging](./0x03-debugging); completed seven days ago (17th Feb).
+- [0x04 : More functions, more nested loops](./0x04-more_functions_nested_loops); completed today the last task.
+- Today I will be creating a road map, get back to pwn.college and do some few challenges on embryoio.
+- Also I might start on python modules.
+
+</details>
