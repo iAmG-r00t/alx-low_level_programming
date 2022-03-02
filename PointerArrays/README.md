@@ -142,7 +142,7 @@
 </details>
 
 <details>
-<summary>Strings<summary>
+<summary>Strings</summary>
 
   - [string array using pointer arithmetic](./string_array.c)
     - Compile the code this way: `gcc string_array.c -o string_array`
