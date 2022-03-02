@@ -140,3 +140,13 @@
   - Compile the code this way: `gcc -o solveme solveme.c`
 
 </details>
+
+<details>
+<summary>Strings<summary>
+
+  - [string array using pointer arithmetic](./string_array.c)
+    - Compile the code this way: `gcc string_array.c -o string_array`
+  - [string array the proper way](./array_string.c)
+    - Compile the code this way: `gcc array_string.c -o array_string`
+
+</details>
