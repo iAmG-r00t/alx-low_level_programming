@@ -2,7 +2,7 @@
 
 ## Resources
 
-- [Pointers, arrays and Data Structures](https://www.notion.so/C-Programming-f13cdb9661db464f8ea326c5a2654e8e)
+- [Pointers, arrays and Data Structures](https://gr00t.notion.site/Gr00t-s-C-Notes-94d170461cb7410fa110c998bd10ec03)
 - [C - Arrays](https://www.tutorialspoint.com/cprogramming/c_arrays.htm)
 - [C - Pointers](https://www.tutorialspoint.com/cprogramming/c_pointers.htm)
 - [C - Strings](https://www.tutorialspoint.com/cprogramming/c_strings.htm)

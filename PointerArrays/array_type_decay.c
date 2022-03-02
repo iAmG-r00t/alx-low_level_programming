@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "pointers.h"
+void f(int *a);
 
 /**
  * main - Illustrating the array type decay
@@ -18,4 +18,15 @@ int main(void)
 	printf("p: %p\n", p);
 	f(t);
 	return (0);
+}
+
+/**
+ * f - prints the value of a pointer of type int
+ *
+ * @a: address of an integer we need to print
+*/
+
+void f(int *a)
+{
+	printf("a: %p\n", a);
 }
