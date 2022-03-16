@@ -1,27 +1,61 @@
 # 0x05. C - Pointers, arrays and strings.
 
+<p align="center">
+  <img src="https://i.postimg.cc/dtJkkJV9/pointers.jpg">
+</p>
+
 ## Resources
 
 - [Pointers, arrays and Data Structures](https://gr00t.notion.site/Gr00t-s-C-Notes-94d170461cb7410fa110c998bd10ec03)
 - [C - Arrays](https://www.tutorialspoint.com/cprogramming/c_arrays.htm)
 - [C - Pointers](https://www.tutorialspoint.com/cprogramming/c_pointers.htm)
 - [C - Strings](https://www.tutorialspoint.com/cprogramming/c_strings.htm)
-- C [Books and PDF's](../references) to check out and use as reference.
+- [Memory Layout of C program](https://aticleworld.com/memory-layout-of-c-program/)
+- [C Books and PDF's](../references) to check out and use as reference.
 
 ## Tasks
 
-0. [98 Battery st.](./0-reset_to_98.c) : A C function program that takes a pointer to an `int` as parameter and updates the value it points to to `98`.
-	- Prototype: `void reset_to_98(int *n);`
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-reset_to_98.c -o 0-98`
-1. [Don't swap horses in crossing a stream](./1-swap.c) : A C function program that swaps the values of two integers.
-	- Prototype: `void swap_int(int *a, int *b);`
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-swap.c -o 1-swap`
-2. [This report, by its very length, defends itself against the risk of being read](./2-strlen.c) : A C function program that returns the length of a string.
-	- Prototype: `int _strlen(char *s);`
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-strlen.c -o 2-strlen`
-3. [I do not fear computers. I fear the lack of them](./3-puts.c) : A C function program that prints a string, followed by a new line, to `stdout`.
-	- Prototype: `void _puts(char *str);`
-	- Comiple the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 3-main.c 3-puts.c -o 3-puts`
+- All `*-main.c` files will be located in the [main](./main) directory
+- We will be using function prototypes that will be included in our header file called, [main.h](./main.h).
+
+---
+
+<details>
+<summary><a href="./0-reset_to_98.c">0. 98 Battery st.</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/MTRnHM0y/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/0-main.c 0-reset_to_98.c -o 0-98`
+
+</details>
+
+<details>
+<summary><a href="./1-swap.c">1. Don't swap horses in crossing a stream</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/tggtCWJG/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/1-main.c 1-swap.c -o 1-swap`
+
+</details>
+
+<details>
+<summary><a href="./2-strlen.c">2. This report, by its very length, defends itself against the rist of being read</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/Rh2YDDrS/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/2-main.c 2-strlen.c -o 2-strlen`
+
+</details>
+
+<details>
+<summary><a href="./3-puts.c">3. I do not fear computers. I fear the lack of them</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/m2m5Fkp3/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/3-main.c 3-puts.c -o 3-puts`
+
+</details>
+
 4. [I can only go one way. I've not got a reverse gear](./4-print_rev.c) : A C function that prints a string, in reverse, followed by a new line.
 	- Prototype: `void print_rev(char *s);`
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 4-main.c 4-print_rev.c -o 4-print_rev`

@@ -1,5 +1,4 @@
-#include "holberton.h"
-#include <stdio.h>
+#include "../main.h"
 
 /**
  * main - check the code for ALX School students.
@@ -12,7 +11,7 @@ int main(void)
 	char *str;
 	int len;
 
-	str = "Holberton!";
+	str = "My first strlen!";
 	len = _strlen(str);
 	printf("%d\n", len);
 	return (0);
