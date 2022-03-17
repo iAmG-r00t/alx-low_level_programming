@@ -56,9 +56,15 @@
 
 </details>
 
-4. [I can only go one way. I've not got a reverse gear](./4-print_rev.c) : A C function that prints a string, in reverse, followed by a new line.
-	- Prototype: `void print_rev(char *s);`
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 4-main.c 4-print_rev.c -o 4-print_rev`
+<details>
+<summary><a href="./4-print_rev.c">4. I do not fear computers. I fear the lack of them</a></summary><br>
+
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/t4m3bGyJ/image.png' border='0' alt='image'/></a>
+
+- Compile this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/4-main.c 4-print_rev.c -o 4-print_rev`
+
+</details>
+
 5. [A good engineer thinks in reverse and asks himself about the stylistic consequences of the components and systems he proposes](./5-rev_string.c) : A C function that reverses a string.
 	- Prototype: `void rev_string(char *s);`
 	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 5-rev_string.c -o 5-rev_string`

@@ -1,30 +1,23 @@
-#include "holberton.h"
+#include"main.h"
 
 /**
- * print_rev - print strings in reverse
- *          followed by a new line
+ * print_rev - prints a string in reverse
  *
- * @s: pointer to input
+ * @s: string parameter input
  *
- * Return: Always 0 (Success)
+ * Return: Nothing
 */
 
 void print_rev(char *s)
 {
-	int i;
+	int len, index;
 
-	/* get string array size of string without the null character*/
-	for (i = 0; s[i] >= 0; i++)
-	{
-		if (s[i] == '\0')
-			break;
-	}
+	/*finds the length of string without null character*/
+	for (len = 0; s[len] != '\0'; ++len)
+		index = len;
 
-	/**
-	 * knowing the string array we print
-	 * each character from last array character.
-	*/
-	for (i--; i >= 0; i--)
-		_putchar(s[i]);
+	/*print char from the last index as you decrement*/
+	for (--index; index >= 0; --index)
+		_putchar(s[index]);
 	_putchar('\n');
 }
