@@ -10,11 +10,11 @@
 
 void print_rev(char *s)
 {
-	int len, index;
+	int index;
 
 	/*finds the length of string without null character*/
-	for (len = 0; s[len] != '\0'; ++len)
-		index = len;
+	for (index = 0; s[index] != '\0'; ++index)
+		;
 
 	/*print char from the last index as you decrement*/
 	for (--index; index >= 0; --index)
