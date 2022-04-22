@@ -1,27 +1,24 @@
-#include "holberton.h"
+#include"main.h"
 
 /**
- * puts2 - print character of a string
- *      in an array starting from the first
- *      character followed by the rest of the
- *      even index array
+ * puts2 - prints every character of a string
  *
- * @str: string input array pointer
+ * @str: string parameter input
  *
- * Return: nothing
+ * Return: Noting
 */
 
 void puts2(char *str)
 {
 	int i;
 
-	for (i = 0; str[i] >= 0; i++)
+	for (i = 0; str[i] != '\0'; ++i)
 	{
-		if (str[i] == '\0')
-			break;
+	if (str[i] == '\0')
+		break;
 
-		if (i % 2 == 0)
-			_putchar(str[i]);
+	if (i % 2 == 0)
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }
