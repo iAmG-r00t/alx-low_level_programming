@@ -135,7 +135,7 @@
 <details>
 <summary><a href="./6-puts2.c">6. Half the lies they tell about me aren't true</a></summary><br>
 
-<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/Xv4RD7Jq/image.png' border='0' alt='image'/></a>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/XJsfCQkQ/image.png' border='0' alt='image'/></a>
 
 - Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/6-main.c 6-puts2.c -o 6-puts2`
 
