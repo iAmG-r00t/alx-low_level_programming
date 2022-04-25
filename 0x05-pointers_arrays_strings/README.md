@@ -150,14 +150,16 @@
 
 </details>
 
+<details>
+<summary><a href="./8-print_array.c">8. Arrays are not pointers</a></summary><br>
 
-8. [Arrays are not pointer](./8-print_array.c) : A C function program that prints `n` elements of an array of integers, followed by a new line.
-	- Prototype: `void print_array(int *a, int n);`
-	- Where `n` is the number of elements of the array to be printed.
-	- Numbers must be separated by comma, followed by a space.
-	- The numbers should be displayed in the same order as they are stored in the array.
-	- You are allowed to use `printf`.
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 8-main.c 8-print_array.c -o 8-print_array`
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/jdqkvtS3/image.png' border='0' alt='image'/></a>
+
+- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/8-main.c 8-print_array.c -o 8-print_array`
+
+</details>
+
+
 9. [strcpy](./9-strcpy.c) : A C function program that copies the string pointed to by `src`, including the terminating null byte (`\0`), to the buffer pointed to by `dest`.
 	- Prototype: `char *_strcpy(char *dest, char *src);`
 	- Return value is the pointer to `dest`.
