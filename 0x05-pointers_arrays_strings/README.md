@@ -141,12 +141,16 @@
 
 </details>
 
+<details>
+<summary><a href="./7-puts_half.c">7. Winning is only half of it. Having fun is the other half</a></summary><br>
 
-7. [Winning is only half of it. Having fun is the other half](./7-puts_half.c) : A C function that prints half of a string, followed by a new line.
-	- Prototype: `void puts_half(char *str);`
-	- The function should print the second half of the string.
-	- If the number of characters is odd, the function should print the last `n` characters of the string where `n = (length_of_the_string - 1) / 2)`
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 7-main.c 7-puts_half.c -o 7-puts_half`
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/2SjCBrHY/image.png' border='0' alt='image'/></a>
+
+- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c main/7-main.c 7-puts_half.c -o 7-puts_half`
+
+</details>
+
+
 8. [Arrays are not pointer](./8-print_array.c) : A C function program that prints `n` elements of an array of integers, followed by a new line.
 	- Prototype: `void print_array(int *a, int n);`
 	- Where `n` is the number of elements of the array to be printed.
