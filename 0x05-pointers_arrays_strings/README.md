@@ -159,13 +159,15 @@
 
 </details>
 
+<details>
+<summary><a href="./9-strcpy.c">9. strcpy</a></summary><br>
 
-9. [strcpy](./9-strcpy.c) : A C function program that copies the string pointed to by `src`, including the terminating null byte (`\0`), to the buffer pointed to by `dest`.
-	- Prototype: `char *_strcpy(char *dest, char *src);`
-	- Return value is the pointer to `dest`.
-	- **FYI:** The standard library provides a similar function: `strcpy`. Run `man strcpy` to learn more.
-	- [Read more here about strcpy](https://www.holbertonschool.com/coding-resource-strcpy-in-c).
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 9-main.c 9-strcpy.c -o 9-strcpy`
+
+- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/9-main.c 9-strcpy.c -o 9-strcpy`
+
+</details>
+
+
 10. [Great leaders are willing to sacrifice the numbers to save the people. Poor leaders sacrifice the people to save the numbers](./100-atoi.c) : A C function program that converts a string into an integer.
 	- Prototype: `int _atoi(char *s);`
 	- The number in the string can be preceded by an infinite number of characters.
