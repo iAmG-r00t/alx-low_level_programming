@@ -162,6 +162,7 @@
 <details>
 <summary><a href="./9-strcpy.c">9. strcpy</a></summary><br>
 
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/tCyvgTcN/image.png' border='0' alt='image'/></a>
 
 - Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main/9-main.c 9-strcpy.c -o 9-strcpy`
 
