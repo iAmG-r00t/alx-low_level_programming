@@ -168,18 +168,18 @@
 
 </details>
 
+<details>
+<summary><a href="./100-atoi.c">10. Great leaders are willing to sacrifice the numbers to save the people. Poor leaders sacrifice the people to save the numbers</a></summary><br>
 
-10. [Great leaders are willing to sacrifice the numbers to save the people. Poor leaders sacrifice the people to save the numbers](./100-atoi.c) : A C function program that converts a string into an integer.
-	- Prototype: `int _atoi(char *s);`
-	- The number in the string can be preceded by an infinite number of characters.
-	- You need to take into account all the `-` and `+` signs before the number.
-	- If there are no numbers in the string, the function must return `0`.
-	- You are not allowed to use `long`
-	- You are not allowed to declare new variables of “type” array.
-	- You are not allowed to hard-code special values.
-	- We will use the `-fsanitize=signed-integer-overflow` gcc flag to compile your code.
-	- **FYI:** The standard library provides a similar function: `atoi`. Run `man atoi` to learn more.
-	- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -fsanitize=signed-integer-overflow 100-main.c 100-atoi.c -o 100-atoi`
+<a href='https://postimg.cc/1n3bJ6Mq' target='_blank'><img src='https://i.postimg.cc/j5HKq47Z/image.png' border='0' alt='image'/></a>
+
+- We will use the `-fsanitize=signed-integer-overflow` gcc flag to compile your code.
+- Compile the code this way: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -fsanitize=signed-integer-overflow main/100-main.c 100-atoi.c -o 100-atoi`
+
+</details>
+
+
+
 11. [Don't hate the hacker, hate the code](./101-keygen.c) : A C function program that generates random valid passwords for the program [101-crackme](https://github.com/holbertonschool/0x04.c)
 	- You are allowed to use the standard library.
 	- You don’t have to pass the `betty-style` tests (you still need to pass the `betty-doc` tests)
